@@ -1,0 +1,136 @@
+/* _content/CamcoMetrics/Pages/Index.razor.rz.scp.css */
+.cardhover[b-23uopmquzf] {
+    border-color: gray;
+    transition: .5s;
+    box-shadow: rgba(128, 128, 128, 0.43) 3px 3px;
+    color: black;
+}
+
+.cardhover:hover[b-23uopmquzf] {
+    border-color: blue;
+    transition: .7s;
+    box-shadow: rgba(128, 128, 128, 1) 5px 5px;
+    color: blue;
+}
+
+.link-outline-primary[b-23uopmquzf] {
+    color: blue;
+    border-color: blue;
+    border: 2px solid blue;
+    transition: .5s;
+}
+
+.link-outline-primary:hover[b-23uopmquzf] {
+    color: white;
+    background-color: #1b6ec2;
+    border-color: blue;
+    border: 2px solid blue;
+    transition: .5s;
+    font-weight: bold;
+}
+
+.e-grid .e-headercell[b-23uopmquzf] {
+    background-color: #24202C;
+}
+
+.e-grid .e-altrow[b-23uopmquzf] {
+    background-color: #C6EEFF;
+}
+
+.e-grid .e-detailindentcell[b-23uopmquzf] {
+    background-color: #EB711D;
+}
+
+.e-grid e-detailrowexpand[b-23uopmquzf] {
+    background-color: #EB711D;
+}
+/* _content/CamcoMetrics/Shared/MainLayout.razor.rz.scp.css */
+.page[b-sfghfc7xoi] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-sfghfc7xoi] {
+    flex: 1;
+}
+
+.sidebar[b-sfghfc7xoi] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-sfghfc7xoi] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-sfghfc7xoi]  a, .top-row .btn-link[b-sfghfc7xoi] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-sfghfc7xoi] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+.footer[b-sfghfc7xoi] {
+    height: 30px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Calibri';
+    background: #323232;
+    font-weight: bold;
+}
+
+.blazored-toast-container[b-sfghfc7xoi], .position-topright[b-sfghfc7xoi] {
+    z-index: 9999 !important;
+}
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-sfghfc7xoi] {
+        display: none;
+    }
+
+    .top-row.auth[b-sfghfc7xoi] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-sfghfc7xoi], .top-row .btn-link[b-sfghfc7xoi] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-sfghfc7xoi] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-sfghfc7xoi] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-sfghfc7xoi] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row[b-sfghfc7xoi], article[b-sfghfc7xoi] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* _content/CamcoMetrics/Shared/NavMenu.razor.rz.scp.css */

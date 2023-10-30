@@ -1,0 +1,45 @@
+.cardhover[b-23uopmquzf] {
+    border-color: gray;
+    transition: .5s;
+    box-shadow: rgba(128, 128, 128, 0.43) 3px 3px;
+    color: black;
+}
+
+.cardhover:hover[b-23uopmquzf] {
+    border-color: blue;
+    transition: .7s;
+    box-shadow: rgba(128, 128, 128, 1) 5px 5px;
+    color: blue;
+}
+
+.link-outline-primary[b-23uopmquzf] {
+    color: blue;
+    border-color: blue;
+    border: 2px solid blue;
+    transition: .5s;
+}
+
+.link-outline-primary:hover[b-23uopmquzf] {
+    color: white;
+    background-color: #1b6ec2;
+    border-color: blue;
+    border: 2px solid blue;
+    transition: .5s;
+    font-weight: bold;
+}
+
+.e-grid .e-headercell[b-23uopmquzf] {
+    background-color: #24202C;
+}
+
+.e-grid .e-altrow[b-23uopmquzf] {
+    background-color: #C6EEFF;
+}
+
+.e-grid .e-detailindentcell[b-23uopmquzf] {
+    background-color: #EB711D;
+}
+
+.e-grid e-detailrowexpand[b-23uopmquzf] {
+    background-color: #EB711D;
+}

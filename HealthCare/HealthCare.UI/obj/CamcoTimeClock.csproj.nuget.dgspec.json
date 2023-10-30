@@ -1,0 +1,517 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock\\CamcoTimeClock.csproj": {}
+  },
+  "projects": {
+    "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Data\\CamcoTimeClock.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Data\\CamcoTimeClock.Data.csproj",
+        "projectName": "CamcoTimeClock.Data",
+        "projectPath": "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Data\\CamcoTimeClock.Data.csproj",
+        "packagesPath": "C:\\Users\\Syed Abdul Rehman\\.nuget\\packages\\",
+        "outputPath": "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Syed Abdul Rehman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Library\\CamcoTimeClock.Library.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Library\\CamcoTimeClock.Library.csproj",
+        "projectName": "CamcoTimeClock.Library",
+        "projectPath": "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Library\\CamcoTimeClock.Library.csproj",
+        "packagesPath": "C:\\Users\\Syed Abdul Rehman\\.nuget\\packages\\",
+        "outputPath": "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Library\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Syed Abdul Rehman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "DocumentFormat.OpenXml": {
+              "target": "Package",
+              "version": "[2.20.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Repository\\CamcoTimeClock.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Repository\\CamcoTimeClock.Repository.csproj",
+        "projectName": "CamcoTimeClock.Repository",
+        "projectPath": "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Repository\\CamcoTimeClock.Repository.csproj",
+        "packagesPath": "C:\\Users\\Syed Abdul Rehman\\.nuget\\packages\\",
+        "outputPath": "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Syed Abdul Rehman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Data\\CamcoTimeClock.Data.csproj": {
+                "projectPath": "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Data\\CamcoTimeClock.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.16, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Service\\CamcoTimeClock.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Service\\CamcoTimeClock.Service.csproj",
+        "projectName": "CamcoTimeClock.Service",
+        "projectPath": "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Service\\CamcoTimeClock.Service.csproj",
+        "packagesPath": "C:\\Users\\Syed Abdul Rehman\\.nuget\\packages\\",
+        "outputPath": "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Syed Abdul Rehman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Library\\CamcoTimeClock.Library.csproj": {
+                "projectPath": "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Library\\CamcoTimeClock.Library.csproj"
+              },
+              "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Repository\\CamcoTimeClock.Repository.csproj": {
+                "projectPath": "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Repository\\CamcoTimeClock.Repository.csproj"
+              },
+              "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.ViewModel\\CamcoTimeClock.ViewModels.csproj": {
+                "projectPath": "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.ViewModel\\CamcoTimeClock.ViewModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "BlazorDownloadFile": {
+              "target": "Package",
+              "version": "[2.4.0.2, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "iTextSharp": {
+              "target": "Package",
+              "version": "[5.5.13.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.ViewModel\\CamcoTimeClock.ViewModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.ViewModel\\CamcoTimeClock.ViewModels.csproj",
+        "projectName": "CamcoTimeClock.ViewModels",
+        "projectPath": "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.ViewModel\\CamcoTimeClock.ViewModels.csproj",
+        "packagesPath": "C:\\Users\\Syed Abdul Rehman\\.nuget\\packages\\",
+        "outputPath": "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.ViewModel\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Syed Abdul Rehman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Data\\CamcoTimeClock.Data.csproj": {
+                "projectPath": "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Data\\CamcoTimeClock.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock\\CamcoTimeClock.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock\\CamcoTimeClock.csproj",
+        "projectName": "CamcoTimeClock",
+        "projectPath": "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock\\CamcoTimeClock.csproj",
+        "packagesPath": "C:\\Users\\Syed Abdul Rehman\\.nuget\\packages\\",
+        "outputPath": "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Syed Abdul Rehman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Library\\CamcoTimeClock.Library.csproj": {
+                "projectPath": "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Library\\CamcoTimeClock.Library.csproj"
+              },
+              "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Repository\\CamcoTimeClock.Repository.csproj": {
+                "projectPath": "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Repository\\CamcoTimeClock.Repository.csproj"
+              },
+              "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Service\\CamcoTimeClock.Service.csproj": {
+                "projectPath": "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.Service\\CamcoTimeClock.Service.csproj"
+              },
+              "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.ViewModel\\CamcoTimeClock.ViewModels.csproj": {
+                "projectPath": "D:\\My_2nd_Summer\\Training\\Work\\CamcoQuality\\CamcoOnionSecondVersionTemplate\\CamcoTimeClock.ViewModel\\CamcoTimeClock.ViewModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Append.Blazor.Printing": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Blazored.Toast": {
+              "target": "Package",
+              "version": "[3.2.2, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.13, )"
+            },
+            "Syncfusion.Blazor.Charts": {
+              "target": "Package",
+              "version": "[20.2.0.50, )"
+            },
+            "Syncfusion.Blazor.Core": {
+              "target": "Package",
+              "version": "[20.2.0.50, )"
+            },
+            "Syncfusion.Blazor.Grid": {
+              "target": "Package",
+              "version": "[20.2.0.50, )"
+            },
+            "Syncfusion.Blazor.PdfViewerServer.Windows": {
+              "target": "Package",
+              "version": "[20.2.0.50, )"
+            },
+            "Syncfusion.Blazor.Themes": {
+              "target": "Package",
+              "version": "[20.4.0.53, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

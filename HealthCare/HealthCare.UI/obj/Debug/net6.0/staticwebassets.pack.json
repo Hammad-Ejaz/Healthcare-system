@@ -1,0 +1,1241 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\HealthCare.UI.bundle.scp.css",
+      "PackagePath": "staticwebassets\\HealthCare.UI.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\AddIcon.png",
+      "PackagePath": "staticwebassets\\Icons\\AddIcon.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\ApprovedIcon.png",
+      "PackagePath": "staticwebassets\\Icons\\ApprovedIcon.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Atten6.png",
+      "PackagePath": "staticwebassets\\Icons\\Atten6.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\BckS3 120x375.png",
+      "PackagePath": "staticwebassets\\Icons\\BckS3 120x375.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\BckS3 40x125.png",
+      "PackagePath": "staticwebassets\\Icons\\BckS3 40x125.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\BckS3 80x250.png",
+      "PackagePath": "staticwebassets\\Icons\\BckS3 80x250.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Caution.png",
+      "PackagePath": "staticwebassets\\Icons\\Caution.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Delete.png",
+      "PackagePath": "staticwebassets\\Icons\\Delete.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Edit.png",
+      "PackagePath": "staticwebassets\\Icons\\Edit.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Edit1.png",
+      "PackagePath": "staticwebassets\\Icons\\Edit1.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\ErrorMark.png",
+      "PackagePath": "staticwebassets\\Icons\\ErrorMark.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Add Button\\Non-Power User\\Png Files - Icon Only\\AdS35-125x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Add Button\\Non-Power User\\Png Files - Icon Only\\AdS35-125x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Add Button\\Non-Power User\\Png Files - Icon Only\\AdS35-175x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Add Button\\Non-Power User\\Png Files - Icon Only\\AdS35-175x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Add Button\\Non-Power User\\Png Files - Icon Only\\AdS35-250x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Add Button\\Non-Power User\\Png Files - Icon Only\\AdS35-250x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Add Button\\Non-Power User\\Png Files - Icon Only\\AdS35-350x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Add Button\\Non-Power User\\Png Files - Icon Only\\AdS35-350x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Add Button\\Non-Power User\\Png Files - Icon Only\\AdS35-375x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Add Button\\Non-Power User\\Png Files - Icon Only\\AdS35-375x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Add Button\\Non-Power User\\Png Files - Icon Only\\AdS35-450x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Add Button\\Non-Power User\\Png Files - Icon Only\\AdS35-450x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Add Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Add Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Add Button\\Non-Power User\\Png Files\\AdS35 120x375.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Add Button\\Non-Power User\\Png Files\\AdS35 120x375.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Add Button\\Non-Power User\\Png Files\\AdS35 40x125.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Add Button\\Non-Power User\\Png Files\\AdS35 40x125.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Add Button\\Non-Power User\\Png Files\\AdS35 80x250.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Add Button\\Non-Power User\\Png Files\\AdS35 80x250.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Add Button\\Non-Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Add Button\\Non-Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Add Button\\Power User\\Png Files\\Pls6 30x30.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Add Button\\Power User\\Png Files\\Pls6 30x30.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Add Button\\Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Add Button\\Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Admin Button\\Non-Power User\\Png Files - Icon Only\\AdmnS11-125x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Admin Button\\Non-Power User\\Png Files - Icon Only\\AdmnS11-125x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Admin Button\\Non-Power User\\Png Files - Icon Only\\AdmnS11-175x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Admin Button\\Non-Power User\\Png Files - Icon Only\\AdmnS11-175x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Admin Button\\Non-Power User\\Png Files - Icon Only\\AdmnS11-250x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Admin Button\\Non-Power User\\Png Files - Icon Only\\AdmnS11-250x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Admin Button\\Non-Power User\\Png Files - Icon Only\\AdmnS11-350x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Admin Button\\Non-Power User\\Png Files - Icon Only\\AdmnS11-350x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Admin Button\\Non-Power User\\Png Files - Icon Only\\AdmnS11-375x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Admin Button\\Non-Power User\\Png Files - Icon Only\\AdmnS11-375x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Admin Button\\Non-Power User\\Png Files - Icon Only\\AdmnS11-450x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Admin Button\\Non-Power User\\Png Files - Icon Only\\AdmnS11-450x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Admin Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Admin Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Admin Button\\Non-Power User\\Png Files\\AdmnS11 120x375.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Admin Button\\Non-Power User\\Png Files\\AdmnS11 120x375.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Admin Button\\Non-Power User\\Png Files\\AdmnS11 40x125.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Admin Button\\Non-Power User\\Png Files\\AdmnS11 40x125.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Admin Button\\Non-Power User\\Png Files\\AdmnS11 80x250.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Admin Button\\Non-Power User\\Png Files\\AdmnS11 80x250.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Admin Button\\Non-Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Admin Button\\Non-Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Admin Button\\Power User\\Png Files\\Admn5 30x30.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Admin Button\\Power User\\Png Files\\Admn5 30x30.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Admin Button\\Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Admin Button\\Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Admin Button\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Admin Button\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Attention Needed Button\\Power User\\Png Files\\Atten6 30x30.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Attention Needed Button\\Power User\\Png Files\\Atten6 30x30.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Attention Needed Button\\Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Attention Needed Button\\Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Check Yes,No\\Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Check Yes,No\\Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Check Yes,No\\Power User\\Png Files\\no.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Check Yes,No\\Power User\\Png Files\\no.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Check Yes,No\\Power User\\Png Files\\yes.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Check Yes,No\\Power User\\Png Files\\yes.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Check Yes,No\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Check Yes,No\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Close Button\\Non-Power User\\Png Files - Icon Only\\CloS6-125x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Close Button\\Non-Power User\\Png Files - Icon Only\\CloS6-125x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Close Button\\Non-Power User\\Png Files - Icon Only\\CloS6-175x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Close Button\\Non-Power User\\Png Files - Icon Only\\CloS6-175x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Close Button\\Non-Power User\\Png Files - Icon Only\\CloS6-250x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Close Button\\Non-Power User\\Png Files - Icon Only\\CloS6-250x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Close Button\\Non-Power User\\Png Files - Icon Only\\CloS6-350x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Close Button\\Non-Power User\\Png Files - Icon Only\\CloS6-350x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Close Button\\Non-Power User\\Png Files - Icon Only\\CloS6-375x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Close Button\\Non-Power User\\Png Files - Icon Only\\CloS6-375x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Close Button\\Non-Power User\\Png Files - Icon Only\\CloS6-450x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Close Button\\Non-Power User\\Png Files - Icon Only\\CloS6-450x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Close Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Close Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Close Button\\Non-Power User\\Png Files\\CloS6 120x375.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Close Button\\Non-Power User\\Png Files\\CloS6 120x375.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Close Button\\Non-Power User\\Png Files\\CloS6 80x250.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Close Button\\Non-Power User\\Png Files\\CloS6 80x250.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Close Button\\Non-Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Close Button\\Non-Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Close Button\\Non-Power User\\Png Files\\close.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Close Button\\Non-Power User\\Png Files\\close.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Close Button\\Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Close Button\\Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Close Button\\Power User\\Png Files\\close.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Close Button\\Power User\\Png Files\\close.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Close Button\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Close Button\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Delete Button\\Non-Power User\\Png Files - Icon Only\\DltS5-125x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Delete Button\\Non-Power User\\Png Files - Icon Only\\DltS5-125x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Delete Button\\Non-Power User\\Png Files - Icon Only\\DltS5-175x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Delete Button\\Non-Power User\\Png Files - Icon Only\\DltS5-175x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Delete Button\\Non-Power User\\Png Files - Icon Only\\DltS5-250x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Delete Button\\Non-Power User\\Png Files - Icon Only\\DltS5-250x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Delete Button\\Non-Power User\\Png Files - Icon Only\\DltS5-350x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Delete Button\\Non-Power User\\Png Files - Icon Only\\DltS5-350x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Delete Button\\Non-Power User\\Png Files - Icon Only\\DltS5-375x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Delete Button\\Non-Power User\\Png Files - Icon Only\\DltS5-375x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Delete Button\\Non-Power User\\Png Files - Icon Only\\DltS5-450x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Delete Button\\Non-Power User\\Png Files - Icon Only\\DltS5-450x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Delete Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Delete Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Delete Button\\Non-Power User\\Png Files\\DltS5 - 40x125.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Delete Button\\Non-Power User\\Png Files\\DltS5 - 40x125.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Delete Button\\Non-Power User\\Png Files\\DltS5 120x375.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Delete Button\\Non-Power User\\Png Files\\DltS5 120x375.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Delete Button\\Non-Power User\\Png Files\\DltS5 80x250.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Delete Button\\Non-Power User\\Png Files\\DltS5 80x250.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Delete Button\\Non-Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Delete Button\\Non-Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Delete Button\\Power User\\Png Files\\D3 30x30.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Delete Button\\Power User\\Png Files\\D3 30x30.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Delete Button\\Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Delete Button\\Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Delete Button\\Power User\\Psd Files\\D3.psd",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Delete Button\\Power User\\Psd Files\\D3.psd"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Delete Button\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Delete Button\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Edit Button\\Non-Power User\\Png Files - Icon Only\\EdS2--175x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Edit Button\\Non-Power User\\Png Files - Icon Only\\EdS2--175x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Edit Button\\Non-Power User\\Png Files - Icon Only\\EdS2-125x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Edit Button\\Non-Power User\\Png Files - Icon Only\\EdS2-125x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Edit Button\\Non-Power User\\Png Files - Icon Only\\EdS2-250x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Edit Button\\Non-Power User\\Png Files - Icon Only\\EdS2-250x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Edit Button\\Non-Power User\\Png Files - Icon Only\\EdS2-350x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Edit Button\\Non-Power User\\Png Files - Icon Only\\EdS2-350x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Edit Button\\Non-Power User\\Png Files - Icon Only\\EdS2-375x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Edit Button\\Non-Power User\\Png Files - Icon Only\\EdS2-375x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Edit Button\\Non-Power User\\Png Files - Icon Only\\EdS2-450x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Edit Button\\Non-Power User\\Png Files - Icon Only\\EdS2-450x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Edit Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Edit Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Edit Button\\Non-Power User\\Png Files\\EdS2 120x375.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Edit Button\\Non-Power User\\Png Files\\EdS2 120x375.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Edit Button\\Non-Power User\\Png Files\\EdS2 40x125.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Edit Button\\Non-Power User\\Png Files\\EdS2 40x125.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Edit Button\\Non-Power User\\Png Files\\EdS2 80x250.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Edit Button\\Non-Power User\\Png Files\\EdS2 80x250.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Edit Button\\Non-Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Edit Button\\Non-Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Edit Button\\Power User\\Png Files\\E2 30x30.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Edit Button\\Power User\\Png Files\\E2 30x30.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Edit Button\\Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Edit Button\\Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Edit Button\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Edit Button\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Email Button\\Non-Power User\\Png Files - Icon Only\\EmS2_Org-125x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Email Button\\Non-Power User\\Png Files - Icon Only\\EmS2_Org-125x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Email Button\\Non-Power User\\Png Files - Icon Only\\EmS2_Org-175x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Email Button\\Non-Power User\\Png Files - Icon Only\\EmS2_Org-175x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Email Button\\Non-Power User\\Png Files - Icon Only\\EmS2_Org-250x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Email Button\\Non-Power User\\Png Files - Icon Only\\EmS2_Org-250x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Email Button\\Non-Power User\\Png Files - Icon Only\\EmS2_Org-350x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Email Button\\Non-Power User\\Png Files - Icon Only\\EmS2_Org-350x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Email Button\\Non-Power User\\Png Files - Icon Only\\EmS2_Org-375x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Email Button\\Non-Power User\\Png Files - Icon Only\\EmS2_Org-375x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Email Button\\Non-Power User\\Png Files - Icon Only\\EmS2_Org-450x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Email Button\\Non-Power User\\Png Files - Icon Only\\EmS2_Org-450x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Email Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Email Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Email Button\\Non-Power User\\Png Files\\EmS2_Org 120x375.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Email Button\\Non-Power User\\Png Files\\EmS2_Org 120x375.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Email Button\\Non-Power User\\Png Files\\EmS2_Org 40x125.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Email Button\\Non-Power User\\Png Files\\EmS2_Org 40x125.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Email Button\\Non-Power User\\Png Files\\EmS2_Org 80x250.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Email Button\\Non-Power User\\Png Files\\EmS2_Org 80x250.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Email Button\\Non-Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Email Button\\Non-Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Email Button\\Power User\\Png Files\\Em2_Org 30x30.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Email Button\\Power User\\Png Files\\Em2_Org 30x30.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Email Button\\Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Email Button\\Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Email Button\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Email Button\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Excel Download Button\\Non-Power User\\Png Files - Icon Only\\ExS3-125x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Excel Download Button\\Non-Power User\\Png Files - Icon Only\\ExS3-125x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Excel Download Button\\Non-Power User\\Png Files - Icon Only\\ExS3-175x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Excel Download Button\\Non-Power User\\Png Files - Icon Only\\ExS3-175x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Excel Download Button\\Non-Power User\\Png Files - Icon Only\\ExS3-250x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Excel Download Button\\Non-Power User\\Png Files - Icon Only\\ExS3-250x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Excel Download Button\\Non-Power User\\Png Files - Icon Only\\ExS3-350x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Excel Download Button\\Non-Power User\\Png Files - Icon Only\\ExS3-350x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Excel Download Button\\Non-Power User\\Png Files - Icon Only\\ExS3-375x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Excel Download Button\\Non-Power User\\Png Files - Icon Only\\ExS3-375x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Excel Download Button\\Non-Power User\\Png Files - Icon Only\\ExS3-450x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Excel Download Button\\Non-Power User\\Png Files - Icon Only\\ExS3-450x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Excel Download Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Excel Download Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Excel Download Button\\Non-Power User\\Png Files\\ExS3 120x375.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Excel Download Button\\Non-Power User\\Png Files\\ExS3 120x375.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Excel Download Button\\Non-Power User\\Png Files\\ExS3 40x125.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Excel Download Button\\Non-Power User\\Png Files\\ExS3 40x125.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Excel Download Button\\Non-Power User\\Png Files\\ExS3 80x250.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Excel Download Button\\Non-Power User\\Png Files\\ExS3 80x250.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Excel Download Button\\Non-Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Excel Download Button\\Non-Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Excel Download Button\\Power User\\Png Files\\Ex2 30x30.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Excel Download Button\\Power User\\Png Files\\Ex2 30x30.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Excel Download Button\\Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Excel Download Button\\Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Go Back Button\\Non-Power User\\Png Files - Icon Only\\BckS3-125x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Go Back Button\\Non-Power User\\Png Files - Icon Only\\BckS3-125x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Go Back Button\\Non-Power User\\Png Files - Icon Only\\BckS3-175x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Go Back Button\\Non-Power User\\Png Files - Icon Only\\BckS3-175x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Go Back Button\\Non-Power User\\Png Files - Icon Only\\BckS3-250x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Go Back Button\\Non-Power User\\Png Files - Icon Only\\BckS3-250x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Go Back Button\\Non-Power User\\Png Files - Icon Only\\BckS3-350x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Go Back Button\\Non-Power User\\Png Files - Icon Only\\BckS3-350x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Go Back Button\\Non-Power User\\Png Files - Icon Only\\BckS3-375x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Go Back Button\\Non-Power User\\Png Files - Icon Only\\BckS3-375x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Go Back Button\\Non-Power User\\Png Files - Icon Only\\BckS3-450x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Go Back Button\\Non-Power User\\Png Files - Icon Only\\BckS3-450x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Go Back Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Go Back Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Go Back Button\\Non-Power User\\Png Files\\BckS3 120x375.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Go Back Button\\Non-Power User\\Png Files\\BckS3 120x375.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Go Back Button\\Non-Power User\\Png Files\\BckS3 40x125.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Go Back Button\\Non-Power User\\Png Files\\BckS3 40x125.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Go Back Button\\Non-Power User\\Png Files\\BckS3 80x250.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Go Back Button\\Non-Power User\\Png Files\\BckS3 80x250.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Go Back Button\\Non-Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Go Back Button\\Non-Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Go Back Button\\Power User\\Png Files\\G1 30x30.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Go Back Button\\Power User\\Png Files\\G1 30x30.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Go Back Button\\Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Go Back Button\\Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Help Button\\Power User\\Png Files\\Q3 30x30.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Help Button\\Power User\\Png Files\\Q3 30x30.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Help Button\\Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Help Button\\Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Maximize Button\\Non-Power User\\Png Files - Icon Only\\MaxS11-125x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Maximize Button\\Non-Power User\\Png Files - Icon Only\\MaxS11-125x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Maximize Button\\Non-Power User\\Png Files - Icon Only\\MaxS11-175x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Maximize Button\\Non-Power User\\Png Files - Icon Only\\MaxS11-175x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Maximize Button\\Non-Power User\\Png Files - Icon Only\\MaxS11-250x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Maximize Button\\Non-Power User\\Png Files - Icon Only\\MaxS11-250x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Maximize Button\\Non-Power User\\Png Files - Icon Only\\MaxS11-350x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Maximize Button\\Non-Power User\\Png Files - Icon Only\\MaxS11-350x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Maximize Button\\Non-Power User\\Png Files - Icon Only\\MaxS11-375x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Maximize Button\\Non-Power User\\Png Files - Icon Only\\MaxS11-375x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Maximize Button\\Non-Power User\\Png Files - Icon Only\\MaxS11-450x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Maximize Button\\Non-Power User\\Png Files - Icon Only\\MaxS11-450x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Maximize Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Maximize Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Maximize Button\\Non-Power User\\Png Files\\MaxS11 120x375.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Maximize Button\\Non-Power User\\Png Files\\MaxS11 120x375.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Maximize Button\\Non-Power User\\Png Files\\MaxS11 40x125.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Maximize Button\\Non-Power User\\Png Files\\MaxS11 40x125.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Maximize Button\\Non-Power User\\Png Files\\MaxS11 80x250.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Maximize Button\\Non-Power User\\Png Files\\MaxS11 80x250.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Maximize Button\\Non-Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Maximize Button\\Non-Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Maximize Button\\Power User\\Png Files\\Max2 30x30.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Maximize Button\\Power User\\Png Files\\Max2 30x30.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Maximize Button\\Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Maximize Button\\Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Minimize Button\\Non-Power User\\Png Files - Icon Only\\MinS11-125x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Minimize Button\\Non-Power User\\Png Files - Icon Only\\MinS11-125x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Minimize Button\\Non-Power User\\Png Files - Icon Only\\MinS11-175x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Minimize Button\\Non-Power User\\Png Files - Icon Only\\MinS11-175x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Minimize Button\\Non-Power User\\Png Files - Icon Only\\MinS11-250x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Minimize Button\\Non-Power User\\Png Files - Icon Only\\MinS11-250x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Minimize Button\\Non-Power User\\Png Files - Icon Only\\MinS11-350x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Minimize Button\\Non-Power User\\Png Files - Icon Only\\MinS11-350x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Minimize Button\\Non-Power User\\Png Files - Icon Only\\MinS11-375x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Minimize Button\\Non-Power User\\Png Files - Icon Only\\MinS11-375x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Minimize Button\\Non-Power User\\Png Files - Icon Only\\MinS11-450x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Minimize Button\\Non-Power User\\Png Files - Icon Only\\MinS11-450x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Minimize Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Minimize Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Minimize Button\\Non-Power User\\Png Files\\MinS11 120x375.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Minimize Button\\Non-Power User\\Png Files\\MinS11 120x375.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Minimize Button\\Non-Power User\\Png Files\\MinS11 40x125.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Minimize Button\\Non-Power User\\Png Files\\MinS11 40x125.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Minimize Button\\Non-Power User\\Png Files\\MinS11 80x250.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Minimize Button\\Non-Power User\\Png Files\\MinS11 80x250.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Minimize Button\\Non-Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Minimize Button\\Non-Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Minimize Button\\Power User\\Png Files\\Min2 30x30.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Minimize Button\\Power User\\Png Files\\Min2 30x30.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Minimize Button\\Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Minimize Button\\Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Nudge Button\\Non-Power User\\Png Files - Icon Only\\NudS11-125x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Nudge Button\\Non-Power User\\Png Files - Icon Only\\NudS11-125x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Nudge Button\\Non-Power User\\Png Files - Icon Only\\NudS11-175x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Nudge Button\\Non-Power User\\Png Files - Icon Only\\NudS11-175x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Nudge Button\\Non-Power User\\Png Files - Icon Only\\NudS11-250x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Nudge Button\\Non-Power User\\Png Files - Icon Only\\NudS11-250x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Nudge Button\\Non-Power User\\Png Files - Icon Only\\NudS11-350x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Nudge Button\\Non-Power User\\Png Files - Icon Only\\NudS11-350x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Nudge Button\\Non-Power User\\Png Files - Icon Only\\NudS11-375x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Nudge Button\\Non-Power User\\Png Files - Icon Only\\NudS11-375x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Nudge Button\\Non-Power User\\Png Files - Icon Only\\NudS11-450x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Nudge Button\\Non-Power User\\Png Files - Icon Only\\NudS11-450x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Nudge Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Nudge Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Nudge Button\\Non-Power User\\Png Files\\NudS11 120x375.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Nudge Button\\Non-Power User\\Png Files\\NudS11 120x375.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Nudge Button\\Non-Power User\\Png Files\\NudS11 40x125.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Nudge Button\\Non-Power User\\Png Files\\NudS11 40x125.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Nudge Button\\Non-Power User\\Png Files\\NudS11 80x250.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Nudge Button\\Non-Power User\\Png Files\\NudS11 80x250.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Nudge Button\\Non-Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Nudge Button\\Non-Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Nudge Button\\Power User\\Png Files\\Nud15 30x30.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Nudge Button\\Power User\\Png Files\\Nud15 30x30.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Nudge Button\\Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Nudge Button\\Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Pdf Download Button\\Non-Power User\\Png Files - Icon Only\\PdfS15-125x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Pdf Download Button\\Non-Power User\\Png Files - Icon Only\\PdfS15-125x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Pdf Download Button\\Non-Power User\\Png Files - Icon Only\\PdfS15-175x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Pdf Download Button\\Non-Power User\\Png Files - Icon Only\\PdfS15-175x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Pdf Download Button\\Non-Power User\\Png Files - Icon Only\\PdfS15-250x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Pdf Download Button\\Non-Power User\\Png Files - Icon Only\\PdfS15-250x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Pdf Download Button\\Non-Power User\\Png Files - Icon Only\\PdfS15-350x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Pdf Download Button\\Non-Power User\\Png Files - Icon Only\\PdfS15-350x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Pdf Download Button\\Non-Power User\\Png Files - Icon Only\\PdfS15-375x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Pdf Download Button\\Non-Power User\\Png Files - Icon Only\\PdfS15-375x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Pdf Download Button\\Non-Power User\\Png Files - Icon Only\\PdfS15-450x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Pdf Download Button\\Non-Power User\\Png Files - Icon Only\\PdfS15-450x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Pdf Download Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Pdf Download Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Pdf Download Button\\Non-Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Pdf Download Button\\Non-Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Pdf Download Button\\Non-Power User\\Png Files\\pdf-125x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Pdf Download Button\\Non-Power User\\Png Files\\pdf-125x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Pdf Download Button\\Non-Power User\\Png Files\\pdf-250x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Pdf Download Button\\Non-Power User\\Png Files\\pdf-250x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Pdf Download Button\\Non-Power User\\Png Files\\pdf-375x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Pdf Download Button\\Non-Power User\\Png Files\\pdf-375x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Pdf Download Button\\Power User\\Png Files\\Pdf8_Pink 30x30.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Pdf Download Button\\Power User\\Png Files\\Pdf8_Pink 30x30.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Pdf Download Button\\Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Pdf Download Button\\Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Pdf Download Button\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Pdf Download Button\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Printer Button\\Non-Power User\\Png Files - Icon Only\\PntS5-125x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Printer Button\\Non-Power User\\Png Files - Icon Only\\PntS5-125x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Printer Button\\Non-Power User\\Png Files - Icon Only\\PntS5-175x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Printer Button\\Non-Power User\\Png Files - Icon Only\\PntS5-175x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Printer Button\\Non-Power User\\Png Files - Icon Only\\PntS5-250x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Printer Button\\Non-Power User\\Png Files - Icon Only\\PntS5-250x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Printer Button\\Non-Power User\\Png Files - Icon Only\\PntS5-350x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Printer Button\\Non-Power User\\Png Files - Icon Only\\PntS5-350x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Printer Button\\Non-Power User\\Png Files - Icon Only\\PntS5-375x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Printer Button\\Non-Power User\\Png Files - Icon Only\\PntS5-375x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Printer Button\\Non-Power User\\Png Files - Icon Only\\PntS5-450x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Printer Button\\Non-Power User\\Png Files - Icon Only\\PntS5-450x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Printer Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Printer Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Printer Button\\Non-Power User\\Png Files\\PntS5 120x375.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Printer Button\\Non-Power User\\Png Files\\PntS5 120x375.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Printer Button\\Non-Power User\\Png Files\\PntS5 40x125.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Printer Button\\Non-Power User\\Png Files\\PntS5 40x125.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Printer Button\\Non-Power User\\Png Files\\PntS5 80x250.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Printer Button\\Non-Power User\\Png Files\\PntS5 80x250.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Printer Button\\Non-Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Printer Button\\Non-Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Printer Button\\Power User\\Png Files\\P2 30x30.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Printer Button\\Power User\\Png Files\\P2 30x30.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Printer Button\\Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Printer Button\\Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Printer Button\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Printer Button\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Save Button\\Non-Power User\\Png Files - Icon Only\\SavS21-125x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Save Button\\Non-Power User\\Png Files - Icon Only\\SavS21-125x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Save Button\\Non-Power User\\Png Files - Icon Only\\SavS21-175x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Save Button\\Non-Power User\\Png Files - Icon Only\\SavS21-175x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Save Button\\Non-Power User\\Png Files - Icon Only\\SavS21-250x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Save Button\\Non-Power User\\Png Files - Icon Only\\SavS21-250x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Save Button\\Non-Power User\\Png Files - Icon Only\\SavS21-350x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Save Button\\Non-Power User\\Png Files - Icon Only\\SavS21-350x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Save Button\\Non-Power User\\Png Files - Icon Only\\SavS21-375x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Save Button\\Non-Power User\\Png Files - Icon Only\\SavS21-375x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Save Button\\Non-Power User\\Png Files - Icon Only\\SavS21-450x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Save Button\\Non-Power User\\Png Files - Icon Only\\SavS21-450x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Save Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Save Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Save Button\\Non-Power User\\Png Files\\SavS21 120x375.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Save Button\\Non-Power User\\Png Files\\SavS21 120x375.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Save Button\\Non-Power User\\Png Files\\SavS21 80x250.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Save Button\\Non-Power User\\Png Files\\SavS21 80x250.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Save Button\\Non-Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Save Button\\Non-Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Save Button\\Non-Power User\\Png Files\\save.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Save Button\\Non-Power User\\Png Files\\save.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Save Button\\Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Save Button\\Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Save Button\\Power User\\Png Files\\save.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Save Button\\Power User\\Png Files\\save.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Save Button\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Save Button\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Search Bar\\SrcBar11.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Search Bar\\SrcBar11.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Search Button\\Non-Power User\\Png Files - Icon Only\\SrcS3-125x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Search Button\\Non-Power User\\Png Files - Icon Only\\SrcS3-125x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Search Button\\Non-Power User\\Png Files - Icon Only\\SrcS3-175x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Search Button\\Non-Power User\\Png Files - Icon Only\\SrcS3-175x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Search Button\\Non-Power User\\Png Files - Icon Only\\SrcS3-250x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Search Button\\Non-Power User\\Png Files - Icon Only\\SrcS3-250x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Search Button\\Non-Power User\\Png Files - Icon Only\\SrcS3-350x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Search Button\\Non-Power User\\Png Files - Icon Only\\SrcS3-350x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Search Button\\Non-Power User\\Png Files - Icon Only\\SrcS3-375x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Search Button\\Non-Power User\\Png Files - Icon Only\\SrcS3-375x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Search Button\\Non-Power User\\Png Files - Icon Only\\SrcS3-450x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Search Button\\Non-Power User\\Png Files - Icon Only\\SrcS3-450x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Search Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Search Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Search Button\\Non-Power User\\Png Files\\SrcS3 120x375.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Search Button\\Non-Power User\\Png Files\\SrcS3 120x375.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Search Button\\Non-Power User\\Png Files\\SrcS3 40x125.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Search Button\\Non-Power User\\Png Files\\SrcS3 40x125.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Search Button\\Non-Power User\\Png Files\\SrcS3 80x250.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Search Button\\Non-Power User\\Png Files\\SrcS3 80x250.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Search Button\\Non-Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Search Button\\Non-Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Search Button\\Power User\\Png Files\\Src1 30x30.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Search Button\\Power User\\Png Files\\Src1 30x30.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Search Button\\Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Search Button\\Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Take Picture Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Take Picture Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Take Picture Button\\Non-Power User\\Png Files - Icon Only\\TpicS8-125x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Take Picture Button\\Non-Power User\\Png Files - Icon Only\\TpicS8-125x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Take Picture Button\\Non-Power User\\Png Files - Icon Only\\TpicS8-175x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Take Picture Button\\Non-Power User\\Png Files - Icon Only\\TpicS8-175x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Take Picture Button\\Non-Power User\\Png Files - Icon Only\\TpicS8-250x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Take Picture Button\\Non-Power User\\Png Files - Icon Only\\TpicS8-250x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Take Picture Button\\Non-Power User\\Png Files - Icon Only\\TpicS8-350x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Take Picture Button\\Non-Power User\\Png Files - Icon Only\\TpicS8-350x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Take Picture Button\\Non-Power User\\Png Files - Icon Only\\TpicS8-375x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Take Picture Button\\Non-Power User\\Png Files - Icon Only\\TpicS8-375x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Take Picture Button\\Non-Power User\\Png Files - Icon Only\\TpicS8-450x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Take Picture Button\\Non-Power User\\Png Files - Icon Only\\TpicS8-450x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Take Picture Button\\Non-Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Take Picture Button\\Non-Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Take Picture Button\\Non-Power User\\Png Files\\TpicS8 120x375.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Take Picture Button\\Non-Power User\\Png Files\\TpicS8 120x375.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Take Picture Button\\Non-Power User\\Png Files\\TpicS8 40x125.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Take Picture Button\\Non-Power User\\Png Files\\TpicS8 40x125.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Take Picture Button\\Non-Power User\\Png Files\\TpicS8 80x250.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Take Picture Button\\Non-Power User\\Png Files\\TpicS8 80x250.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Take Picture Button\\Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Take Picture Button\\Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Take Picture Button\\Power User\\Png Files\\Tpic1 30x30.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Take Picture Button\\Power User\\Png Files\\Tpic1 30x30.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Take Picture Button\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Take Picture Button\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\View Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\View Button\\Non-Power User\\Png Files - Icon Only\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\View Button\\Non-Power User\\Png Files - Icon Only\\VS5_New-125x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\View Button\\Non-Power User\\Png Files - Icon Only\\VS5_New-125x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\View Button\\Non-Power User\\Png Files - Icon Only\\VS5_New-175x40.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\View Button\\Non-Power User\\Png Files - Icon Only\\VS5_New-175x40.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\View Button\\Non-Power User\\Png Files - Icon Only\\VS5_New-250x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\View Button\\Non-Power User\\Png Files - Icon Only\\VS5_New-250x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\View Button\\Non-Power User\\Png Files - Icon Only\\VS5_New-350x80.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\View Button\\Non-Power User\\Png Files - Icon Only\\VS5_New-350x80.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\View Button\\Non-Power User\\Png Files - Icon Only\\VS5_New-375x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\View Button\\Non-Power User\\Png Files - Icon Only\\VS5_New-375x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\View Button\\Non-Power User\\Png Files - Icon Only\\VS5_New-450x120.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\View Button\\Non-Power User\\Png Files - Icon Only\\VS5_New-450x120.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\View Button\\Non-Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\View Button\\Non-Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\View Button\\Non-Power User\\Png Files\\VS5_New 120x375.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\View Button\\Non-Power User\\Png Files\\VS5_New 120x375.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\View Button\\Non-Power User\\Png Files\\VS5_New 40x125.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\View Button\\Non-Power User\\Png Files\\VS5_New 40x125.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\View Button\\Non-Power User\\Png Files\\VS5_New 80x250.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\View Button\\Non-Power User\\Png Files\\VS5_New 80x250.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\View Button\\Power User\\Png Files\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\View Button\\Power User\\Png Files\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\View Button\\Power User\\Png Files\\V5_LightY 30x30.png",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\View Button\\Power User\\Png Files\\V5_LightY 30x30.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Finalized\\View Button\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Icons\\Finalized\\View Button\\Thumbs.db"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Goal.png",
+      "PackagePath": "staticwebassets\\Icons\\Goal.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Good.png",
+      "PackagePath": "staticwebassets\\Icons\\Good.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Green.svg",
+      "PackagePath": "staticwebassets\\Icons\\Green.svg"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\How-to-instruction.JPG",
+      "PackagePath": "staticwebassets\\Icons\\How-to-instruction.JPG"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Metrics.jfif",
+      "PackagePath": "staticwebassets\\Icons\\Metrics.jfif"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Note.png",
+      "PackagePath": "staticwebassets\\Icons\\Note.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Note1.png",
+      "PackagePath": "staticwebassets\\Icons\\Note1.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Note2.png",
+      "PackagePath": "staticwebassets\\Icons\\Note2.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Note3.png",
+      "PackagePath": "staticwebassets\\Icons\\Note3.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Nudge.png",
+      "PackagePath": "staticwebassets\\Icons\\Nudge.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\OneTime Tasks.jpg",
+      "PackagePath": "staticwebassets\\Icons\\OneTime Tasks.jpg"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Recurring Tasks.jfif",
+      "PackagePath": "staticwebassets\\Icons\\Recurring Tasks.jfif"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Red.svg",
+      "PackagePath": "staticwebassets\\Icons\\Red.svg"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Respond.png",
+      "PackagePath": "staticwebassets\\Icons\\Respond.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Respond1.png",
+      "PackagePath": "staticwebassets\\Icons\\Respond1.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Respond2.png",
+      "PackagePath": "staticwebassets\\Icons\\Respond2.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Respond3.png",
+      "PackagePath": "staticwebassets\\Icons\\Respond3.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\ViewEmail.svg",
+      "PackagePath": "staticwebassets\\Icons\\ViewEmail.svg"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\ViewImage.png",
+      "PackagePath": "staticwebassets\\Icons\\ViewImage.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\ViewImage1.png",
+      "PackagePath": "staticwebassets\\Icons\\ViewImage1.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\ViewImage2.png",
+      "PackagePath": "staticwebassets\\Icons\\ViewImage2.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\ViewSubTasks.png",
+      "PackagePath": "staticwebassets\\Icons\\ViewSubTasks.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\ViewUpdates.png",
+      "PackagePath": "staticwebassets\\Icons\\ViewUpdates.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\cancel.svg",
+      "PackagePath": "staticwebassets\\Icons\\cancel.svg"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\close.png",
+      "PackagePath": "staticwebassets\\Icons\\close.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\doctor.png",
+      "PackagePath": "staticwebassets\\Icons\\doctor.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\filter-gray.svg",
+      "PackagePath": "staticwebassets\\Icons\\filter-gray.svg"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\filter-white.svg",
+      "PackagePath": "staticwebassets\\Icons\\filter-white.svg"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\patient.png",
+      "PackagePath": "staticwebassets\\Icons\\patient.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\prescription.png",
+      "PackagePath": "staticwebassets\\Icons\\prescription.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\save.png",
+      "PackagePath": "staticwebassets\\Icons\\save.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\viewtickets.png",
+      "PackagePath": "staticwebassets\\Icons\\viewtickets.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\watermark.png",
+      "PackagePath": "staticwebassets\\Icons\\watermark.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\UploaderJson\\SfUploaderData.json",
+      "PackagePath": "staticwebassets\\UploaderJson\\SfUploaderData.json"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\css\\CustomCss.css",
+      "PackagePath": "staticwebassets\\css\\CustomCss.css"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\js\\CustomJs.js",
+      "PackagePath": "staticwebassets\\js\\CustomJs.js"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\js\\webcamjs\\Configuration.js",
+      "PackagePath": "staticwebassets\\js\\webcamjs\\Configuration.js"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\js\\webcamjs\\webcam.min.js",
+      "PackagePath": "staticwebassets\\js\\webcamjs\\webcam.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.HealthCare.UI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.HealthCare.UI.props",
+      "PackagePath": "build\\HealthCare.UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.HealthCare.UI.props",
+      "PackagePath": "buildMultiTargeting\\HealthCare.UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.HealthCare.UI.props",
+      "PackagePath": "buildTransitive\\HealthCare.UI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

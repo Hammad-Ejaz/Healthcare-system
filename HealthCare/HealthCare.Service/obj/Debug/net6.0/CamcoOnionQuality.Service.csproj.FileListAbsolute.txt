@@ -1,0 +1,78 @@
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoTimeClock.Service\bin\Debug\net6.0\CamcoOnionQuality.Service.deps.json
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoTimeClock.Service\bin\Debug\net6.0\CamcoOnionQuality.Service.dll
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoTimeClock.Service\bin\Debug\net6.0\CamcoOnionQuality.Service.pdb
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoTimeClock.Service\bin\Debug\net6.0\CamcoOnionQuality.Data.dll
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoTimeClock.Service\bin\Debug\net6.0\CamcoOnionQuality.Library.dll
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoTimeClock.Service\bin\Debug\net6.0\CamcoOnionQuality.Repository.dll
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoTimeClock.Service\bin\Debug\net6.0\CamcoOnionQuality.ViewModels.dll
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoTimeClock.Service\bin\Debug\net6.0\CamcoOnionQuality.Library.pdb
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoTimeClock.Service\bin\Debug\net6.0\CamcoOnionQuality.Repository.pdb
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoTimeClock.Service\bin\Debug\net6.0\CamcoOnionQuality.ViewModels.pdb
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoTimeClock.Service\bin\Debug\net6.0\CamcoOnionQuality.Data.pdb
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoTimeClock.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.csproj.AssemblyReference.cache
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoTimeClock.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoTimeClock.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.AssemblyInfoInputs.cache
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoTimeClock.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.AssemblyInfo.cs
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoTimeClock.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.csproj.CoreCompileInputs.cache
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoTimeClock.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.csproj.CopyComplete
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoTimeClock.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.dll
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoTimeClock.Service\obj\Debug\net6.0\refint\CamcoOnionQuality.Service.dll
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoTimeClock.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.pdb
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoTimeClock.Service\obj\Debug\net6.0\ref\CamcoOnionQuality.Service.dll
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.csproj.AssemblyReference.cache
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.AssemblyInfoInputs.cache
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.AssemblyInfo.cs
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.csproj.CoreCompileInputs.cache
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.dll
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\refint\CamcoOnionQuality.Service.dll
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.pdb
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\bin\Debug\net6.0\CamcoOnionQuality.Service.deps.json
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\bin\Debug\net6.0\CamcoOnionQuality.Service.dll
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\bin\Debug\net6.0\CamcoOnionQuality.Service.pdb
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\bin\Debug\net6.0\CamcoOnionQuality.Data.dll
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\bin\Debug\net6.0\CamcoOnionQuality.Repository.dll
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\bin\Debug\net6.0\CamcoOnionQuality.ViewModels.dll
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\bin\Debug\net6.0\CamcoOnionQuality.Data.pdb
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\bin\Debug\net6.0\CamcoOnionQuality.Repository.pdb
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\bin\Debug\net6.0\CamcoOnionQuality.ViewModels.pdb
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.csproj.CopyComplete
+D:\My_2nd_Summer\Training\Work\CamcoQuality\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\ref\CamcoOnionQuality.Service.dll
+D:\My_2nd_Summer\Danger Zone\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\bin\Debug\net6.0\CamcoOnionQuality.Service.deps.json
+D:\My_2nd_Summer\Danger Zone\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\bin\Debug\net6.0\CamcoOnionQuality.Service.dll
+D:\My_2nd_Summer\Danger Zone\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\bin\Debug\net6.0\CamcoOnionQuality.Service.pdb
+D:\My_2nd_Summer\Danger Zone\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\bin\Debug\net6.0\CamcoOnionQuality.Data.dll
+D:\My_2nd_Summer\Danger Zone\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\bin\Debug\net6.0\CamcoOnionQuality.Repository.dll
+D:\My_2nd_Summer\Danger Zone\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\bin\Debug\net6.0\CamcoOnionQuality.ViewModels.dll
+D:\My_2nd_Summer\Danger Zone\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\bin\Debug\net6.0\CamcoOnionQuality.Data.pdb
+D:\My_2nd_Summer\Danger Zone\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\bin\Debug\net6.0\CamcoOnionQuality.Repository.pdb
+D:\My_2nd_Summer\Danger Zone\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\bin\Debug\net6.0\CamcoOnionQuality.ViewModels.pdb
+D:\My_2nd_Summer\Danger Zone\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.csproj.AssemblyReference.cache
+D:\My_2nd_Summer\Danger Zone\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\My_2nd_Summer\Danger Zone\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.AssemblyInfoInputs.cache
+D:\My_2nd_Summer\Danger Zone\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.AssemblyInfo.cs
+D:\My_2nd_Summer\Danger Zone\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.csproj.CoreCompileInputs.cache
+D:\My_2nd_Summer\Danger Zone\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.csproj.CopyComplete
+D:\My_2nd_Summer\Danger Zone\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.dll
+D:\My_2nd_Summer\Danger Zone\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\refint\CamcoOnionQuality.Service.dll
+D:\My_2nd_Summer\Danger Zone\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.pdb
+D:\My_2nd_Summer\Danger Zone\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\ref\CamcoOnionQuality.Service.dll
+D:\My_5th_Semester\se\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\bin\Debug\net6.0\CamcoOnionQuality.Service.deps.json
+D:\My_5th_Semester\se\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\bin\Debug\net6.0\CamcoOnionQuality.Service.dll
+D:\My_5th_Semester\se\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\bin\Debug\net6.0\CamcoOnionQuality.Service.pdb
+D:\My_5th_Semester\se\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\bin\Debug\net6.0\CamcoOnionQuality.Data.dll
+D:\My_5th_Semester\se\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\bin\Debug\net6.0\CamcoOnionQuality.Repository.dll
+D:\My_5th_Semester\se\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\bin\Debug\net6.0\CamcoOnionQuality.ViewModels.dll
+D:\My_5th_Semester\se\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\bin\Debug\net6.0\CamcoOnionQuality.Data.pdb
+D:\My_5th_Semester\se\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\bin\Debug\net6.0\CamcoOnionQuality.Repository.pdb
+D:\My_5th_Semester\se\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\bin\Debug\net6.0\CamcoOnionQuality.ViewModels.pdb
+D:\My_5th_Semester\se\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.csproj.AssemblyReference.cache
+D:\My_5th_Semester\se\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\My_5th_Semester\se\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.AssemblyInfoInputs.cache
+D:\My_5th_Semester\se\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.AssemblyInfo.cs
+D:\My_5th_Semester\se\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.csproj.CoreCompileInputs.cache
+D:\My_5th_Semester\se\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.csproj.CopyComplete
+D:\My_5th_Semester\se\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.dll
+D:\My_5th_Semester\se\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\refint\CamcoOnionQuality.Service.dll
+D:\My_5th_Semester\se\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\CamcoOnionQuality.Service.pdb
+D:\My_5th_Semester\se\CamcoOnionSecondVersionTemplate\CamcoOnionSecondVersionTemplate\CamcoOnionQuality.Service\obj\Debug\net6.0\ref\CamcoOnionQuality.Service.dll

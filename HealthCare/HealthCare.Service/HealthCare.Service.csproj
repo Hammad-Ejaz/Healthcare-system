@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BlazorDownloadFile" Version="2.4.0.2" />
+    <PackageReference Include="iTextSharp" Version="5.5.13.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.16" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HealthCare.Data\HealthCare.Data.csproj" />
+    <ProjectReference Include="..\HealthCare.Repository\HealthCare.Repository.csproj" />
+    <ProjectReference Include="..\HealthCare.ViewModel\HealthCare.ViewModels.csproj" />
+   </ItemGroup>
+
+</Project>

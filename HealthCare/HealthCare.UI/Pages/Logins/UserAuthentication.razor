@@ -1,0 +1,53 @@
+﻿@page "/login2"
+@using Syncfusion.Blazor.Inputs
+@using Syncfusion.Blazor.DropDowns
+<div class="col-12 navbar navbar-expand screenLabel screen-label position-fixed top-row m-0 p-0">
+    <div class="col-12 m-0 p-0" ><span >@ScreenLabel</span></div>
+</div>
+@if (ShowSpinner)
+{
+    <div class="spinner" style="top:50%;"></div>
+}
+else
+{
+    <header>
+        <h1 class="text-center standard-header-style font-weight-bold">
+            PASSWORD PROTECTED SECTION
+        </h1>
+    </header>
+    <div class="container-fluid p-3">
+        <div class="row col-12">
+            <div class="col-lg-3 col-md-1">
+            </div>
+            <div class="col-lg-6 box col-md-10 p-5 mt-5">
+                <br />
+                <div class="col-12 mt-3">
+                    <div class="control_wrapper">
+                        <label class="p-0 m-0 font-weight-bold" style="font-size:22px;">EMPLOYEE:</label>
+                        <SfTextBox CssClass="mandatory" TValue="string" @onkeyup="(args) => Keydown(args)" @bind-Value="@UserName" />
+                    </div>
+                </div>
+                <div class="col-12 mt-3">
+                    <div class="control_wrapper">
+                        <label class="p-0 m-0 font-weight-bold" style="font-size:22px;">PASSWORD:</label>
+                        <SfTextBox Type="InputType.Password" CssClass="mandatory" TValue="string" @onkeyup="(args) => Keydown(args)" @bind-Value="@Password" />
+                    </div>
+                </div>
+                <div class="col-12 mt-3 text-center">
+                    <button type="button" class="btn btn-danger w-25 p-1" style="font-size: 20px;" @onclick="() => cancelAsync()">LOGIN</button>
+                </div>
+                <div class="col-12 mt-3 text-center">
+                    <a href="/signup" class="btn btn-link">Forgot password</a>
+                </div>
+                <br />
+                <br />
+                <div class="col-12 mt-3 text-center">
+                    <a href="/signup" class="btn btn-link">Sign up for an account</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-1">
+            </div>
+        </div>
+    </div>
+
+}

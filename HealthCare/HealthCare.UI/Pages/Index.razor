@@ -1,0 +1,53 @@
+﻿@page "/"
+@using HealthCare.Data.Entity;
+@using HealthCare.ViewModels;
+
+@inherits HealthCare.UI.Pages.IndexModel
+
+
+<div class="col-12 navbar navbar-expand screenLabel position-fixed top-row m-0 p-0 screenLabelStyle">
+    <div class="col-12 m-0 p-0" style="font-size: 18px; text-align: left;"><span style="float: left">Me</span></div>
+</div>
+
+<div class="ml-3">
+    <div class="jumbotron-fluid text-center mt-1">
+        <div class="container">
+            <h1 class="display-4">ONION TEMPLATE</h1>
+        </div>
+    </div>
+    <hr />
+
+
+    <div class="inner-center" style="margin-bottom:30px;">
+        <div class="card-deck">
+            
+            <SfGrid DataSource="@employees" RowHeight="10" EnableHover="false" AllowSorting="true" EnableVirtualization="false" AllowTextWrap="true" AllowMultiSorting="true"
+                    AllowFiltering="true" AllowPaging="false" Width="100%">
+                <GridFilterSettings Type="Syncfusion.Blazor.Grids.FilterType.Excel"></GridFilterSettings>
+                <GridGroupSettings ShowDropArea="false"></GridGroupSettings>
+                <GridColumns>
+                    <GridColumn HeaderText="First Name" Field=@nameof(ExceptionLog.UserId) TextAlign="Syncfusion.Blazor.Grids.TextAlign.Left" AllowFiltering="false">
+                        <Template>
+                            @{
+                                var obj = (context as ExceptionLog);
+                                <div class="col-12 m-0 p-0 textHidden" style="font-size: 13px !important;color: black; font-family: Franklin Gothic Medium;">
+                                    @obj.UserId
+                                </div>
+                            }
+                        </Template>
+                    </GridColumn>
+                    <GridColumn HeaderText="Last Name" Width="80" Field=@nameof(ExceptionLog.ExceptionMessage) TextAlign="Syncfusion.Blazor.Grids.TextAlign.Center" AllowFiltering="false">
+                        <Template>
+                            @{
+                                var obj = (context as ExceptionLog);
+                                <div class="col-12 m-0 p-0 textHidden" style="font-size: 13px !important;color: black; font-family: Franklin Gothic Medium;">
+                                    @obj.ExceptionMessage
+                                </div>
+                            }
+                        </Template>
+                    </GridColumn>
+                </GridColumns>
+            </SfGrid>
+        </div>
+    </div>
+</div>
