@@ -1,0 +1,35 @@
+﻿@page "/login"
+@using Syncfusion.Blazor.Buttons
+
+<style>
+    .custom-button {
+        background: none; /* Remove the background */
+        border: none; /* Remove the border, if any */
+        padding: 0; /* Remove padding, if any */
+        cursor: pointer; /* Add cursor style if needed */
+    }
+
+</style>
+
+
+
+<div>
+    <HealthCare.UI.Pages.Components.DoctorCards></HealthCare.UI.Pages.Components.DoctorCards>
+</div>
+<div class="doctor-card">    
+    <div class="doctor-container">
+        <div class="doctor-info">
+            <label><strong>Record For:</strong></label>
+            <p>John Doe</p>
+
+            <label><strong>Prescription:</strong></label>
+            <br/> 
+            <SfButton class="custom-button">
+                    <img class="presc-image" src="/Icons/prescription.png" alt="">
+            </SfButton>    
+            <br/>
+            <label><strong>Record Created On:</strong></label>
+            <p>10 years</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,137 @@
+﻿@page "/login11"
+@using Syncfusion.Blazor.Inputs
+
+<style>
+.header {
+    align-self: flex-start;
+}
+
+.search-box {
+    align-self: flex-start;
+    margin-top: 10px;
+}
+.newMenu-box {
+	text-align: center;
+	height: 200px;
+	cursor: pointer;
+	width: 20%;
+	border-radius: 5px;
+	box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+	padding: 30px;
+	margin: 20px;
+	transition: all .2s ease-in-out;
+	background-color: #6c757d24 !important;
+	position: relative;
+	display: inline-block;
+}
+
+.newMenu-box:hover {
+	transform: scale(1.1);
+}
+
+.green-menu-box {
+	border: 3px solid var(--green);
+	box-shadow: 5px 5px forestgreen;
+	background-color: #90ee9069;
+}
+
+.red-menu-box {
+	border: 3px solid var(--red);
+	background-color: #fc030324;
+	box-shadow: 5px 5px red;
+}
+
+.blue-menu-box {
+	border: 3px solid var(--blue);
+	background-color: #00c0ff2e;
+	box-shadow: 5px 5px dodgerblue;
+}
+
+.pink-menu-box {
+	border: 3px solid var(--pink);
+	background-color: #00c0ff2e;
+	box-shadow: 5px 5px #f73456;
+}
+
+.orange-menu-box {
+	border: 3px solid var(--orange);
+	background-color: lightsalmon;
+	box-shadow: 5px 5px darkorange;
+}
+
+.newMenu-box-down {
+	position: relative;
+	top: 10px;
+}
+
+.row1-container-style {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.row2-container-style {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* Define a class for the menu images */
+.menu-image {
+	width: 100px; /* Adjust the width as needed */
+	height: 100px; /* Adjust the height as needed */
+	position: absolute;
+	bottom: 5px; /* Adjust the distance from the bottom */
+	right: 5px; /* Adjust the distance from the right */
+}
+
+.row {
+	display: flex;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+}
+
+</style>
+
+<div class="container-fluid p-3">
+    
+    <div class="header">
+        <h3>Find your doctor</h3>
+    </div>
+    <div class="search-box">
+        <SfTextBox placeholder="Search for a doctor" />
+    </div>
+
+    <div class="row1-container-style">
+        <div class="newMenu-box newMenu-box-down green-menu-box">
+            <h2>DOCTOR</h2>
+            <img class="menu-image" src="/Icons/doctor.png" alt="">
+        </div>
+        <div class="newMenu-box newMenu-box-down blue-menu-box">
+            <h2>PATIENTS</h2>
+            <img class="menu-image" src="/Icons/patient.png" alt="">
+        </div>
+        <div class="newMenu-box newMenu-box-down green-menu-box">
+            <h2>DOCTOR</h2>
+            <img class="menu-image" src="/Icons/doctor.png" alt="">
+        </div>
+        <div class="newMenu-box newMenu-box-down blue-menu-box">
+            <h2>PATIENTS</h2>
+            <img class="menu-image" src="/Icons/patient.png" alt="">
+        </div>
+        <div class="newMenu-box newMenu-box-down green-menu-box">
+            <h2>DOCTOR</h2>
+            <img class="menu-image" src="/Icons/doctor.png" alt="">
+        </div>
+        <div class="newMenu-box newMenu-box-down blue-menu-box">
+            <h2>PATIENTS</h2>
+            <img class="menu-image" src="/Icons/patient.png" alt="">
+        </div>
+    </div>
+	<div class="row">
+	    <HealthCare.UI.Pages.Components.DoctorCards></HealthCare.UI.Pages.Components.DoctorCards>
+		<HealthCare.UI.Pages.Components.DoctorCards></HealthCare.UI.Pages.Components.DoctorCards>
+		<HealthCare.UI.Pages.Components.DoctorCards></HealthCare.UI.Pages.Components.DoctorCards>
+		<HealthCare.UI.Pages.Components.DoctorCards></HealthCare.UI.Pages.Components.DoctorCards>
+	</div>
+</div>
