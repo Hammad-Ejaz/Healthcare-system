@@ -1,4 +1,4 @@
-﻿@page  "/login10"
+﻿@page  "/accountChoice"
 
 
 <div class="text-center standard-header-style font-weight-bold">
@@ -6,12 +6,12 @@
 </div>
 
 <div class="row1-container-style">
-    <div class="newMenu-box newMenu-box-down green-menu-box" @onclick="@(() => GoToThePage("/lineInspection"))">
+    <div class="newMenu-box newMenu-box-down green-menu-box" @onclick="@(() => _navigationManager.NavigateTo("/doctorSignUp"))">
         <h2>DOCTOR</h2>
         <img class="menu-image" src="/Icons//doctor.png" alt="">
     </div>
 
-    <div class="newMenu-box newMenu-box-down blue-menu-box" @onclick="@(() => GoToThePage("/scrapOperations"))">
+    <div class="newMenu-box newMenu-box-down blue-menu-box" @onclick="@(() => _navigationManager.NavigateTo("/patientSignUp"))">
         <h2>PATIENTS</h2>
         <img class="menu-image" src="/Icons/patient.png" alt="">
     </div>

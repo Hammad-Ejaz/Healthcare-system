@@ -1,4 +1,5 @@
-﻿@page "/login9"
+﻿@page "/patientSignUp"
+@using HealthCare.Data.Entity;
 @using Syncfusion.Blazor.Calendars
 @using Syncfusion.Blazor.Inputs
 
@@ -21,49 +22,51 @@
                 <div class="col-6 mt-3">
                     <div class="control_wrapper">
                         <label class="p-0 m-0 font-weight-bold">Full Name:</label>
-                        <SfTextBox CssClass="mandatory" TValue="string" />
+                        <SfTextBox CssClass="mandatory" TValue="string" @bind-Value="@UserName" />
                     </div>
                 </div>
                 <div class="col-6 mt-3">
                     <div class="control_wrapper">
                         <label class="p-0 m-0 font-weight-bold">Email Address:</label>
-                        <SfTextBox CssClass="mandatory" TValue="string" />
+                        <SfTextBox CssClass="mandatory" TValue="string" @bind-Value="@Email" />
                     </div>
                 </div>
                 <div class="col-6 mt-3">
                     <div class="control_wrapper">
                         <label class="p-0 m-0 font-weight-bold">Password:</label>
-                        <SfTextBox Type="InputType.Password" CssClass="mandatory" TValue="string" />
+                        <SfTextBox Type="InputType.Password" CssClass="mandatory" TValue="string" @bind-Value="@Password" />
                     </div>
                 </div>
                 <div class="col-6 mt-3">
                     <div class="control_wrapper">
                         <label class="p-0 m-0 font-weight-bold">Contact Information:</label>
-                        <SfTextBox TValue="string" />
+                        <SfTextBox TValue="string" @bind-Value="@ContactInfo" />
                     </div>
                 </div>
                 <div class="col-6 mt-3">
                     <div class="control_wrapper">
                         <label class="p-0 m-0 font-weight-bold">Date of Birth:</label>
-                        <SfDatePicker TValue="DateTime" />
+                        <SfDatePicker TValue="DateTime" @bind-Value="@DateOfBirth" />
                     </div>
                 </div>
                 <div class="col-6 mt-3">
                     <div class="control_wrapper">
                         <label class="p-0 m-0 font-weight-bold">Gender:</label>
-                        <SfComboBox TValue="string" TItem="string"
+                        <SfComboBox ID = "Id" TValue="int" TItem="HealthCareGender"
                                     PopupHeight="400px"
                                     CssClass="mandatory"
+                                    DataSource="Genders"
                                     FilterType="Syncfusion.Blazor.DropDowns.FilterType.Contains"
-                                    AllowFiltering="true">
-                            <ComboBoxEvents TValue="string" TItem="string"></ComboBoxEvents>
+                                    AllowFiltering="true" @bind-Value="@Gender">
+                            <ComboBoxFieldSettings Value="Id" Text="GenderType"></ComboBoxFieldSettings>
+                            <ComboBoxEvents TValue="int" TItem="HealthCareGender" ></ComboBoxEvents>
                         </SfComboBox>
                     </div>
                 </div>
                 <div class="col-12 mt-3">
                     <div class="control_wrapper text-right">
                         <!-- Use text-right to align to the right -->
-                        <button type="button" class="btn btn-danger w-25 p-1" style="font-size: 20px;">SIGN IN</button>
+                        <button type="button" class="btn btn-danger w-25 p-1" style="font-size: 20px;" @onclick="CreateAccount">SIGN IN</button>
                     </div>
                 </div>
             </div>

@@ -9,8 +9,10 @@ namespace HealthCare.UI.AppSettings
         {
             //app services
             services.AddTransient<IEmployeeService, EmployeeService>();
-            services.AddTransient<IDepartmentService, DepartmentService>();
-     
+            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IHelperService, HelperService>();
+            services.AddTransient<IDoctorService, DoctorService>();
+
             return services;
         }
     }

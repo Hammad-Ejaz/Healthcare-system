@@ -17,13 +17,13 @@ namespace HealthCare.Repository
 
         }
 
-        public virtual DbSet<Employee> Employees { get; set; }
-        public virtual DbSet<Department> Department { get; set; }
         public virtual DbSet<AppointmentTable> AppointmentTables { get; set; }
         public virtual DbSet<AppointmentTableAudit> AppointmentTableAudits { get; set; }
         public virtual DbSet<DiscussionTable> DiscussionTables { get; set; }
         public virtual DbSet<DiscussionTableAudit> DiscussionTableAudits { get; set; }
         public virtual DbSet<ExceptionLog> ExceptionLogs { get; set; }
+        public virtual DbSet<HealthCareDoctorSpecialization> HealthCareDoctorSpecializations { get; set; }
+        public virtual DbSet<HealthCareGender> HealthCareGenders { get; set; }
         public virtual DbSet<HealthcareProviderTable> HealthcareProviderTables { get; set; }
         public virtual DbSet<HealthcareProviderTableAudit> HealthcareProviderTableAudits { get; set; }
         public virtual DbSet<NotificationTable> NotificationTables { get; set; }
@@ -39,12 +39,11 @@ namespace HealthCare.Repository
         public virtual DbSet<UserProfileTable> UserProfileTables { get; set; }
         public virtual DbSet<UserProfileTableAudit> UserProfileTableAudits { get; set; }
         public virtual DbSet<UserTable> UserTables { get; set; }
-
-
-
+        public virtual DbSet<UserType> UserTypes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
             modelBuilder.Entity<AppointmentTable>(entity =>
             {
                 entity.HasKey(e => e.AppointmentId)
@@ -267,24 +266,34 @@ namespace HealthCare.Repository
                 entity.Property(e => e.UserId).HasColumnName("UserID");
             });
 
+            modelBuilder.Entity<HealthCareDoctorSpecialization>(entity =>
+            {
+                entity.ToTable("HealthCare_DoctorSpecialization");
+            });
+
+            modelBuilder.Entity<HealthCareGender>(entity =>
+            {
+                entity.ToTable("HealthCare_Genders");
+
+                entity.Property(e => e.GenderType).HasMaxLength(255);
+            });
+
             modelBuilder.Entity<HealthcareProviderTable>(entity =>
             {
-                entity.HasKey(e => e.ProviderId)
-                    .HasName("PK__Healthca__B54C689D74B59681");
-
                 entity.ToTable("HealthcareProviderTable");
 
-                entity.Property(e => e.ProviderId)
-                    .ValueGeneratedNever()
-                    .HasColumnName("ProviderID");
+                entity.Property(e => e.Id).ValueGeneratedNever();
 
                 entity.Property(e => e.CreatedAt).HasColumnType("datetime");
-
-                entity.Property(e => e.Location).HasMaxLength(255);
 
                 entity.Property(e => e.UpdatedAt).HasColumnType("datetime");
 
                 entity.Property(e => e.UserId).HasColumnName("UserID");
+
+                entity.HasOne(d => d.Specialization)
+                    .WithMany(p => p.HealthcareProviderTables)
+                    .HasForeignKey(d => d.SpecializationId)
+                    .HasConstraintName("FK_Specialization");
 
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.HealthcareProviderTables)
@@ -898,18 +907,15 @@ namespace HealthCare.Repository
 
             modelBuilder.Entity<UserTable>(entity =>
             {
-                entity.HasKey(e => e.UserId)
-                    .HasName("PK__UserTabl__1788CCAC332744D5");
-
                 entity.ToTable("UserTable");
 
-                entity.Property(e => e.UserId)
-                    .ValueGeneratedNever()
-                    .HasColumnName("UserID");
+                entity.Property(e => e.Id).ValueGeneratedNever();
 
                 entity.Property(e => e.ContactNumber).HasMaxLength(20);
 
                 entity.Property(e => e.CreatedAt).HasColumnType("datetime");
+
+                entity.Property(e => e.DateOfBirth).HasColumnType("datetime");
 
                 entity.Property(e => e.Email).HasMaxLength(255);
 
@@ -917,11 +923,29 @@ namespace HealthCare.Repository
 
                 entity.Property(e => e.UpdatedAt).HasColumnType("datetime");
 
-                entity.Property(e => e.UserType).HasMaxLength(50);
+                entity.Property(e => e.UserTypeId).HasColumnName("userTypeId");
 
                 entity.Property(e => e.Username).HasMaxLength(255);
+
+                entity.HasOne(d => d.Gender)
+                    .WithMany(p => p.UserTables)
+                    .HasForeignKey(d => d.GenderId)
+                    .HasConstraintName("FK_UserTable_Gender");
+
+                entity.HasOne(d => d.UserType)
+                    .WithMany(p => p.UserTables)
+                    .HasForeignKey(d => d.UserTypeId)
+                    .HasConstraintName("FK_UserTable_UserTypes");
             });
 
+            modelBuilder.Entity<UserType>(entity =>
+            {
+                entity.Property(e => e.UserTypeId).ValueGeneratedNever();
+
+                entity.Property(e => e.UserType1)
+                    .HasMaxLength(255)
+                    .HasColumnName("UserType");
+            });
             base.OnModelCreating(modelBuilder);
         }
     }

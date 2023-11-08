@@ -1,5 +1,6 @@
 ﻿using HealthCare.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -12,85 +13,44 @@ namespace HealthCare.Repository.Repository
     public abstract class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
         private readonly IDbContextFactory<CamcoDbContext> _contextFactory;
-        private readonly ILogger _logger;
-
-        public Repository(IDbContextFactory<CamcoDbContext> contextFactory, ILoggerFactory loggerFactory)
+      
+        public Repository(IDbContextFactory<CamcoDbContext> contextFactory)
         {
             _contextFactory = contextFactory;
-            _logger = loggerFactory.CreateLogger(typeof(TEntity));
         }
 
         public virtual int Insert(TEntity entity)
         {
             int id = 0;
 
-            try
+            using (var context = _contextFactory.CreateDbContext())
             {
-                using (var context = _contextFactory.CreateDbContext())
-                {
-                    context.Set<TEntity>().Add(entity);
-                    context.SaveChanges();
+                context.Set<TEntity>().Add(entity);
+                context.SaveChanges();
 
-                    id = (int)entity.GetType().GetProperty("Id").GetValue(entity, null);
-                }
+                id = (int)entity.GetType().GetProperty("Id").GetValue(entity, null);
             }
-            catch (DbUpdateException ex)
-            {
-                _logger.LogError(ex.InnerException.InnerException.Message);
-            }
-            catch (Exception ex)
-            {
-                if (ex.InnerException.InnerException.Message.ToUpper().Contains("VIOLATION OF UNIQUE KEY"))
-                {
-                    _logger.LogError("Duplicate unique key");
-                }
-                else
-                {
-                    _logger.LogError("OTHER ERROR " + ex.Message);
-                }
-            }
-
             return id;
         }
 
         public virtual async Task<int> InsertAsync(TEntity entity)
         {
-            int id = 0;
             try
             {
                 using (var context = _contextFactory.CreateDbContext())
                 {
-                    var local = context.Set<TEntity>().Local
-                        .FirstOrDefault(x => x.GetType().GetProperty("Id").Equals(entity.GetType().GetProperty("Id")));
-
-                    if (local != null)
-                        context.Entry(local).State = EntityState.Detached;
-
-                    context.Entry(entity).State = EntityState.Modified;
-
-                    await context.Set<TEntity>().AddAsync(entity);
+                    var entityEntry = await context.Set<TEntity>().AddAsync(entity);
                     await context.SaveChangesAsync();
-
-                    id = (int)entity.GetType().GetProperty("Id").GetValue(entity, null);
+                    return (int)entityEntry.Property("Id").CurrentValue;
                 }
-            }
-            catch (DbUpdateException ex)
-            {
-                _logger.LogError(ex.InnerException.Message);
             }
             catch (Exception ex)
             {
-                if (ex.InnerException.InnerException.Message.ToUpper().Contains("VIOLATION OF UNIQUE KEY"))
-                {
-                    _logger.LogError("Duplicate unique key");
-                }
-                else
-                {
-                    _logger.LogError("OTHER ERROR " + ex.Message);
-                }
+                // Handle the exception or log it for debugging
+                // You can also throw the exception if necessary
+                // Example: throw new Exception("Error saving the entity.", ex);
+                return -1; // or some error code to indicate failure
             }
-
-            return id;
         }
 
         public virtual async Task AddRangeAsync(IEnumerable<TEntity> entities)
@@ -198,56 +158,35 @@ namespace HealthCare.Repository.Repository
 
         public virtual void Update(TEntity entity)
         {
-            try
+            using (var context = _contextFactory.CreateDbContext())
             {
-                using (var context = _contextFactory.CreateDbContext())
-                {
-                    var local = context.Set<TEntity>().Local
-                    .FirstOrDefault(x => x.GetType().GetProperty("Id").Equals(entity.GetType().GetProperty("Id")));
+                var local = context.Set<TEntity>().Local
+                .FirstOrDefault(x => x.GetType().GetProperty("Id").Equals(entity.GetType().GetProperty("Id")));
 
-                    if (local != null)
-                        context.Entry(local).State = EntityState.Detached;
+                if (local != null)
+                    context.Entry(local).State = EntityState.Detached;
 
-                    context.Entry(entity).State = EntityState.Modified;
+                context.Entry(entity).State = EntityState.Modified;
 
-                    context.SaveChanges();
-                }
-            }
-            catch (DbUpdateException ex)
-            {
-                _logger.LogError(ex.InnerException.InnerException.Message);
-            }
-            catch (Exception)
-            {
-                throw;
-            }
+                context.SaveChanges();
+            }           
         }
 
         public virtual async Task UpdateAsync(TEntity entity)
         {
-            try
+            using (var context = _contextFactory.CreateDbContext())
             {
-                using (var context = _contextFactory.CreateDbContext())
-                {
-                    var local = context.Set<TEntity>().Local
-                    .FirstOrDefault(x => x.GetType().GetProperty("Id").Equals(entity.GetType().GetProperty("Id")));
+                var local = context.Set<TEntity>().Local
+                .FirstOrDefault(x => x.GetType().GetProperty("Id").Equals(entity.GetType().GetProperty("Id")));
 
-                    if (local != null)
-                        context.Entry(local).State = EntityState.Detached;
+                if (local != null)
+                    context.Entry(local).State = EntityState.Detached;
 
-                    context.Entry(entity).State = EntityState.Modified;
+                context.Entry(entity).State = EntityState.Modified;
 
-                    await context.SaveChangesAsync();
-                }
+                await context.SaveChangesAsync();
             }
-            catch (DbUpdateException ex)
-            {
-                _logger.LogError(ex.InnerException.InnerException.Message);
-            }
-            catch (Exception)
-            {
-                throw;
-            }
+
         }
 
         public virtual async Task<IEnumerable<TEntity>> GetAllAsync(int skip, int limit)

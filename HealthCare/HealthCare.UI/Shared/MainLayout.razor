@@ -1,8 +1,8 @@
 ﻿@inherits LayoutComponentBase
 <div class="main">
-	<NavMenu />	
+    <NavMenu Login="@Authenticate.IsLogin" />
 
-	<div class="content">
+    <div class="content">
 		<BlazoredToasts Position="Blazored.Toast.Configuration.ToastPosition.BottomRight"
 		Timeout="2" RemoveToastsOnNavigation="true" ShowCloseButton="true" ShowProgressBar="true" />
 		@Body

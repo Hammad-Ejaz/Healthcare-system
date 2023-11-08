@@ -32,16 +32,20 @@ namespace HealthCare.Data.Entity
             UserProfileTables = new HashSet<UserProfileTable>();
         }
 
-        public int UserId { get; set; }
+        public int Id { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
         public string Email { get; set; }
         public string ContactNumber { get; set; }
-        public string UserType { get; set; }
         public DateTime? CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
         public bool? Active { get; set; }
+        public int? UserTypeId { get; set; }
+        public DateTime? DateOfBirth { get; set; }
+        public int? GenderId { get; set; }
 
+        public virtual HealthCareGender Gender { get; set; }
+        public virtual UserType UserType { get; set; }
         public virtual ICollection<AppointmentTableAudit> AppointmentTableAuditOldPatientUsers { get; set; }
         public virtual ICollection<AppointmentTableAudit> AppointmentTableAuditUsers { get; set; }
         public virtual ICollection<AppointmentTable> AppointmentTables { get; set; }
@@ -65,5 +69,6 @@ namespace HealthCare.Data.Entity
         public virtual ICollection<ReviewTable> ReviewTables { get; set; }
         public virtual ICollection<UserProfileTableAudit> UserProfileTableAudits { get; set; }
         public virtual ICollection<UserProfileTable> UserProfileTables { get; set; }
+
     }
 }

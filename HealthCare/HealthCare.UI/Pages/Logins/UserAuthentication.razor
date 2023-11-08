@@ -1,4 +1,4 @@
-﻿@page "/login2"
+﻿@page "/loginAccount"
 @using Syncfusion.Blazor.Inputs
 @using Syncfusion.Blazor.DropDowns
 <div class="col-12 navbar navbar-expand screenLabel screen-label position-fixed top-row m-0 p-0">
@@ -23,7 +23,7 @@ else
                 <br />
                 <div class="col-12 mt-3">
                     <div class="control_wrapper">
-                        <label class="p-0 m-0 font-weight-bold" style="font-size:22px;">EMPLOYEE:</label>
+                        <label class="p-0 m-0 font-weight-bold" style="font-size:22px;">USER NAME:</label>
                         <SfTextBox CssClass="mandatory" TValue="string" @onkeyup="(args) => Keydown(args)" @bind-Value="@UserName" />
                     </div>
                 </div>
@@ -34,7 +34,7 @@ else
                     </div>
                 </div>
                 <div class="col-12 mt-3 text-center">
-                    <button type="button" class="btn btn-danger w-25 p-1" style="font-size: 20px;" @onclick="() => cancelAsync()">LOGIN</button>
+                    <button type="button" class="btn btn-danger w-25 p-1" style="font-size: 20px;" @onclick="() => Login()">LOGIN</button>
                 </div>
                 <div class="col-12 mt-3 text-center">
                     <a href="/signup" class="btn btn-link">Forgot password</a>
@@ -42,12 +42,14 @@ else
                 <br />
                 <br />
                 <div class="col-12 mt-3 text-center">
-                    <a href="/signup" class="btn btn-link">Sign up for an account</a>
+                    <a href="/accountChoice" class="btn btn-link">Sign up for an account</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-1">
             </div>
         </div>
     </div>
+
+}
 
 }

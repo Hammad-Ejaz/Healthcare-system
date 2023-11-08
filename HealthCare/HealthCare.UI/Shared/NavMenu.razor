@@ -7,15 +7,25 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <NavLink class="nav-link" href="login">HOME</NavLink>
-            </li>
+            @if(Login)
+            {
+                <li class="nav-item">
+                    <NavLink class="nav-link" href="login">HOME</NavLink>
+                </li>
+            }
         </ul>
         <ul class="navbar-nav">
             <li id="NavBackButton" class="nav-item">
-                <NavLink class="nav-link text-white" @onclick="GoBack" style="cursor:pointer">
-                        <img src="/Icons//doctor.png" class="profile-image" alt="Profile Picture">
-                </NavLink>
+                @if(!Login)
+                {
+                    <NavLink class="nav-link" href="loginAccount">LOGIN</NavLink>
+                }
+                else
+                {   
+                    <NavLink class="nav-link text-white" @onclick="GoBack" style="cursor:pointer">
+                            <img src="/Icons//doctor.png" class="profile-image" alt="Profile Picture">
+                    </NavLink>
+                }
             </li>
         </ul>
     </div>

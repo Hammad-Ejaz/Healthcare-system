@@ -21,14 +21,16 @@ namespace HealthCare.Data.Entity
             ReviewTables = new HashSet<ReviewTable>();
         }
 
-        public int ProviderId { get; set; }
+        public int Id { get; set; }
         public int? UserId { get; set; }
-        public string Specialties { get; set; }
-        public string Location { get; set; }
         public DateTime? CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
         public bool? Active { get; set; }
+        public int? WorkExperience { get; set; }
+        public long? MedicalLicenseInfo { get; set; }
+        public int? SpecializationId { get; set; }
 
+        public virtual HealthCareDoctorSpecialization Specialization { get; set; }
         public virtual UserTable User { get; set; }
         public virtual ICollection<AppointmentTableAudit> AppointmentTableAudits { get; set; }
         public virtual ICollection<AppointmentTable> AppointmentTables { get; set; }

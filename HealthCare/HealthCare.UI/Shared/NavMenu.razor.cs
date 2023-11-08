@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Components;
+﻿using iTextSharp.text.pdf;
+using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 
 namespace HealthCare.UI.Shared
@@ -9,10 +10,24 @@ namespace HealthCare.UI.Shared
         protected IJSRuntime JSRuntime { get; set; }
 
         protected bool IsClick { get; set; } = false;
+        [Parameter]
+        public bool Login { get; set; } = false;
+       
+        protected override async Task OnInitializedAsync()
+        {
+            Authenticate.OnLoginChanged += LoginChanged;
+        }
 
         protected void LoadViewTaskByEmployeePopup()
         {
             IsClick = true;
+        }
+
+        protected async void LoginChanged()
+        {
+            await InvokeAsync(() => {
+                StateHasChanged();
+            });
         }
 
         protected async Task GoBack()
