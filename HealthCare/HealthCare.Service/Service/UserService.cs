@@ -18,11 +18,11 @@ namespace HealthCare.Service.Service
             this.UnitOfWork = UnitOfWork;
         }
 
-        public async Task<int> AddUser(UserTable user)
+        public async Task<int> AddUser(HealthCareUser user)
         {
               return await UnitOfWork.User.InsertAsync(user);
         }
-        public async Task<UserTable> IsUserExits(UserTable user)
+        public async Task<HealthCareUser> IsUserExits(HealthCareUser user)
         {
             var obj = (await UnitOfWork.User.GetListAsync()).Where(x=> x.Username == user.Username).FirstOrDefault();
             return (obj != null) ? obj : null;

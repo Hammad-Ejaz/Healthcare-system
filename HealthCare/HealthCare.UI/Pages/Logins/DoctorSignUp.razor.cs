@@ -49,7 +49,7 @@ namespace HealthCare.UI.Pages.Logins
             try
             {
                 var Id = await UserService.AddUser(
-                    new UserTable
+                    new HealthCareUser
                     {
                         Username = UserName,
                         Email = Email,
@@ -64,15 +64,17 @@ namespace HealthCare.UI.Pages.Logins
                     });
 
                 DoctorService.AddDoctor(
-                    new HealthcareProviderTable
+                    new HealthcareDoctor
                     {
                         UserId = Id,
                         SpecializationId = Specialization,
+                        MedicalLicenseInfo = MedicalNo,
                         WorkExperience = WorkExperience,
                         CreatedAt = DateTime.Now,
                         UpdatedAt = DateTime.Now,
                         Active = true
                     });
+
                 ToastService.ShowSuccess("UserAdded Successfully");
                 UserName = "";
                 Email = "";

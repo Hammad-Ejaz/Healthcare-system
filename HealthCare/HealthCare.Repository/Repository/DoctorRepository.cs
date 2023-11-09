@@ -10,7 +10,7 @@ using HealthCare.Repository.IRepository;
 
 namespace HealthCare.Repository.Repository
 {
-    public class DoctorRepository  : Repository<HealthcareProviderTable> ,  IDoctorRepository  
+    public class DoctorRepository  : Repository<HealthcareDoctor> ,  IDoctorRepository  
     {
         private readonly IDbContextFactory<CamcoDbContext> _contextFactory;
 

@@ -87,7 +87,7 @@
 	border:4px solid Black;
 }
 .screenLabelStyle {
-	background-color: #666666 !important;
+	background-color: deepskyblue !important;
 	color: white !important;
 	height: 22px !important;
 	margin-top: 70px !important;
@@ -473,4 +473,9 @@ div.container4 {
 	width: 50px; /* Adjust the width as needed */
 	height: 50px;
 }
+
+.screenLabel {
+	background: linear-gradient(180deg, rgba(189,189,189,1) 0%, rgba(128,128,128,1) 20%, rgba(128,128,128,1) 80%, rgba(46,46,46,1) 100%);
+}
+
 

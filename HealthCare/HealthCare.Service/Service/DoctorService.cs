@@ -18,9 +18,9 @@ namespace HealthCare.Service.Service
             this.UnitOfWork = UnitOfWork;
         }
 
-        public async void AddDoctor(HealthcareProviderTable user)
+        public async void AddDoctor(HealthcareDoctor user)
         {
-            UnitOfWork.Doctor.InsertAsync(user);
+           await UnitOfWork.Doctor.InsertAsync(user);
         }
     }
 }

@@ -9,7 +9,7 @@ namespace HealthCare.Service.IService
 {
     public interface IUserService
     {
-        Task<int> AddUser(UserTable user);
-        Task<UserTable> IsUserExits(UserTable user);
+        Task<int> AddUser(HealthCareUser user);
+        Task<HealthCareUser> IsUserExits(HealthCareUser user);
     }
 }

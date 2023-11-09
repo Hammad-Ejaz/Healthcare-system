@@ -42,7 +42,7 @@ namespace HealthCare.UI.Pages.Logins
             try
             {
                await UserService.AddUser(
-                    new UserTable
+                    new HealthCareUser
                     {
                         Username = UserName,
                         Email = Email,

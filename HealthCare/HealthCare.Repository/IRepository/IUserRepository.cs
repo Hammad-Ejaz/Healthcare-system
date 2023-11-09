@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HealthCare.Repository.IRepository
 {
-    public interface IUserRepository : IRepository<UserTable>
+    public interface IUserRepository : IRepository<HealthCareUser>
     {
     }
 }

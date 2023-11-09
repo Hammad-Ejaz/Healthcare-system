@@ -1,9 +1,11 @@
 ﻿@page "/loginAccount"
 @using Syncfusion.Blazor.Inputs
 @using Syncfusion.Blazor.DropDowns
-<div class="col-12 navbar navbar-expand screenLabel screen-label position-fixed top-row m-0 p-0">
-    <div class="col-12 m-0 p-0" ><span >@ScreenLabel</span></div>
+
+<div class="col-12 navbar navbar-expand screenLabel position-fixed top-row m-0 p-0 screenLabelStyle" style="margin-top: 55px !important;">
+    <div class="col-12 m-0 p-0" style="font-size: 18px; text-align: left;"><span style="float: left">Me</span></div>
 </div>
+
 @if (ShowSpinner)
 {
     <div class="spinner" style="top:50%;"></div>

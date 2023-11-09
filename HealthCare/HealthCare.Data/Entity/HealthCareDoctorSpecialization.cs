@@ -7,6 +7,7 @@ namespace HealthCare.Data.Entity
     {
         public HealthCareDoctorSpecialization()
         {
+            HealthcareDoctors = new HashSet<HealthcareDoctor>();
             HealthcareProviderTables = new HashSet<HealthcareProviderTable>();
         }
 
@@ -14,6 +15,7 @@ namespace HealthCare.Data.Entity
         public string Specialization { get; set; }
         public string Detail { get; set; }
 
+        public virtual ICollection<HealthcareDoctor> HealthcareDoctors { get; set; }
         public virtual ICollection<HealthcareProviderTable> HealthcareProviderTables { get; set; }
     }
 }

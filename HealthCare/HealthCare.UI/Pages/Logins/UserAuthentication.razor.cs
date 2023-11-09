@@ -47,7 +47,7 @@ namespace HealthCare.UI.Pages.Logins
         protected async Task Login()
         {
             var user = await UserService.IsUserExits(
-                    new UserTable
+                    new HealthCareUser
                     {
                         Username = UserName,
                         Password = Password,

@@ -5,12 +5,40 @@
       "PackagePath": "staticwebassets\\HealthCare.UI.bundle.scp.css"
     },
     {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\MyFrontPage.png",
+      "PackagePath": "staticwebassets\\Icons\\MyFrontPage.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Orthopedic.png",
+      "PackagePath": "staticwebassets\\Icons\\Orthopedic.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\Psychiatrists.png",
+      "PackagePath": "staticwebassets\\Icons\\Psychiatrists.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\dermatologist.png",
+      "PackagePath": "staticwebassets\\Icons\\dermatologist.png"
+    },
+    {
       "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\doctor.png",
       "PackagePath": "staticwebassets\\Icons\\doctor.png"
     },
     {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\nephrologists.png",
+      "PackagePath": "staticwebassets\\Icons\\nephrologists.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\neurologist.png",
+      "PackagePath": "staticwebassets\\Icons\\neurologist.png"
+    },
+    {
       "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\patient.png",
       "PackagePath": "staticwebassets\\Icons\\patient.png"
+    },
+    {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\pediatrician.png",
+      "PackagePath": "staticwebassets\\Icons\\pediatrician.png"
     },
     {
       "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\prescription.png",

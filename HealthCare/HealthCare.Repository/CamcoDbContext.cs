@@ -24,6 +24,8 @@ namespace HealthCare.Repository
         public virtual DbSet<ExceptionLog> ExceptionLogs { get; set; }
         public virtual DbSet<HealthCareDoctorSpecialization> HealthCareDoctorSpecializations { get; set; }
         public virtual DbSet<HealthCareGender> HealthCareGenders { get; set; }
+        public virtual DbSet<HealthCareUser> HealthCareUsers { get; set; }
+        public virtual DbSet<HealthcareDoctor> HealthcareDoctors { get; set; }
         public virtual DbSet<HealthcareProviderTable> HealthcareProviderTables { get; set; }
         public virtual DbSet<HealthcareProviderTableAudit> HealthcareProviderTableAudits { get; set; }
         public virtual DbSet<NotificationTable> NotificationTables { get; set; }
@@ -39,6 +41,7 @@ namespace HealthCare.Repository
         public virtual DbSet<UserProfileTable> UserProfileTables { get; set; }
         public virtual DbSet<UserProfileTableAudit> UserProfileTableAudits { get; set; }
         public virtual DbSet<UserTable> UserTables { get; set; }
+        public virtual DbSet<UserTableNew> UserTableNews { get; set; }
         public virtual DbSet<UserType> UserTypes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -276,6 +279,64 @@ namespace HealthCare.Repository
                 entity.ToTable("HealthCare_Genders");
 
                 entity.Property(e => e.GenderType).HasMaxLength(255);
+            });
+
+            modelBuilder.Entity<HealthCareUser>(entity =>
+            {
+                entity.ToTable("HealthCare_User");
+
+                entity.Property(e => e.ContactNumber)
+                    .HasMaxLength(20)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.CreatedAt).HasColumnType("datetime");
+
+                entity.Property(e => e.DateOfBirth).HasColumnType("datetime");
+
+                entity.Property(e => e.Email)
+                    .HasMaxLength(255)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Password)
+                    .HasMaxLength(255)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.UpdatedAt).HasColumnType("datetime");
+
+                entity.Property(e => e.UserTypeId).HasColumnName("userTypeId");
+
+                entity.Property(e => e.Username)
+                    .HasMaxLength(255)
+                    .IsUnicode(false);
+
+                entity.HasOne(d => d.Gender)
+                    .WithMany(p => p.HealthCareUsers)
+                    .HasForeignKey(d => d.GenderId)
+                    .HasConstraintName("FK_Gender");
+
+                entity.HasOne(d => d.UserType)
+                    .WithMany(p => p.HealthCareUsers)
+                    .HasForeignKey(d => d.UserTypeId)
+                    .HasConstraintName("FK_UserType");
+            });
+
+            modelBuilder.Entity<HealthcareDoctor>(entity =>
+            {
+                entity.ToTable("Healthcare_Doctor");
+
+                entity.Property(e => e.CreatedAt).HasColumnType("datetime");
+
+                entity.Property(e => e.UpdatedAt).HasColumnType("datetime");
+
+                entity.HasOne(d => d.Specialization)
+                    .WithMany(p => p.HealthcareDoctors)
+                    .HasForeignKey(d => d.SpecializationId)
+                    .HasConstraintName("FK_Healthcare_Doctor_SpecializationId");
+
+                entity.HasOne(d => d.User)
+                    .WithMany(p => p.HealthcareDoctors)
+                    .HasForeignKey(d => d.UserId)
+                    .HasConstraintName("FK_Healthcare_Doctor_UserId");
             });
 
             modelBuilder.Entity<HealthcareProviderTable>(entity =>
@@ -938,9 +999,38 @@ namespace HealthCare.Repository
                     .HasConstraintName("FK_UserTable_UserTypes");
             });
 
+            modelBuilder.Entity<UserTableNew>(entity =>
+            {
+                entity.ToTable("UserTable_New");
+
+                entity.Property(e => e.ContactNumber)
+                    .HasMaxLength(20)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.CreatedAt).HasColumnType("datetime");
+
+                entity.Property(e => e.DateOfBirth).HasColumnType("date");
+
+                entity.Property(e => e.Email)
+                    .HasMaxLength(255)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Password)
+                    .HasMaxLength(255)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.UpdatedAt).HasColumnType("datetime");
+
+                entity.Property(e => e.UserTypeId).HasColumnName("userTypeId");
+
+                entity.Property(e => e.Username)
+                    .HasMaxLength(255)
+                    .IsUnicode(false);
+            });
+
             modelBuilder.Entity<UserType>(entity =>
             {
-                entity.Property(e => e.UserTypeId).ValueGeneratedNever();
+                entity.Property(e => e.Id).ValueGeneratedNever();
 
                 entity.Property(e => e.UserType1)
                     .HasMaxLength(255)

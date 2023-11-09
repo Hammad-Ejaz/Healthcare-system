@@ -11,7 +11,7 @@ using Microsoft.Extensions.Logging;
 
 namespace HealthCare.Repository.Repository
 {
-    public class UserRepository : Repository<UserTable> ,  IUserRepository
+    public class UserRepository : Repository<HealthCareUser> ,  IUserRepository
     {
 
         private readonly IDbContextFactory<CamcoDbContext> _contextFactory;

@@ -9,6 +9,6 @@ namespace HealthCare.Service.IService
 {
     public interface IDoctorService
     {
-        void AddDoctor(HealthcareProviderTable user);
+        void AddDoctor(HealthcareDoctor user);
     }
 }

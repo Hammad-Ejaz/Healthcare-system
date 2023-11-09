@@ -69,6 +69,5 @@ namespace HealthCare.Data.Entity
         public virtual ICollection<ReviewTable> ReviewTables { get; set; }
         public virtual ICollection<UserProfileTableAudit> UserProfileTableAudits { get; set; }
         public virtual ICollection<UserProfileTable> UserProfileTables { get; set; }
-
     }
 }
