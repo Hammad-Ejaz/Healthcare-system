@@ -1,4 +1,4 @@
-﻿@page "/login"
+﻿@page "/patientCheckUp/{DoctorId}"
 @using Syncfusion.Blazor.Buttons
 
 <style>
@@ -14,7 +14,10 @@
 
 
 <div>
-    <HealthCare.UI.Pages.Components.DoctorCards></HealthCare.UI.Pages.Components.DoctorCards>
+    @if(Doctor != null)
+    {
+        <HealthCare.UI.Pages.Components.DoctorCards Doctor="@Doctor"></HealthCare.UI.Pages.Components.DoctorCards>    
+    }
 </div>
 <div class="doctor-card">    
     <div class="doctor-container">

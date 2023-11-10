@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\Icons\\dermatologist.png"
     },
     {
+      "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\doctor.jpg",
+      "PackagePath": "staticwebassets\\Icons\\doctor.jpg"
+    },
+    {
       "Id": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\doctor.png",
       "PackagePath": "staticwebassets\\Icons\\doctor.png"
     },

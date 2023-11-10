@@ -30,23 +30,3 @@
         </ul>
     </div>
 </nav>
-
-<!-- Modal -->
-<div class="modal fade" id="ViewTaskByEmployeePopupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered" role="document" style="max-width: 100%; width:99%">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title text-info" id="exampleModalLabel">VIEW TASK BY TASKTYPE</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                @if (IsClick)
-                {
-                    <ViewTaskByEmployeePopup />
-                }
-            </div>
-        </div>
-    </div>
-</div>

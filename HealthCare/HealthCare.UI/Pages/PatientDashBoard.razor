@@ -92,48 +92,48 @@
 }
 
 </style>
-
-
-
 <div class="container-fluid p-3">
     
     <div class="header">
         <h3>Find your doctor</h3>
     </div>
     <div class="search-box">
-        <SfTextBox placeholder="Search for a doctor" />
-    </div>
+		<SfTextBox placeholder="Search for a doctor" @bind-Value="@SearchText" @onchange="@(() => NavigateToDoctorSelection())" />
+	</div>
 
     <div class="row1-container-style">
-        <div class="newMenu-box newMenu-box-down green-menu-box">
+		<div class="newMenu-box newMenu-box-down green-menu-box" @onclick="@(() => _navigationManager.NavigateTo("/doctorSelection/"+ "Dermatologists"))">
 			<h2>DERMATOLOGIST</h2>
             <img class="menu-image" src="/Icons/dermatologist.png" alt="">
         </div>
-        <div class="newMenu-box newMenu-box-down blue-menu-box">
+		<div class="newMenu-box newMenu-box-down blue-menu-box" @onclick="@(() => _navigationManager.NavigateTo("/doctorSelection/" + "Nephrologists"))">
             <h2>NEPHROLOGISTS</h2>
             <img class="menu-image" src="/Icons/nephrologists.png" alt="">
         </div>
-        <div class="newMenu-box newMenu-box-down green-menu-box">
+		<div class="newMenu-box newMenu-box-down green-menu-box" @onclick="@(() => _navigationManager.NavigateTo("/doctorSelection/" + "Neurologists"))">
             <h2>NEUROLOGISTS</h2>
             <img class="menu-image" src="/Icons/neurologist.png" alt="">
         </div>
-        <div class="newMenu-box newMenu-box-down blue-menu-box">
+		<div class="newMenu-box newMenu-box-down blue-menu-box" @onclick="@(() => _navigationManager.NavigateTo("/doctorSelection/" + "Orthopedic Surgeons"))">
             <h2>ORTHOPEDIC</h2>
             <img class="menu-image" src="/Icons/Orthopedic.png" alt="">
         </div>
-        <div class="newMenu-box newMenu-box-down green-menu-box">
+		<div class="newMenu-box newMenu-box-down green-menu-box" @onclick="@(() => _navigationManager.NavigateTo("/doctorSelection/" + "Psychiatrists"))">
             <h2>PSYCHIATRISTS</h2>
             <img class="menu-image" src="/Icons/Psychiatrists.png" alt="">
         </div>
-        <div class="newMenu-box newMenu-box-down blue-menu-box">
+		<div class="newMenu-box newMenu-box-down blue-menu-box" @onclick="@(() => _navigationManager.NavigateTo("/doctorSelection/" + "Pediatricians"))">
             <h2>PEDIATRICIAN</h2>
             <img class="menu-image" src="/Icons/pediatrician.png" alt="">
         </div>
     </div>
 	<div class="row">
-	    <HealthCare.UI.Pages.Components.DoctorCards></HealthCare.UI.Pages.Components.DoctorCards>
-		<HealthCare.UI.Pages.Components.DoctorCards></HealthCare.UI.Pages.Components.DoctorCards>
-		<HealthCare.UI.Pages.Components.DoctorCards></HealthCare.UI.Pages.Components.DoctorCards>
-		<HealthCare.UI.Pages.Components.DoctorCards></HealthCare.UI.Pages.Components.DoctorCards>
+		@if(Doctors != null)
+		{	
+			<HealthCare.UI.Pages.Components.DoctorCards Doctor="Doctors[0]"></HealthCare.UI.Pages.Components.DoctorCards>
+			<HealthCare.UI.Pages.Components.DoctorCards Doctor="Doctors[1]"></HealthCare.UI.Pages.Components.DoctorCards>
+			<HealthCare.UI.Pages.Components.DoctorCards Doctor="Doctors[2]"></HealthCare.UI.Pages.Components.DoctorCards>
+			<HealthCare.UI.Pages.Components.DoctorCards Doctor="Doctors[3]"></HealthCare.UI.Pages.Components.DoctorCards>
+		}
 	</div>
 </div>

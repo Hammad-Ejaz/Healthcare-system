@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "f8L+KxD49cCau0a01bLTNCKu9We3V8HhhlUqH0beijg=",
+  "Hash": "cd9zn2Vz3K14S6Z7eQFLjnYmiRmewiwv6OrXC3fPW+Y=",
   "Source": "HealthCare.UI",
   "BasePath": "_content/HealthCare.UI",
   "Mode": "Default",
@@ -2514,6 +2514,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Icons\\dermatologist.png"
+    },
+    {
+      "Identity": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\doctor.jpg",
+      "SourceId": "HealthCare.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\",
+      "BasePath": "_content/HealthCare.UI",
+      "RelativePath": "Icons/doctor.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Icons\\doctor.jpg"
     },
     {
       "Identity": "D:\\My_5th_Semester\\se\\Project\\Healthcare-system\\HealthCare\\HealthCare.UI\\wwwroot\\Icons\\doctor.png",

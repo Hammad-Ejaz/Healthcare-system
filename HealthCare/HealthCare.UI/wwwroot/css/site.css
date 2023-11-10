@@ -14,13 +14,15 @@ a, .btn-link {
 }
 
 .doctor-card {
-    border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px;
     padding: 20px;
     max-width: 400px;
     text-align: center;
+    background-color: lightblue;
+    border: 3px solid var(--blue);
+    background-color: #00c0ff2e;
+    box-shadow: 5px 5px dodgerblue;
 }
 
 .doctor-container {
@@ -40,12 +42,17 @@ a, .btn-link {
     justify-content: space-between;
 }
 
+    .availability-container label {
+        float: left;
+        width: 100%;
+        text-align: left;
+    }
 .availability-container div-label {
    text-align: left; /* Align the label to the left */
 }
 
 .book-now-btn {
-    background-color: silver;
+    background-color: dodgerblue;
     padding: 10px;
     border: none;
     color: white;

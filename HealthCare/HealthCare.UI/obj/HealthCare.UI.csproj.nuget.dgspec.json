@@ -248,6 +248,10 @@
               "target": "Package",
               "version": "[6.0.16, )"
             },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "iTextSharp": {
               "target": "Package",
               "version": "[5.5.13.3, )"
@@ -403,7 +407,7 @@
             },
             "System.Drawing.Common": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
