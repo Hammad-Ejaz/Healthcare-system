@@ -13,5 +13,6 @@ namespace HealthCare.ViewModels
 		public string Username { get; set; }
 		public string Specialization { get; set; }
 		public int? WorkExperience { get; set; }
+		public UserViewModel User { get; set; }
 	}
 }

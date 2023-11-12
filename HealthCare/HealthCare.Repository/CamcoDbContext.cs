@@ -16,7 +16,7 @@ namespace HealthCare.Repository
         {
 
         }
-
+        public virtual DbSet<HealthCareChat> HealthCareChats { get; set; }
         public virtual DbSet<AppointmentTable> AppointmentTables { get; set; }
         public virtual DbSet<AppointmentTableAudit> AppointmentTableAudits { get; set; }
         public virtual DbSet<DiscussionTable> DiscussionTables { get; set; }
@@ -26,6 +26,7 @@ namespace HealthCare.Repository
         public virtual DbSet<HealthCareGender> HealthCareGenders { get; set; }
         public virtual DbSet<HealthCareUser> HealthCareUsers { get; set; }
         public virtual DbSet<HealthcareDoctor> HealthcareDoctors { get; set; }
+        public virtual DbSet<HealthCarePrescription> HealthCarePrescriptions { get; set; }
         public virtual DbSet<HealthcareProviderTable> HealthcareProviderTables { get; set; }
         public virtual DbSet<HealthcareProviderTableAudit> HealthcareProviderTableAudits { get; set; }
         public virtual DbSet<NotificationTable> NotificationTables { get; set; }
@@ -46,6 +47,25 @@ namespace HealthCare.Repository
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<HealthCareChat>(entity =>
+            {
+                entity.ToTable("HealthCare_Chat");
+
+                entity.Property(e => e.EnteredDate).HasColumnType("datetime");
+
+                entity.Property(e => e.SeenDate).HasColumnType("datetime");
+
+                entity.HasOne(d => d.FromEmp)
+                    .WithMany(p => p.HealthCareChatFromEmps)
+                    .HasForeignKey(d => d.FromEmpId)
+                    .HasConstraintName("FK_FromEmp");
+
+                entity.HasOne(d => d.ToEmp)
+                    .WithMany(p => p.HealthCareChatToEmps)
+                    .HasForeignKey(d => d.ToEmpId)
+                    .HasConstraintName("FK_ToEmp");
+            });
+
 
             modelBuilder.Entity<AppointmentTable>(entity =>
             {
@@ -77,6 +97,36 @@ namespace HealthCare.Repository
                     .WithMany(p => p.AppointmentTables)
                     .HasForeignKey(d => d.ProviderId)
                     .HasConstraintName("FK__Appointme__Provi__5441852A");
+            });
+            modelBuilder.Entity<HealthCarePrescription>(entity =>
+            {
+                entity.ToTable("HealthCare_Prescription");
+
+                entity.Property(e => e.CreatedAt).HasColumnType("datetime");
+
+                entity.Property(e => e.DatePrescribed).HasColumnType("date");
+
+                entity.Property(e => e.Dosage)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Instructions).IsUnicode(false);
+
+                entity.Property(e => e.Medication)
+                    .HasMaxLength(255)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.UpdatedAt).HasColumnType("datetime");
+
+                entity.HasOne(d => d.Doctor)
+                    .WithMany(p => p.HealthCarePrescriptions)
+                    .HasForeignKey(d => d.DoctorId)
+                    .HasConstraintName("FK__HealthCar__Docto__57DD0BE4");
+
+                entity.HasOne(d => d.Patient)
+                    .WithMany(p => p.HealthCarePrescriptions)
+                    .HasForeignKey(d => d.PatientId)
+                    .HasConstraintName("FK__HealthCar__Patie__56E8E7AB");
             });
 
             modelBuilder.Entity<AppointmentTableAudit>(entity =>

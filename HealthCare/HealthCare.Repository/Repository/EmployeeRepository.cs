@@ -18,6 +18,16 @@ namespace HealthCare.Repository.Repository
             _contextFactory = contextFactory;
         }
 
+
+        public List<HealthCareChat> Get()
+        {
+            using (var context = _contextFactory.CreateDbContext())
+            {
+                var Models = context.HealthCareChats.ToList();
+
+                return Models;
+            }
+        }
         public List<ExceptionLog> GetList()
         {
             using (var context = _contextFactory.CreateDbContext())

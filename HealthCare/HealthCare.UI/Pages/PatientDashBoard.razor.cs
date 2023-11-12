@@ -17,14 +17,18 @@ namespace HealthCare.UI.Pages
         private ILogger<IndexModel> _logger { get; set; }
 
         [Inject] IDoctorService DoctorService { get; set; }
+        [Inject] IUserService UserService { get; set; }
 
         public List<DoctorViewModel> Doctors { get; set; }
+        public HealthCareUser User { get; set; }
+
         public string SearchText { get; set; }
 
         protected override async Task OnInitializedAsync()
         {
             try
             {
+                User = await UserService.GetUserById(1);
                 Doctors = (await DoctorService.GetAllDoctors()).OrderBy(x=> x.WorkExperience).ToList();
             }
             catch

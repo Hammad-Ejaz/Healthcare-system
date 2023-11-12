@@ -10,6 +10,9 @@ namespace HealthCare.Service.IService
     {
         List<ExceptionLog> GetList();
         Task AddDataToList(string data);
+        List<PrescriptionViewModel> Get1();
+        List<HealthCareChat> Get();
         Task<List<string>> GetDataList();
+        List<MessageList> GetMessageListByEmpId(string empId, string currentChatEmpId, bool isUnseenMsgs);
     }
 }

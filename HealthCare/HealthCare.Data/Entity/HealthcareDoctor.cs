@@ -5,6 +5,11 @@ namespace HealthCare.Data.Entity
 {
     public partial class HealthcareDoctor
     {
+        public HealthcareDoctor()
+        {
+            HealthCarePrescriptions = new HashSet<HealthCarePrescription>();
+        }
+
         public int Id { get; set; }
         public int? UserId { get; set; }
         public DateTime? CreatedAt { get; set; }
@@ -16,5 +21,6 @@ namespace HealthCare.Data.Entity
 
         public virtual HealthCareDoctorSpecialization Specialization { get; set; }
         public virtual HealthCareUser User { get; set; }
+        public virtual ICollection<HealthCarePrescription> HealthCarePrescriptions { get; set; }
     }
 }

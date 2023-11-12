@@ -13,6 +13,7 @@ namespace HealthCare.UI.Shared
         [Parameter]
         public bool Login { get; set; } = false;
        
+        public bool Visible {  get; set; } = false;
         protected override async Task OnInitializedAsync()
         {
             Authenticate.OnLoginChanged += LoginChanged;
@@ -30,9 +31,10 @@ namespace HealthCare.UI.Shared
             });
         }
 
-        protected async Task GoBack()
+        protected async Task Visiblity()
         {
-            await JSRuntime.InvokeVoidAsync("history.back");
+            Visible = !Visible;
+//            await JSRuntime.InvokeVoidAsync("history.back");
         }
     }
 }

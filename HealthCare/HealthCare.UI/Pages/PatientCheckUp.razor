@@ -1,5 +1,9 @@
 ﻿@page "/patientCheckUp/{DoctorId}"
 @using Syncfusion.Blazor.Buttons
+@using Syncfusion.Blazor.Inputs
+@using Syncfusion.Blazor.Navigations
+@using Syncfusion.Blazor.Popups
+@using HealthCare.ViewModels;
 
 <style>
     .custom-button {
@@ -11,8 +15,8 @@
 
 </style>
 
-
-
+<div class="col-12 m-0 p-0 row">
+    <div class="col-3 m-0 p-1">
 <div>
     @if(Doctor != null)
     {
@@ -27,7 +31,7 @@
 
             <label><strong>Prescription:</strong></label>
             <br/> 
-            <SfButton class="custom-button">
+            <SfButton class="custom-button" OnClick="OpenPrescriptionDialoge">
                     <img class="presc-image" src="/Icons/prescription.png" alt="">
             </SfButton>    
             <br/>
@@ -36,3 +40,60 @@
         </div>
     </div>
 </div>
+
+<HealthCare.UI.Pages.Components.PatientCard User="User"></HealthCare.UI.Pages.Components.PatientCard>
+</div>
+
+<div class="col-9" >
+
+@if(Chat != null && Lists != null)
+{
+    <HealthCare.UI.Pages.Components.MessengerComponents.CurrentChatComponent UserId="1" message="@Chat[0]" currentChat="@Lists[0]" LoadMessageChatBox="@LoadMessagesChat"></HealthCare.UI.Pages.Components.MessengerComponents.CurrentChatComponent>
+}
+
+
+
+<SfDialog Width="1000px" ShowCloseIcon="true" IsModal="true" @bind-Visible="@IsDetailsDialogOpened">
+    <DialogTemplates>
+        <Header> Prescription Detail </Header>
+        <Content>
+            <div class="col-lg-12">
+                <SfGrid ID="PrescriptionGrid" DataSource="Prescription" @ref="PrescriptionGrid" Height="600" Width="100%"
+                        AllowPaging="false" AllowSorting="true"
+                        AllowExcelExport="true" AllowFiltering="true">
+                    <GridPageSettings PageSize="10"></GridPageSettings>
+                    <GridFilterSettings Type="Syncfusion.Blazor.Grids.FilterType.Excel"></GridFilterSettings>
+                    <GridEvents TValue="PrescriptionViewModel" OnToolbarClick="ToolbarClickHandler"></GridEvents>
+                    <SfToolbar>
+                        <ToolbarItems>
+                            <ToolbarItem Type="ItemType.Input" Align="ItemAlign.Left">
+                                <Template>
+                                    <SfButton class="camco-btn camco-btn-md btn-download-excel" title="Excel Export" @onclick="ExcelExport"></SfButton>
+                                </Template>
+                            </ToolbarItem>
+                            <ToolbarItem Type="ItemType.Input" Align="ItemAlign.Right">
+                                <Template>
+                                    <SfTextBox Placeholder="Search" ValueChange="OnSearch"></SfTextBox>
+                                </Template>
+                            </ToolbarItem>
+                        </ToolbarItems>
+                    </SfToolbar>
+                    <GridColumns>
+                        <GridColumn Field=@nameof(PrescriptionViewModel.Id) HeaderText="ID" Width="80"></GridColumn>
+                        <GridColumn Field=@nameof(PrescriptionViewModel.PatientId) HeaderText="Shipment Name" Width="150"></GridColumn>
+                        <GridColumn Field=@nameof(PrescriptionViewModel.DoctorId) HeaderText="Customer" Width="120"></GridColumn>
+                        <GridColumn Field=@nameof(PrescriptionViewModel.DatePrescribed) HeaderText="Ship Date" Width="150"></GridColumn>
+                    </GridColumns>
+                </SfGrid>
+            </div>
+        </Content>
+    </DialogTemplates>
+    <Syncfusion.Blazor.Popups.DialogButtons>
+        <Syncfusion.Blazor.Popups.DialogButton title="Click to Save" CssClass="camco-btn camco-btn-md btn-save"/>
+        <Syncfusion.Blazor.Popups.DialogButton title="Click to Close" CssClass="camco-btn camco-btn-md btn-close" />
+    </Syncfusion.Blazor.Popups.DialogButtons>
+</SfDialog>
+</div>
+</div>
+
+

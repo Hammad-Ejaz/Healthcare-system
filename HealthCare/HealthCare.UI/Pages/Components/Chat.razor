@@ -1,10 +1,7 @@
-﻿@*
-
-
-<div class="col-12 m-0 p-0 row border-bottom" style=" border-width: 2px !important; border-color: lightgray !important">
+﻿<div class="col-12 m-0 p-0 row border-bottom" style=" border-width: 2px !important; border-color: lightgray !important">
     <div class="col-4 m-0 p-1 row">
         <div class="col-2 m-0 p-0">
-            <div class="col-12 m-0 p-0 mt-1 container4 text-white" style="border-radius: 50%; height: 57px; width: 57px; display: inline-block; margin-right: 2px; background: radial-gradient( circle at 0% 100%, #f1f1f4, @currentChat.ProfileCircleColor ); cursor: pointer; ">
+            <div class="col-12 m-0 p-0 mt-1 container4 text-white" style="border-radius: 50%; height: 57px; width: 57px; display: inline-block; margin-right: 2px; background: radial-gradient( circle at 0% 100%, #f1f1f4); cursor: pointer; ">
                 <p style="font-size:20px;font-weight:bold"></p>
             </div>
         </div>
@@ -18,20 +15,14 @@
                 </div>
             </div>
             <div class="col-12 m-0 p-0 row" style="color:darkgray">
-                @if (currentChat.EmployeeStatusBubble == "statusWorkingRemotely")
-                {
-                    <div class="statusWorking align-middle m-0 p-0 container4"><p>R</p></div><span class="pl-2"></span>
-                }
-                else
-                {
-                    <div class="@currentChat.EmployeeStatusBubble align-middle m-0 p-0"></div><span class="pl-2"></span>
-                }
-
+                    <div class="statusWorking align-middle m-0 p-0 container4"><p>R</p></div><span class="pl-2"></span>             
             </div>
         </div>
     </div>
     <div class="col-8 m-0 p-0"></div>
 </div>
+
+@*
 <div class="col-12 m-0 p-0" style="font-size:20px">
     @if (IsImageUpload)
     {

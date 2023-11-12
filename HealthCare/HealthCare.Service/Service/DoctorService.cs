@@ -40,9 +40,9 @@ namespace HealthCare.Service.Service
                     {
                         DoctorId = doctor.Id,
                         UserId = users.Where(x => x.Id == doctor.UserId).Select(x => x.Id).FirstOrDefault(),
-                        Username = users.Where(x => x.Id == doctor.UserId).Select(x => x.Username).FirstOrDefault(),
+                        Username = users.Where(x => x.Id == doctor.UserId).Select(x => x.Username).FirstOrDefault(),                    
                         Specialization = specialization.Where(x => x.Id == doctor.SpecializationId).Select(x => x.Specialization).FirstOrDefault(),
-                        WorkExperience = doctor.WorkExperience
+                        WorkExperience = doctor.WorkExperience                    
                     });
             }
             return doctorList;

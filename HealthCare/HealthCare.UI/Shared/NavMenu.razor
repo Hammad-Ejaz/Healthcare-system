@@ -1,4 +1,5 @@
-﻿<nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-dark">
+﻿@using Syncfusion.Blazor.Buttons
+<nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-dark">
     <NavLink class="navbar-brand" href="/">HEALTH CARE</NavLink>
     <button class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,7 +23,7 @@
                 }
                 else
                 {   
-                    <NavLink class="nav-link text-white" @onclick="GoBack" style="cursor:pointer">
+                    <NavLink class="nav-link text-white" @onclick="Visiblity" style="cursor:pointer">
                             <img src="/Icons//doctor.png" class="profile-image" alt="Profile Picture">
                     </NavLink>
                 }
@@ -30,3 +31,9 @@
         </ul>
     </div>
 </nav>
+
+<div id="profileMenu" class="profile-menu" style="@(Visible ? "visibility:visible": "visibility:hidden" )">
+    <SfButton class="menu-button">Your Profile</SfButton>
+    <SfButton class="menu-button">History</SfButton>
+    <SfButton class="menu-button">Logout</SfButton>
+</div>

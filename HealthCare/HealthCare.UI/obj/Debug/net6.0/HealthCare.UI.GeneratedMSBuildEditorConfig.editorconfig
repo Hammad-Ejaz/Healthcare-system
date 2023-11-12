@@ -32,6 +32,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xEb2N0b3JDYXJkcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/My_5th_Semester/se/Project/Healthcare-system/HealthCare/HealthCare.UI/Pages/Components/MessengerComponents/CurrentChatComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xNZXNzZW5nZXJDb21wb25lbnRzXEN1cnJlbnRDaGF0Q29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My_5th_Semester/se/Project/Healthcare-system/HealthCare/HealthCare.UI/Pages/Components/PatientCard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50c1xQYXRpZW50Q2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/My_5th_Semester/se/Project/Healthcare-system/HealthCare/HealthCare.UI/Pages/DoctorSelection.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRG9jdG9yU2VsZWN0aW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 

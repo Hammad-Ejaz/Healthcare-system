@@ -9,5 +9,6 @@ namespace HealthCare.Repository.IRepository
     public interface IEmployeeRepository
     {
         List<ExceptionLog> GetList();
+        List<HealthCareChat> Get();
     }
 }

@@ -1,0 +1,242 @@
+﻿
+
+<div class="col-12 m-0 p-0 row border-bottom" style=" border-width: 2px !important; border-color: lightgray !important">
+    <div class="col-4 m-0 p-1 row">
+        <div class="col-2 m-0 p-0">
+            <div class="col-12 m-0 p-0 mt-1 container4 text-white" style="border-radius: 50%; height: 57px; width: 57px; background-color: @currentChat.ProfileCircleColor; display: inline-block; margin-right: 2px; background: radial-gradient( circle at 0% 100%, #f1f1f4, @currentChat.ProfileCircleColor ); cursor: pointer; ">
+                <p style="font-size:20px;font-weight:bold">@currentChat.ProfileWords</p>
+            </div>
+        </div>
+        <div class="col-10 m-0 p-0">
+            <div class="col-12 m-0 p-0 row">
+                <div class="col-8 m-0 p-0 textHidden1">
+                    <p class="p-0 m-0 pt-1 font-weight-bold" style="font-size:20px">@currentChat.ChatEmpName</p>
+                </div>
+                <div class="col-4 m-0 p-0">
+                    <label class="m-0 p-0 pt-1 float-right"></label>
+                </div>
+            </div>
+            <div class="col-12 m-0 p-0 row" style="color:darkgray">
+                @if (currentChat.EmployeeStatusBubble == "statusWorkingRemotely")
+                {
+                    <div class="statusWorking align-middle m-0 p-0 container4"><p>R</p></div><span class="pl-2">@currentChat.EmployeeStatus</span>
+                }
+                else
+                {
+                    <div class="@currentChat.EmployeeStatusBubble align-middle m-0 p-0"></div><span class="pl-2">@currentChat.EmployeeStatus</span>
+                }
+
+            </div>
+        </div>
+    </div>
+    <div class="col-8 m-0 p-0"></div>
+</div>
+<div class="col-12 m-0 p-0" style="font-size:20px">
+    @if (IsImageUpload)
+    {
+        <div class="col-12 m-0 p-1" style=" max-height: 330px; overflow-y: auto; height: 330px; display: flex; flex-direction: column-reverse;">
+            <div class="col-12 m-0 p-1">
+                @foreach (var msg in currentChat.MessagesRecord)
+                {
+                    if (msg.FromEmpId == int.Parse(UserId))
+                    {
+                        <div class="col-12 m-0 p-0 row">
+                            <div class="col-6 m-0 p-0"></div>
+                            <div class="col-6 m-0 p-0 row">
+                                <div class="col-6 m-0 p-0 row">
+                                    <div class="col-5 m-0 p-0 "> 
+                                         <label class="m-0 p-0 float-left " style="font-size:12px;color: darkgray">"SENT : " + @msg.StringEnteredDate</label>
+                                    </div>
+                                     <div class="col-6 m-0 p-0 "> 
+                                             <label class="m-0 p-0 float-left" style="font-size: 12px; color: darkgray">@msg.StringSeenDate</label>
+                                     </div>
+                                </div>
+                                 <div class="col-6 m-0 p-0">  </div>
+                                @if (!String.IsNullOrEmpty(@msg.Message))
+                                {
+                                    <div class="col-12 m-0 p-2" style="background-color:@msg.Color;word-wrap: break-word;border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;">
+                                        @msg.Message
+                                    </div>
+                                }
+                                @if (!String.IsNullOrEmpty(msg.ImageFile))
+                                {
+
+                                    <div class="col-12 m-0 p-0">
+                                        <img class="w-100" style="border-top-left-radius:25px;border-top-right-radius:25px;border-bottom-left-radius:25px;" src="@(fileManager.ConvertPathToBase64(msg.ImageFile))" />
+                                    </div>
+                                }
+                                @*@if (!String.IsNullOrEmpty(msg.DocumentFile))
+                                    {
+                                        <div class="col-12 m-0 p-0" style="background-color:@msg.Color;word-wrap: break-word">
+                                            @msg.DocumentFile
+                                        </div>
+                                    }*@
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="col-12 m-0 p-0 row">
+                            <div class="col-7 m-0 p-0 row">
+                                <div class="col-1 m-0 p-0">
+                                    <div class="col-12 m-0 p-0 mt-1 container4 text-white" style="border-radius: 50%; height: 57px; width: 57px; background-color: @currentChat.ProfileCircleColor; display: inline-block; margin-right: 2px; background: radial-gradient( circle at 0% 100%, #f1f1f4, @currentChat.ProfileCircleColor ); cursor: pointer; ">
+                                        <p style="font-size:20px;font-weight:bold">@currentChat.ProfileWords</p>
+                                    </div>
+                                </div>
+                                <div class="col-11 m-0 p-1 row">
+                                    <div class="col-12 m-0 p-0">
+                                        <label class="m-0 p-0 float-left" style="font-size: 16px; color: darkgray">@msg.NameAndEnteredDate</label>
+                                    </div>
+                                    @if (!String.IsNullOrEmpty(msg.Message))
+                                    {
+                                        <div class="col-12 m-0 p-2" style="background-color:@msg.Color;word-wrap: break-word;border-bottom-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;">
+                                            @msg.Message
+                                        </div>
+                                    }
+                                    @if (!String.IsNullOrEmpty(msg.ImageFile))
+                                    {
+                                        <div class="col-12 m-0 p-0">
+                                            <img class="w-100" style="border-bottom-right-radius:25px;border-top-right-radius:25px;border-bottom-left-radius:25px;" src="@(fileManager.ConvertPathToBase64(msg.ImageFile))" />
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                            <div class="col-5 m-0 p-0"></div>
+                        </div>
+                    }
+
+                }
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="col-12 m-0 p-1" id="#ScrollDiv" style=" max-height: 530px; overflow-y: auto; height: 560px; display: flex; flex-direction: column-reverse;">
+            <div class="col-12 m-0 p-1">
+                @foreach (var msg in currentChat.MessagesRecord)
+                {
+                    if (msg.FromEmpId == int.Parse(UserId))
+                    {
+                        <div class="col-12 m-0 p-0 row">
+                            <div class="col-6 m-0 p-0"></div>
+                            <div class="col-6 m-0 p-0 row">
+                               <div class="col-6 m-0 p-0 row">
+                                    <div class="col-5 m-0 p-0 "> 
+                                         <label class="m-0 p-0 float-left " style="font-size:12px;color: darkgray">SENT : @msg.StringEnteredDate</label>
+                                    </div>
+                                     <div class="col-6 m-0 p-0 "> 
+                                             <label class="m-0 p-0 float-left" style="font-size: 12px; color: darkgray">@msg.StringSeenDate</label>
+                                     </div>
+                                </div>
+                                 <div class="col-6 m-0 p-0">  </div>
+                                @if (!String.IsNullOrEmpty(@msg.Message))
+                                {
+                                    <div class="col-12 m-0 p-2" style="background-color:@msg.Color;word-wrap: break-word;border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;">
+                                        @msg.Message
+                                    </div>
+                                }
+                                @if (!String.IsNullOrEmpty(msg.ImageFile))
+                                {
+                                    <div class="col-12 m-0 p-0">
+                                        <img class="w-100" style="border-top-left-radius:25px;border-top-right-radius:25px;border-bottom-left-radius:25px;" src="@(fileManager.ConvertPathToBase64(msg.ImageFile))" />
+                                    </div>
+                                }
+                                @*@if (!String.IsNullOrEmpty(msg.DocumentFile))
+        {
+            <div class="col-12 m-0 p-0" style="background-color:@msg.Color;word-wrap: break-word">
+                @msg.DocumentFile
+            </div>
+        }*@
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="col-12 m-0 p-0 row">
+                            <div class="col-7 m-0 p-0 row">
+                                <div class="col-1 m-0 p-0">
+                                    <div class="col-12 m-0 p-0 mt-1 container4 text-white" style="border-radius: 50%; height: 57px; width: 57px; background-color: @currentChat.ProfileCircleColor; display: inline-block; margin-right: 2px; background: radial-gradient( circle at 0% 100%, #f1f1f4, @currentChat.ProfileCircleColor ); cursor: pointer; ">
+                                        <p style="font-size:20px;font-weight:bold">@currentChat.ProfileWords</p>
+                                    </div>
+                                </div>
+                                <div class="col-11 m-0 p-1 row">
+                                    <div class="col-12 m-0 p-0">
+                                        <label class="m-0 p-0 float-left" style="font-size: 16px; color: darkgray">@msg.NameAndEnteredDate</label>
+                                    </div>
+                                    @if (!String.IsNullOrEmpty(msg.Message))
+                                    {
+                                        <div class="col-12 m-0 p-2" style="background-color:@msg.Color;word-wrap: break-word;border-bottom-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;">
+                                            @msg.Message
+                                        </div>
+                                    }
+                                    @if (!String.IsNullOrEmpty(msg.ImageFile))
+                                    {
+
+                                        <div class="col-12 m-0 p-0">
+                                            <img class="w-100" style="border-bottom-right-radius:25px;border-top-right-radius:25px;border-bottom-left-radius:25px;" src="@(fileManager.ConvertPathToBase64(msg.ImageFile))" />
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                            <div class="col-5 m-0 p-0"></div>
+                        </div>
+                    }
+
+                }
+            </div>
+        </div>
+    }
+    <div class="col-12 m-0 p-0 row">
+        <div class="col-10 m-0 p-0 row">
+            <div class="col-12 m-0 p-2 ">
+                @if (IsImageUpload)
+                {
+                    <div class="col-12 m-0 p-0 row border-bottom border-dark pt-3" style="background-color: #fdff8f; border-top-left-radius: 25px; border-top-right-radius: 25px">
+                        @foreach (var path in imageList)
+                        {
+                            <div class="col-3 m-0 p-0">
+                                <div class="col-12 m-0 p-2">
+                                    <img style="height:200px;width:180px" src="@(fileManager.ConvertPathToBase64(path))" />
+                                    <span style="margin-bottom:-5px !important;cursor:pointer;" @onclick="() => RemoveImage(path)">
+                                        <i class="fa fa-times-circle-o m-0 p-0 deleteHoverIcon" style="opacity: 0.3;font-size:50px" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+                    <div class="col-12 m-0 p-0">
+                         <Syncfusion.Blazor.Inputs.SfTextBox @ref="msgtxtbox" Placeholder="TYPE A MESSAGE" @onkeyup="(args) => Keydown(args)"  CssClass="conversion mandatory" ShowClearButton="false" @bind-Value="@message.Message"></Syncfusion.Blazor.Inputs.SfTextBox>
+                    </div>
+                }
+                else
+                {
+                    <div class="col-12 m-0 p-0 pt-3">
+                        <Syncfusion.Blazor.Inputs.SfTextBox @ref="msgtxtbox" Placeholder="TYPE A MESSAGE" @onkeyup="(args) => Keydown(args)" CssClass="conversion mandatory" ShowClearButton="false" @bind-Value="@message.Message"></Syncfusion.Blazor.Inputs.SfTextBox>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="col-2 m-0 p-0 row">
+            @if (IsImageUpload)
+            {
+                <div class="col-12 m-0 p-0" style="height:210px"></div>
+            }
+            <div class="col-6 m-0 p-0">
+                <div class="col-12 m-0 pt-0 pr-0 pl-0 p-1">
+                       <label class="p-0 m-0 font-weight-bold" style="font-size: 20px; color: black;">PICTURE:</label>
+                       <br />
+                       <Microsoft.AspNetCore.Components.Forms.InputFile multiple="true" style="width:110px !important;font-size:16px" id="input1" class="hidden" title="CHOOSE PICTURE" OnChange="OnInputFileChange"></Microsoft.AspNetCore.Components.Forms.InputFile>
+                </div>
+             </div>
+            <div class="col-6 m-0 p-0">
+                <div class="col-12 m-0 pt-0 pr-0 pl-0 p-1 pt-4">
+                     <button class="btn no-print btn-success font-weight-bold w-100 text-center" style="justify-content: center;font-size:20px; height: 40px;" @onclick="() => SendMsg()">
+                        SEND
+                        <i class="fa fa-paper-plane m-0 p-0" style="font-size:20px;" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

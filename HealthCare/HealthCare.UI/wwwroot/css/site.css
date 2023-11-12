@@ -8,6 +8,31 @@ html, body {
 a, .btn-link {
     color: #0366d6;
 }
+.profile-menu {
+    position: fixed;
+    bottom: 0;
+    top: 07%;
+    left: 98%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: inline-block;
+    z-index: 10;
+    height: fit-content;
+    width: fit-content;
+}
+/* Style the menu buttons */
+    .profile-menu .menu-button {
+        background-color: transparent;
+        border: none; /* Optional: This removes the button border */
+        color: #000; /* Set the text color as needed */
+    }
+
+        .profile-menu .menu-button:hover {
+            background-color: dodgerblue; /* Set the hover background color as needed */
+        }
+
 .card {
     border-radius: 0.5rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);

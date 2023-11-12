@@ -1,26 +1,26 @@
 /* _content/HealthCare.UI/Pages/Index.razor.rz.scp.css */
-.cardhover[b-23uopmquzf] {
+.cardhover[b-pzbfhscs16] {
     border-color: gray;
     transition: .5s;
     box-shadow: rgba(128, 128, 128, 0.43) 3px 3px;
     color: black;
 }
 
-.cardhover:hover[b-23uopmquzf] {
+.cardhover:hover[b-pzbfhscs16] {
     border-color: blue;
     transition: .7s;
     box-shadow: rgba(128, 128, 128, 1) 5px 5px;
     color: blue;
 }
 
-.link-outline-primary[b-23uopmquzf] {
+.link-outline-primary[b-pzbfhscs16] {
     color: blue;
     border-color: blue;
     border: 2px solid blue;
     transition: .5s;
 }
 
-.link-outline-primary:hover[b-23uopmquzf] {
+.link-outline-primary:hover[b-pzbfhscs16] {
     color: white;
     background-color: #1b6ec2;
     border-color: blue;
@@ -29,19 +29,19 @@
     font-weight: bold;
 }
 
-.e-grid .e-headercell[b-23uopmquzf] {
+.e-grid .e-headercell[b-pzbfhscs16] {
     background-color: #24202C;
 }
 
-.e-grid .e-altrow[b-23uopmquzf] {
+.e-grid .e-altrow[b-pzbfhscs16] {
     background-color: #C6EEFF;
 }
 
-.e-grid .e-detailindentcell[b-23uopmquzf] {
+.e-grid .e-detailindentcell[b-pzbfhscs16] {
     background-color: #EB711D;
 }
 
-.e-grid e-detailrowexpand[b-23uopmquzf] {
+.e-grid e-detailrowexpand[b-pzbfhscs16] {
     background-color: #EB711D;
 }
 /* _content/HealthCare.UI/Shared/MainLayout.razor.rz.scp.css */

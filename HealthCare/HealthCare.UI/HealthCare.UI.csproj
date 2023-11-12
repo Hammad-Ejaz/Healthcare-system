@@ -7,6 +7,10 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <None Remove="Pages\Components\PatientCard.razor.cs~RFa570312.TMP" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <PackageReference Include="Append.Blazor.Printing" Version="1.1.0" />
 	  <PackageReference Include="Blazored.Toast" Version="3.2.2" />
 	  <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.16" />

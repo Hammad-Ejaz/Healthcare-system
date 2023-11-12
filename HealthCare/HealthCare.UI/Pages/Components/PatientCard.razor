@@ -1,0 +1,29 @@
+﻿<div class="doctor-card">
+    <div class="doctor-container">
+        <div>
+            <img src="/Icons/doctor.png" alt="Doctor Image" style="width: 200px; height: 200px;" />
+        </div>
+        <div class="doctor-info">
+            @if (User != null)
+            {
+
+                <label><strong>Patient Name: </strong></label>
+                <p>@User.Username</p>
+
+                <label><strong>Age: </strong></label>
+                <p>@User.Age</p>
+
+                <label><strong>Gender: </strong></label>
+                <p>@User.Gender</p>
+            }
+        </div>
+    </div>
+
+    <div class="availability-container">
+        <div>
+            <label style="float: left; width: 100%; text-align: left;">Appointment Date:</label>
+            <label style="float: left; width: 100%; text-align: left;">Time: 10:00 AM - 12:00 PM</label>
+        </div>
+        <SfButton class="book-now-btn" style="width:180px" @onclick="@(() => _navigationManager.NavigateTo("/patientCheckUp/" + "1"))">Check Up</SfButton>
+    </div>
+</div>

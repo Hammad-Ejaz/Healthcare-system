@@ -1,4 +1,5 @@
 ﻿using HealthCare.Data.Entity;
+using HealthCare.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,8 @@ namespace HealthCare.Service.IService
     public interface IUserService
     {
         Task<int> AddUser(HealthCareUser user);
+        Task<HealthCareUser> GetUserById(int UserId);
         Task<HealthCareUser> IsUserExits(HealthCareUser user);
+        Task<UserViewModel> GetUserViewModelById(int UserId);
     }
 }

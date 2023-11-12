@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace HealthCare.UI.NewF
+namespace HealthCare.ViewModels
 {
-    public partial class PrescriptionTable
+    public  class PrescriptionViewModel
     {
-        public int PrescriptionId { get; set; }
-        public int? PatientUserId { get; set; }
-        public int? ProviderId { get; set; }
+        public int Id { get; set; }
+        public int? PatientId { get; set; }
+        public int? DoctorId { get; set; }
         public DateTime? DatePrescribed { get; set; }
         public string Medication { get; set; }
         public string Dosage { get; set; }
@@ -15,8 +18,5 @@ namespace HealthCare.UI.NewF
         public DateTime? CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
         public bool? Active { get; set; }
-
-        public virtual UserTable PatientUser { get; set; }
-        public virtual HealthcareProviderTable Provider { get; set; }
     }
 }
