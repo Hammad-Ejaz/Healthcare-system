@@ -63,10 +63,10 @@ namespace HealthCare.Repository.Repository
         }
         public virtual IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate)
         {
-            using (var context = _contextFactory.CreateDbContext())
-            {
-                return context.Set<TEntity>().Where(predicate);
-            }
+            //using (var context =)
+            //{
+                return _contextFactory.CreateDbContext().Set<TEntity>().Where(predicate);
+            //}
         }
 
         public virtual async Task<IEnumerable<TEntity>> GetListAsync()
@@ -167,7 +167,6 @@ namespace HealthCare.Repository.Repository
                     context.Entry(local).State = EntityState.Detached;
 
                 context.Entry(entity).State = EntityState.Modified;
-
                 context.SaveChanges();
             }           
         }

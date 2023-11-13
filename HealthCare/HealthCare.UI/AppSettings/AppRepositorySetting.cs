@@ -14,6 +14,7 @@ namespace HealthCare.UI.AppSettings
             services.AddTransient<IEmployeeRepository, EmployeeRepository>();
             services.AddTransient<IDoctorRepository, DoctorRepository>();
             services.AddTransient<IUserRepository, UserRepository>();
+            services.AddTransient<IPrescriptionRepository, PrescriptionRepository>();
             return services;
         }
     }

@@ -1,0 +1,56 @@
+﻿@page "/doctorDashBoard/{UserId}"
+
+@using Syncfusion.Blazor.Inputs
+
+<style>
+
+    .row {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+    }
+
+</style>
+
+<div class="col-12 navbar navbar-expand screenLabel position-fixed top-row m-0 p-0 screenLabelStyle" style="margin-top: 55px !important;">
+    <div class="col-12 m-0 p-0" style="font-size: 18px; text-align: left;"><span style="float: left">Me</span></div>
+</div>
+
+
+<div class="container-fluid p-3">
+    <div class="header">
+        <h3>Find your doctor</h3>
+    </div>
+    <div class="search-box">
+        <SfTextBox placeholder="Search for a doctor" @bind-Value="@SearchText" @onchange="@(() => DoctorSearch())" />
+    </div>
+    <div class=" row">
+        @if (User != null)
+        {
+            @for (int i = 0; i < User.Count(); i++)
+            {
+                <div>
+                    <HealthCare.UI.Pages.Components.PatientCard User="User[i]"></HealthCare.UI.Pages.Components.PatientCard>
+                </div>
+            }
+            @for (int i = 0; i < User.Count(); i++)
+            {
+                <div>
+                    <HealthCare.UI.Pages.Components.PatientCard User="User[i]"></HealthCare.UI.Pages.Components.PatientCard>
+                </div>
+            }
+            @for (int i = 0; i < User.Count(); i++)
+            {
+                <div>
+                    <HealthCare.UI.Pages.Components.PatientCard User="User[i]"></HealthCare.UI.Pages.Components.PatientCard>
+                </div>
+            }
+            @for (int i = 0; i < User.Count(); i++)
+            {
+                <div>
+                    <HealthCare.UI.Pages.Components.PatientCard User="User[i]"></HealthCare.UI.Pages.Components.PatientCard>
+                </div>
+            }
+        }
+    </div>
+</div>

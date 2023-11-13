@@ -51,9 +51,7 @@
     <HealthCare.UI.Pages.Components.MessengerComponents.CurrentChatComponent UserId="1" message="@Chat[0]" currentChat="@Lists[0]" LoadMessageChatBox="@LoadMessagesChat"></HealthCare.UI.Pages.Components.MessengerComponents.CurrentChatComponent>
 }
 
-
-
-<SfDialog Width="1000px" ShowCloseIcon="true" IsModal="true" @bind-Visible="@IsDetailsDialogOpened">
+<SfDialog Width="60%" ShowCloseIcon="true" IsModal="true" @bind-Visible="@IsDetailsDialogOpened">
     <DialogTemplates>
         <Header> Prescription Detail </Header>
         <Content>
@@ -64,11 +62,11 @@
                     <GridPageSettings PageSize="10"></GridPageSettings>
                     <GridFilterSettings Type="Syncfusion.Blazor.Grids.FilterType.Excel"></GridFilterSettings>
                     <GridEvents TValue="PrescriptionViewModel" OnToolbarClick="ToolbarClickHandler"></GridEvents>
-                    <SfToolbar>
+                    <SfToolbar Height="5">
                         <ToolbarItems>
                             <ToolbarItem Type="ItemType.Input" Align="ItemAlign.Left">
                                 <Template>
-                                    <SfButton class="camco-btn camco-btn-md btn-download-excel" title="Excel Export" @onclick="ExcelExport"></SfButton>
+                                            <SfButton CssClass="healthCare-btn" @onclick="ExcelExport" style="text-align: center; background-color: dodgerblue; color: white;">Excel Export</SfButton>
                                 </Template>
                             </ToolbarItem>
                             <ToolbarItem Type="ItemType.Input" Align="ItemAlign.Right">
@@ -79,18 +77,18 @@
                         </ToolbarItems>
                     </SfToolbar>
                     <GridColumns>
-                        <GridColumn Field=@nameof(PrescriptionViewModel.Id) HeaderText="ID" Width="80"></GridColumn>
-                        <GridColumn Field=@nameof(PrescriptionViewModel.PatientId) HeaderText="Shipment Name" Width="150"></GridColumn>
-                        <GridColumn Field=@nameof(PrescriptionViewModel.DoctorId) HeaderText="Customer" Width="120"></GridColumn>
-                        <GridColumn Field=@nameof(PrescriptionViewModel.DatePrescribed) HeaderText="Ship Date" Width="150"></GridColumn>
+                        <GridColumn Field=@nameof(PrescriptionViewModel.Id) HeaderText="ID"></GridColumn>
+                        <GridColumn Field=@nameof(PrescriptionViewModel.PatientId) HeaderText="Shipment Name"></GridColumn>
+                        <GridColumn Field=@nameof(PrescriptionViewModel.DoctorId) HeaderText="Customer"></GridColumn>
+                        <GridColumn Field=@nameof(PrescriptionViewModel.DatePrescribed) HeaderText="Ship Date" ></GridColumn>
                     </GridColumns>
                 </SfGrid>
             </div>
         </Content>
     </DialogTemplates>
     <Syncfusion.Blazor.Popups.DialogButtons>
-        <Syncfusion.Blazor.Popups.DialogButton title="Click to Save" CssClass="camco-btn camco-btn-md btn-save"/>
-        <Syncfusion.Blazor.Popups.DialogButton title="Click to Close" CssClass="camco-btn camco-btn-md btn-close" />
+                <Syncfusion.Blazor.Popups.DialogButton Content="Save" CssClass="healthCare-btn" style="text-align: center; background-color: dodgerblue; color: white;" />
+                <Syncfusion.Blazor.Popups.DialogButton Content="Close" CssClass="healthCare-btn" style="text-align: center; background-color: dodgerblue; color: white;" />
     </Syncfusion.Blazor.Popups.DialogButtons>
 </SfDialog>
 </div>

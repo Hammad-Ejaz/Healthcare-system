@@ -14,5 +14,9 @@ namespace HealthCare.Service.IService
         Task<HealthCareUser> GetUserById(int UserId);
         Task<HealthCareUser> IsUserExits(HealthCareUser user);
         Task<UserViewModel> GetUserViewModelById(int UserId);
+        Task<HealthCareUser> GetUserByEmail(string Email);
+        void UpdateUser(HealthCareUser user);
+        Task<List<UserViewModel>> GetUserViewModelList();
+        Task<List<UserViewModel>> GetUsersBySearchText(string searchText);
     }
 }

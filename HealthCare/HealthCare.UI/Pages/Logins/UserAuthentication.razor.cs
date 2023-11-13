@@ -64,7 +64,7 @@ namespace HealthCare.UI.Pages.Logins
                     }
                     else
                     {
-                        NavigationManager.NavigateTo("/patientDashboard");
+                        NavigationManager.NavigateTo("/doctorDashboard/" + user.Id);
                     }
                     Authenticate.IsLogin = true;
                     ToastService.ShowSuccess("You are Login Successfully!", "Congratulation");                    

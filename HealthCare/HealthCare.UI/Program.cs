@@ -19,6 +19,7 @@ builder.Services.AddDbContextFactory<CamcoDbContext>(options => options.UseSqlSe
 builder.Services.AddDbContext<CamcoDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), o => o.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery)), ServiceLifetime.Singleton);
 
 
+
 //configure Identity
 
 builder.Services.Configure<CookiePolicyOptions>(options =>

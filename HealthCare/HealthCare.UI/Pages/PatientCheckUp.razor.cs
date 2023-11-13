@@ -89,15 +89,13 @@ namespace HealthCare.UI.Pages
                 Lists = s.GetMessageListByEmpId(DoctorId, "2", false);
                 Lists.Add(new MessageList()
                 {
-       Id = 10,
-       ChatEmpName = "Hammad",
-       ChatEmpId = 1,
-       LastEnteredDate = DateTime.Now,
-       IsReply = false,
-       Message = "TATTI KHA LA"
-      });
-
-
+                   Id = 10,
+                   ChatEmpName = "Hammad",
+                   ChatEmpId = 1,
+                   LastEnteredDate = DateTime.Now,
+                   IsReply = false,
+                   Message = "TATTI KHA LA"
+                });
 
                 //if (randomLightColorList.Count > 0)
                 //{

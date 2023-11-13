@@ -6,6 +6,10 @@
 
   <ItemGroup>
     <PackageReference Include="BlazorDownloadFile" Version="2.4.0.2" />
+    <PackageReference Include="Google.Apis" Version="1.63.0" />
+    <PackageReference Include="Google.Apis.Auth" Version="1.63.0" />
+    <PackageReference Include="Google.Apis.Core" Version="1.63.0" />
+    <PackageReference Include="Google.Apis.Gmail.v1" Version="1.63.0.3231" />
     <PackageReference Include="iTextSharp" Version="5.5.13.3" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.16" />
     <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
