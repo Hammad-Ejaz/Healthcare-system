@@ -161,7 +161,7 @@ namespace HealthCare.UI.Pages.Components.MessengerComponents
                             }
                             message.IsSeen = false;
                         //    message.Id = MessengerService.AddMsgs(message);
-                          //  currentChat.MessagesRecord.Add(MessengerService.ConvertTimeClockMsgToMsg(message));
+                        //    currentChat.MessagesRecord.Add(MessengerService.ConvertTimeClockMsgToMsg(message));
                             message.Message = "";
                         }
                         imageList = new List<string>();
@@ -175,12 +175,14 @@ namespace HealthCare.UI.Pages.Components.MessengerComponents
                             message.Message = message.Message.ToUpper();
                         }
                         message.IsSeen = false;
-                     //   message.Id = MessengerService.AddMsgs(message);
-                      //  currentChat.MessagesRecord.Add(MessengerService.ConvertTimeClockMsgToMsg(message));
+                    //   message.Id = MessengerService.AddMsgs(message);
+                    //    currentChat.MessagesRecord.Add(MessengerService.ConvertTimeClockMsgToMsg(message));
                         message.Message = "";
+                    
+                        
                     }
-                    await LoadMessageChatBox.InvokeAsync(false);
                 }
+                    await LoadMessageChatBox.InvokeAsync(false);
 
             }
             catch (Exception ex)

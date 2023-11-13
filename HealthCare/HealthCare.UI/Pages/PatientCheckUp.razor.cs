@@ -81,12 +81,24 @@ namespace HealthCare.UI.Pages
 
 
 
-        protected async void LoadMessagesChat(bool isMessageSeen)
+        protected async Task LoadMessagesChat(bool isMessageSeen)
         {
             try
             {
                 HealthCareChat currentChat = Chat[0];
                 Lists = s.GetMessageListByEmpId(DoctorId, "2", false);
+                Lists.Add(new MessageList()
+                {
+       Id = 10,
+       ChatEmpName = "Hammad",
+       ChatEmpId = 1,
+       LastEnteredDate = DateTime.Now,
+       IsReply = false,
+       Message = "TATTI KHA LA"
+      });
+
+
+
                 //if (randomLightColorList.Count > 0)
                 //{
                 //    for (int i = 0; i < messagesList.Count; i++)
@@ -129,7 +141,7 @@ namespace HealthCare.UI.Pages
                 //    }
                 //}
 
-                InvokeAsync(StateHasChanged);
+                await InvokeAsync(StateHasChanged);
             }
             catch (Exception ex)
             {
