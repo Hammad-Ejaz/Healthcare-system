@@ -27,16 +27,16 @@ namespace HealthCare.UI.Pages.Components.MessengerComponents
         IToastService ToastService { get; set; }
         [Inject]
         IUserService EmployeeService { get; set; }
+        [Inject]
+        IChatService ChatService { get; set; }
         #endregion
         #region Properties
         [Parameter]
-        public string UserId { get; set; }
+        public int DoctorId { get; set; }
         [Parameter]
+        public int UserId { get; set; }
         public MessageList currentChat { get; set; }
-        [Parameter]
         public HealthCareChat message { get; set; }
-        [Parameter]
-        public EventCallback<bool> LoadMessageChatBox { get; set; }
         public bool IsImageUpload { get; set; }
         List<string> imageList = new List<string>();
         IReadOnlyList<IBrowserFile> selectedFiles;
@@ -45,12 +45,69 @@ namespace HealthCare.UI.Pages.Components.MessengerComponents
         #region Load Initials
         protected override async Task OnInitializedAsync()
         {
-            await Task.Delay(100);
+            message = new();
+            await LoadMessagesChat(false);
+
             await msgtxtbox.FocusIn();
         }
         public void FocusChatBox()
         {
             msgtxtbox.FocusIn();
+        }
+        protected async Task LoadMessagesChat(bool isMessageSeen)
+        {
+            try
+            {
+                currentChat = await ChatService.GetMessageListByUserIdAndDoctorId(UserId, DoctorId, isMessageSeen);
+
+                //if (randomLightColorList.Count > 0)
+                //{
+                //    for (int i = 0; i < messagesList.Count; i++)
+                //    {
+                //        if (i < randomDarkColorList.Count)
+                //        {
+                //            messagesList[i].ProfileCircleColor = randomDarkColorList[i];
+                //            messagesList[i].ProfileCircleLighterColor = randomLightColorList[i];
+                //        }
+                //    }
+                //}
+                //if (!IsColorsSelected)
+                //{
+                //    EmployeeProfile = MessengerService.GetEmployeeProfile(EmpId);
+                //    randomDarkColorList = MessengerService.GetRandomDarkColorList(messagesList.Count);
+                //    randomLightColorList = MessengerService.GetRandomLightColorList(messagesList.Count);
+                //    IsColorsSelected = true;
+                //}
+                //messagesList = messagesList.OrderByDescending(x => x.LastEnteredDate).ToList();
+                //if (!String.IsNullOrEmpty(SearchPeople))
+                //{
+                //    messagesList = messagesList.Where(x => x.ChatEmpName.Contains(SearchPeople.ToUpper())).OrderByDescending(x => x.LastEnteredDate).ToList();
+                //}
+                //if (!String.IsNullOrEmpty(SearchInputKeys))
+                //{
+                //    messagesList = messagesList.Where(x => x.ChatEmpName.Contains(SearchInputKeys.ToUpper())).OrderByDescending(x => x.LastEnteredDate).ToList();
+                //}
+
+                //if (currentChat != null && !String.IsNullOrEmpty(currentChat.ChatEmpId))
+                //{
+                //    var chat = messagesList.ToList().Where(x => x.ChatEmpId == currentChat.ChatEmpId).FirstOrDefault();
+                //    if (chat != null)
+                //    {
+                //        currentChat = chat;
+                //        if (isMessageSeen)
+                //        {
+                //            SeenMsgChat(currentChat);
+                //            aTimer.Dispose();
+                //        }
+                //    }
+                //}
+
+              //  await InvokeAsync(StateHasChanged);
+            }
+            catch (Exception ex)
+            {
+                //   await Error.HandleExceptionAsync(ex, "Messenger", "LoadMessagesChat");
+            }
         }
         #endregion
         #region File Upload and Remove Functions
@@ -87,7 +144,7 @@ namespace HealthCare.UI.Pages.Components.MessengerComponents
                     if (file.Size <= 512000)
                     {
                         // Set File Path Name
-                        var path = fileManager.GetServerFolderPath() + "EmployeeId_" + UserId + "_JarvisMessageImageFile_Time_" + DateTime.Now.Hour.ToString() + DateTime.Now.Minute.ToString() + DateTime.Now.Second.ToString() + DateTime.Now.Day.ToString() + DateTime.Now.Month.ToString() + DateTime.Now.Year.ToString() + "_FileName_" + file.Name;
+                        var path = fileManager.GetServerFolderPath() + "UserId_" + UserId + "_HealthCareMessageImageFile_Time_" + DateTime.Now.Hour.ToString() + DateTime.Now.Minute.ToString() + DateTime.Now.Second.ToString() + DateTime.Now.Day.ToString() + DateTime.Now.Month.ToString() + DateTime.Now.Year.ToString() + "_FileName_" + file.Name;
                         // Get file extension 
                         var ext = Path.GetExtension(path).ToLower();
                         // Check if file extension is image type else show error message
@@ -145,7 +202,7 @@ namespace HealthCare.UI.Pages.Components.MessengerComponents
         {
             try
             {
-                if ((!String.IsNullOrEmpty(message.Message) || IsImageUpload || !String.IsNullOrEmpty(message.DocumentFile)) && !String.IsNullOrEmpty(message.ToEmpId.ToString()) && !String.IsNullOrEmpty(message.FromEmpId.ToString()))
+                if (!String.IsNullOrEmpty(message.Message))
                 {
                     if (IsImageUpload)
                     {
@@ -160,8 +217,8 @@ namespace HealthCare.UI.Pages.Components.MessengerComponents
                                 message.Message = message.Message.ToUpper();
                             }
                             message.IsSeen = false;
-                        //    message.Id = MessengerService.AddMsgs(message);
-                        //    currentChat.MessagesRecord.Add(MessengerService.ConvertTimeClockMsgToMsg(message));
+                            message.Id = await ChatService.AddChat(message);
+                            currentChat.MessagesRecord.Add(await ChatService.ConvertTimeClockMsgToMsg(message));
                             message.Message = "";
                         }
                         imageList = new List<string>();
@@ -175,19 +232,16 @@ namespace HealthCare.UI.Pages.Components.MessengerComponents
                             message.Message = message.Message.ToUpper();
                         }
                         message.IsSeen = false;
-                    //   message.Id = MessengerService.AddMsgs(message);
-                    //    currentChat.MessagesRecord.Add(MessengerService.ConvertTimeClockMsgToMsg(message));
-                        message.Message = "";
-                    
-                        
+                        message.ToEmpId = UserId;
+                        message.FromEmpId = DoctorId;
+                        message.Id = await ChatService.AddChat(message);
+                        currentChat.MessagesRecord.Add(await ChatService.ConvertTimeClockMsgToMsg(message));
                     }
+                    await LoadMessagesChat(false);
                 }
-                    await LoadMessageChatBox.InvokeAsync(false);
-
             }
             catch (Exception ex)
             {
-           //     await Error.HandleExceptionAsync(ex, "CurrentChatCommponent", "SendMsg");
             }
         }
         #endregion

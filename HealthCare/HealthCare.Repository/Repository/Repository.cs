@@ -63,10 +63,7 @@ namespace HealthCare.Repository.Repository
         }
         public virtual IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate)
         {
-            //using (var context =)
-            //{
-                return _contextFactory.CreateDbContext().Set<TEntity>().Where(predicate);
-            //}
+             return _contextFactory.CreateDbContext().Set<TEntity>().Where(predicate);
         }
 
         public virtual async Task<IEnumerable<TEntity>> GetListAsync()

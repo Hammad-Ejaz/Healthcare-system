@@ -48,7 +48,7 @@
 
 @if(Chat != null && Lists != null)
 {
-    <HealthCare.UI.Pages.Components.MessengerComponents.CurrentChatComponent UserId="1" message="@Chat[0]" currentChat="@Lists[0]" LoadMessageChatBox="@LoadMessagesChat"></HealthCare.UI.Pages.Components.MessengerComponents.CurrentChatComponent>
+    <HealthCare.UI.Pages.Components.MessengerComponents.CurrentChatComponent UserId="1" DoctorId = "2"></HealthCare.UI.Pages.Components.MessengerComponents.CurrentChatComponent>
 }
 
 <SfDialog Width="60%" ShowCloseIcon="true" IsModal="true" @bind-Visible="@IsDetailsDialogOpened">

@@ -10,6 +10,7 @@ namespace CamcoTimeClock.Repository.UnitOfWork
         IGenderRepository Gender { get; }
         ISpecializationRepository Specialization { get; }
         IDoctorRepository Doctor { get; }
+        IChatRepository Chat { get; }
         int Commit();
         Task<int> CommitAsync();
     }

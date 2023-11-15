@@ -15,6 +15,7 @@ namespace HealthCare.UI.AppSettings
             services.AddTransient<IFileManager, FileManager>();
             services.AddTransient<IPrescriptionService, PrescriptionService>();
             services.AddTransient<IEmailService, EmailService>();
+            services.AddTransient<IChatService, ChatService>();
 
             return services;
         }

@@ -1,21 +1,26 @@
 ﻿
 
+@if(currentChat != null)
+{
+
 <div class="col-12 m-0 p-0 row border-bottom" style=" border-width: 2px !important; border-color: lightgray !important">
     <div class="col-4 m-0 p-1 row">
         <div class="col-2 m-0 p-0">
             <div class="col-12 m-0 p-0 mt-1 container4 text-white" style="border-radius: 50%; height: 57px; width: 57px; background-color: @currentChat.ProfileCircleColor; display: inline-block; margin-right: 2px; background: radial-gradient( circle at 0% 100%, #f1f1f4, @currentChat.ProfileCircleColor ); cursor: pointer; ">
-                <p style="font-size:20px;font-weight:bold">@currentChat.ProfileWords</p>
+                <p style="font-size:20px;font-weight:bold">@currentChat?.ProfileWords</p>
             </div>
         </div>
         <div class="col-10 m-0 p-0">
             <div class="col-12 m-0 p-0 row">
                 <div class="col-8 m-0 p-0 textHidden1">
-                    <p class="p-0 m-0 pt-1 font-weight-bold" style="font-size:20px">@currentChat.ChatEmpName</p>
+                    <p class="p-0 m-0 pt-1 font-weight-bold" style="font-size:20px">@currentChat?.ChatEmpName</p>
                 </div>
                 <div class="col-4 m-0 p-0">
                     <label class="m-0 p-0 pt-1 float-right"></label>
                 </div>
             </div>
+            @*
+
             <div class="col-12 m-0 p-0 row" style="color:darkgray">
                 @if (currentChat.EmployeeStatusBubble == "statusWorkingRemotely")
                 {
@@ -27,6 +32,7 @@
                 }
 
             </div>
+            *@
         </div>
     </div>
     <div class="col-8 m-0 p-0"></div>
@@ -38,7 +44,7 @@
             <div class="col-12 m-0 p-1">
                 @foreach (var msg in currentChat.MessagesRecord)
                 {
-                    if (msg.FromEmpId == int.Parse(UserId))
+                    if (msg.FromEmpId == UserId)
                     {
                         <div class="col-12 m-0 p-0 row">
                             <div class="col-6 m-0 p-0"></div>
@@ -52,7 +58,7 @@
                                      </div>
                                 </div>
                                  <div class="col-6 m-0 p-0">  </div>
-                                @if (!String.IsNullOrEmpty(@msg.Message))
+                                @if (!String.IsNullOrEmpty(msg.Message))
                                 {
                                     <div class="col-12 m-0 p-2" style="background-color:@msg.Color;word-wrap: break-word;border-top-left-radius:10px;border-top-right-radius:10px;border-bottom-left-radius:10px;">
                                         @msg.Message
@@ -115,7 +121,7 @@
             <div class="col-12 m-0 p-1">
                 @foreach (var msg in currentChat.MessagesRecord)
                 {
-                    if (msg.FromEmpId == int.Parse(UserId))
+                    if (msg.FromEmpId == UserId)
                     {
                         <div class="col-12 m-0 p-0 row">
                             <div class="col-6 m-0 p-0"></div>
@@ -180,8 +186,7 @@
                             </div>
                             <div class="col-5 m-0 p-0"></div>
                         </div>
-                    }
-
+                    }                    
                 }
             </div>
         </div>
@@ -240,3 +245,5 @@
         </div>
     </div>
 </div>
+
+}

@@ -45,6 +45,12 @@ namespace CamcoTimeClock.Repository.UnitOfWork
         {
             get { return _genderRepository ??= new GenderRepository(_contextFactory); }
         }
+        private IChatRepository _chatRepository;
+
+        public IChatRepository Chat
+        {
+            get { return _chatRepository ??= new ChatRepository(_contextFactory); }
+        }
         public int Commit()
         {
             try

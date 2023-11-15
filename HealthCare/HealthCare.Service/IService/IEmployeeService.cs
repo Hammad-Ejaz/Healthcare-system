@@ -13,6 +13,6 @@ namespace HealthCare.Service.IService
         List<PrescriptionViewModel> Get1();
         List<HealthCareChat> Get();
         Task<List<string>> GetDataList();
-        List<MessageList> GetMessageListByEmpId(string empId, string currentChatEmpId, bool isUnseenMsgs);
+   //     List<MessageList> GetMessageListByEmpId(string empId, string currentChatEmpId, bool isUnseenMsgs);
     }
 }

@@ -39,7 +39,7 @@ namespace HealthCare.UI.Pages
             {
                 Prescription = s.Get1();
                 Chat = s.Get();
-                LoadMessagesChat(true);
+          //      LoadMessagesChat(true);
                 User = await UserService.GetUserViewModelById(1);
                 Doctor = (await DoctorService.GetDoctorByDoctorId(int.Parse(DoctorId)));
             }
@@ -76,75 +76,6 @@ namespace HealthCare.UI.Pages
         protected void OpenPrescriptionDialoge()
         {
             IsDetailsDialogOpened = true;
-        }
-
-
-
-
-        protected async Task LoadMessagesChat(bool isMessageSeen)
-        {
-            try
-            {
-                HealthCareChat currentChat = Chat[0];
-                Lists = s.GetMessageListByEmpId(DoctorId, "2", false);
-                Lists.Add(new MessageList()
-                {
-                   Id = 10,
-                   ChatEmpName = "Hammad",
-                   ChatEmpId = 1,
-                   LastEnteredDate = DateTime.Now,
-                   IsReply = false,
-                   Message = "TATTI KHA LA"
-                });
-
-                //if (randomLightColorList.Count > 0)
-                //{
-                //    for (int i = 0; i < messagesList.Count; i++)
-                //    {
-                //        if (i < randomDarkColorList.Count)
-                //        {
-                //            messagesList[i].ProfileCircleColor = randomDarkColorList[i];
-                //            messagesList[i].ProfileCircleLighterColor = randomLightColorList[i];
-                //        }
-                //    }
-                //}
-                //if (!IsColorsSelected)
-                //{
-                //    EmployeeProfile = MessengerService.GetEmployeeProfile(EmpId);
-                //    randomDarkColorList = MessengerService.GetRandomDarkColorList(messagesList.Count);
-                //    randomLightColorList = MessengerService.GetRandomLightColorList(messagesList.Count);
-                //    IsColorsSelected = true;
-                //}
-                //messagesList = messagesList.OrderByDescending(x => x.LastEnteredDate).ToList();
-                //if (!String.IsNullOrEmpty(SearchPeople))
-                //{
-                //    messagesList = messagesList.Where(x => x.ChatEmpName.Contains(SearchPeople.ToUpper())).OrderByDescending(x => x.LastEnteredDate).ToList();
-                //}
-                //if (!String.IsNullOrEmpty(SearchInputKeys))
-                //{
-                //    messagesList = messagesList.Where(x => x.ChatEmpName.Contains(SearchInputKeys.ToUpper())).OrderByDescending(x => x.LastEnteredDate).ToList();
-                //}
-
-                //if (currentChat != null && !String.IsNullOrEmpty(currentChat.ChatEmpId))
-                //{
-                //    var chat = messagesList.ToList().Where(x => x.ChatEmpId == currentChat.ChatEmpId).FirstOrDefault();
-                //    if (chat != null)
-                //    {
-                //        currentChat = chat;
-                //        if (isMessageSeen)
-                //        {
-                //            SeenMsgChat(currentChat);
-                //            aTimer.Dispose();
-                //        }
-                //    }
-                //}
-
-                await InvokeAsync(StateHasChanged);
-            }
-            catch (Exception ex)
-            {
-             //   await Error.HandleExceptionAsync(ex, "Messenger", "LoadMessagesChat");
-            }
         }
 
     }
