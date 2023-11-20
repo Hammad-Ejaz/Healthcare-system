@@ -1,33 +1,35 @@
 ﻿
-    <div class="doctor-card">
-        <div class="doctor-container">
-            <div>
-                <img src="/Icons/doctor.png" alt="Doctor Image" style="width: 200px; height: 200px;" />
-            </div>
-            <div class="doctor-info">
-            @if(Doctor != null)
-            {
-                    
-                <label><strong>Doctor Name: </strong></label>
-                <p>@Doctor.Username</p>
-
-                <label><strong>Specialization: </strong></label>
-                <p>@Doctor.Specialization</p>
-
-                <label><strong>Experience: </strong></label>
-                <p>@Doctor.WorkExperience</p>
-
-                <label><strong>Patients Treated:</strong></label>
-                <p>500</p>
-            }
-            </div>
+<div class="doctor-card">
+    <div class="doctor-container">
+        <div>
+            <img src="/Icons/doctor.png" alt="Doctor Image" style="width: 200px; height: 200px;" />
         </div>
+        <div class="doctor-info">
+        @if(Doctor != null)
+        {
+                    
+            <label><strong>Doctor Name: </strong></label>
+            <p>@Doctor.Username</p>
 
+            <label><strong>Specialization: </strong></label>
+            <p>@Doctor.Specialization</p>
+
+            <label><strong>Experience: </strong></label>
+            <p>@Doctor.WorkExperience</p>
+
+            <label><strong>Patients Treated:</strong></label>
+            <p>500</p>
+        }
+        </div>
+    </div>
+    @if (IsBookNowButtonShown)
+    {
         <div class="availability-container">
             <div>
                 <label style="float: left; width: 100%; text-align: left;">Next Availability:</label>
                 <label style="float: left; width: 100%; text-align: left;">Time: 10:00 AM - 12:00 PM</label>
             </div>
-            <SfButton class="book-now-btn" style="width:180px" @onclick="@(() => _navigationManager.NavigateTo("/patientCheckUp/" + Doctor.DoctorId))">Book Now</SfButton>
+            <SfButton class="book-now-btn" style="width:180px" @onclick="@(() => _navigationManager.NavigateTo("/bookDoctor/" + Doctor.DoctorId))">Book Now</SfButton>
         </div>
-    </div>
+    }
+</div>

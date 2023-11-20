@@ -1,5 +1,47 @@
-﻿<h3>BookDoctor</h3>
+﻿@page "/bookDoctor/{DoctorId}"
+@using Syncfusion.Blazor.Buttons
+@using Syncfusion.Blazor.Calendars
+@using Syncfusion.Blazor.Inputs
+@using Syncfusion.Blazor.Navigations
+@using Syncfusion.Blazor.Popups
+@using HealthCare.ViewModels;
 
-@code {
+<style>
+    .custom-button {
+        background: none; /* Remove the background */
+        border: none; /* Remove the border, if any */
+        padding: 0; /* Remove padding, if any */
+        cursor: pointer; /* Add cursor style if needed */
+    }
 
-}
+</style>
+
+<div class="container-fluid p-3 d-flex justify-content-center align-items-center">
+    <div class="m-0 p-0 row">
+        <div class="m-0 p-1">
+            <div>
+                @if (Doctor != null)
+                {
+                    <HealthCare.UI.Pages.Components.DoctorCards Doctor="@Doctor" IsBookNowButtonShown="false"></HealthCare.UI.Pages.Components.DoctorCards>
+                }
+            </div>
+        </div>
+        <div class="m-0 p-1">
+            <br/>
+            <label>Appointment Time</label>
+            <br/>
+            <br/>
+            <label>Date: </label>
+            <SfDatePicker CssClass="mandatory" TValue="string"></SfDatePicker>
+            <label>Day: </label>
+            <SfComboBox CssClass="mandatory" TValue="string" TItem="string"></SfComboBox>
+            <label>Time: </label>
+            <SfComboBox CssClass="mandatory" TValue="TimeSpan" TItem="TimeSpan"></SfComboBox>
+            <label>Description :</label>
+                <SfTextBox TValue="string" @bind-Value="@Description" style="height: 75px;" />
+        </div>
+    </div>
+</div>
+<div class="d-flex justify-content-center align-items-center">
+    <SfButton type="button" class="btn btn-danger w-25 p-1" style="font-size: 20px;">BOOK NOW</SfButton>
+</div>

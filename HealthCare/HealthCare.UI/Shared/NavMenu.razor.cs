@@ -1,5 +1,6 @@
 ﻿using iTextSharp.text.pdf;
 using Microsoft.AspNetCore.Components;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.JSInterop;
 
 namespace HealthCare.UI.Shared
@@ -8,7 +9,8 @@ namespace HealthCare.UI.Shared
     {
         [Inject]
         protected IJSRuntime JSRuntime { get; set; }
-
+        [Inject]
+        protected NavigationManager _navigationManager { get; set; }
         protected bool IsClick { get; set; } = false;
         [Parameter]
         public bool Login { get; set; } = false;
@@ -17,6 +19,10 @@ namespace HealthCare.UI.Shared
         protected override async Task OnInitializedAsync()
         {
             Authenticate.OnLoginChanged += LoginChanged;
+        }
+        public void NavigateToProfile()
+        {
+            _navigationManager.NavigateTo("/userProfile");
         }
 
         protected void LoadViewTaskByEmployeePopup()

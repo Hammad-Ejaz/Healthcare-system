@@ -16,7 +16,9 @@ namespace HealthCare.UI.Pages.Components
 		[Inject] IDoctorService DoctorService { get; set; }
 
 		[Parameter]
-		public DoctorViewModel Doctor { get; set; } 
+		public DoctorViewModel Doctor { get; set; }
+		[Parameter]
+		public bool IsBookNowButtonShown { get; set; }
 		
 		protected override async Task OnInitializedAsync()
 		{

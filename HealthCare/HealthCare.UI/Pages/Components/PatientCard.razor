@@ -18,12 +18,14 @@
             }
         </div>
     </div>
-
-    <div class="availability-container">
-        <div>
-            <label style="float: left; width: 100%; text-align: left;">Appointment Date:</label>
-            <label style="float: left; width: 100%; text-align: left;">Time: 10:00 AM - 12:00 PM</label>
+    @if(IsCheckUpButtonShown)
+    {
+        <div class="availability-container">
+            <div>
+                <label style="float: left; width: 100%; text-align: left;">Appointment Date:</label>
+                <label style="float: left; width: 100%; text-align: left;">Time: 10:00 AM - 12:00 PM</label>
+            </div>
+            <SfButton class="book-now-btn" style="width:180px" @onclick="@(() => _navigationManager.NavigateTo("/patientCheckUp/" + "1"))">Check Up</SfButton>
         </div>
-        <SfButton class="book-now-btn" style="width:180px" @onclick="@(() => _navigationManager.NavigateTo("/patientCheckUp/" + "1"))">Check Up</SfButton>
-    </div>
+    }
 </div>

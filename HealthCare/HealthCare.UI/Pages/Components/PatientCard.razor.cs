@@ -3,6 +3,7 @@ using HealthCare.Data.Entity;
 using HealthCare.Service.IService;
 using HealthCare.ViewModels;
 using Microsoft.AspNetCore.Components;
+using Microsoft.Xrm.Sdk.Metadata;
 
 namespace HealthCare.UI.Pages.Components
 {
@@ -18,6 +19,8 @@ namespace HealthCare.UI.Pages.Components
 
         [Parameter]
         public UserViewModel User { get; set; }
+        [Parameter]
+        public bool IsCheckUpButtonShown { get; set; }
         protected override async Task OnInitializedAsync()
         {
         

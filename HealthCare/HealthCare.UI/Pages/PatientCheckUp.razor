@@ -20,7 +20,7 @@
 <div>
     @if(Doctor != null)
     {
-        <HealthCare.UI.Pages.Components.DoctorCards Doctor="@Doctor"></HealthCare.UI.Pages.Components.DoctorCards>    
+        <HealthCare.UI.Pages.Components.DoctorCards Doctor="@Doctor" IsBookNowButtonShown = "true"></HealthCare.UI.Pages.Components.DoctorCards>    
     }
 </div>
 <div class="doctor-card">    
@@ -41,7 +41,7 @@
     </div>
 </div>
 
-<HealthCare.UI.Pages.Components.PatientCard User="User"></HealthCare.UI.Pages.Components.PatientCard>
+<HealthCare.UI.Pages.Components.PatientCard User="User" IsCheckUpButtonShown="false"></HealthCare.UI.Pages.Components.PatientCard>
 </div>
 
 <div class="col-9" >
