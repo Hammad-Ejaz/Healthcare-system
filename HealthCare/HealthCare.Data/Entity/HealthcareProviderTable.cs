@@ -14,7 +14,6 @@ namespace HealthCare.Data.Entity
             PaymentTableAudits = new HashSet<PaymentTableAudit>();
             PaymentTables = new HashSet<PaymentTable>();
             PrescriptionTableAudits = new HashSet<PrescriptionTableAudit>();
-            PrescriptionTables = new HashSet<PrescriptionTable>();
             ProviderHistoryTableAudits = new HashSet<ProviderHistoryTableAudit>();
             ProviderHistoryTables = new HashSet<ProviderHistoryTable>();
             ReviewTableAudits = new HashSet<ReviewTableAudit>();
@@ -39,7 +38,6 @@ namespace HealthCare.Data.Entity
         public virtual ICollection<PaymentTableAudit> PaymentTableAudits { get; set; }
         public virtual ICollection<PaymentTable> PaymentTables { get; set; }
         public virtual ICollection<PrescriptionTableAudit> PrescriptionTableAudits { get; set; }
-        public virtual ICollection<PrescriptionTable> PrescriptionTables { get; set; }
         public virtual ICollection<ProviderHistoryTableAudit> ProviderHistoryTableAudits { get; set; }
         public virtual ICollection<ProviderHistoryTable> ProviderHistoryTables { get; set; }
         public virtual ICollection<ReviewTableAudit> ReviewTableAudits { get; set; }

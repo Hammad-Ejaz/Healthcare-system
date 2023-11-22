@@ -9,6 +9,8 @@ namespace CamcoTimeClock.Repository.UnitOfWork
         IUserRepository User { get; }
         IGenderRepository Gender { get; }
         ISpecializationRepository Specialization { get; }
+        IDoctorAvailibilityScheduleRepository DoctorAvailibility { get; }
+        IAppointmentRepository Appointment { get; }
         IDoctorRepository Doctor { get; }
         IChatRepository Chat { get; }
         int Commit();

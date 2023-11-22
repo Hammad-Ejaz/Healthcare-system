@@ -16,6 +16,8 @@ namespace HealthCare.UI.AppSettings
             services.AddTransient<IPrescriptionService, PrescriptionService>();
             services.AddTransient<IEmailService, EmailService>();
             services.AddTransient<IChatService, ChatService>();
+            services.AddTransient<IDoctorAvailibilityScheduleService, DoctorAvailibilityScheduleService>();
+            services.AddTransient<IAppointmentService, AppointmentService>();
 
             return services;
         }

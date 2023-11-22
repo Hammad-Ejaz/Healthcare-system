@@ -8,6 +8,8 @@ namespace HealthCare.Data.Entity
         public HealthcareDoctor()
         {
             HealthCarePrescriptions = new HashSet<HealthCarePrescription>();
+            HealthcareAppointments = new HashSet<HealthcareAppointment>();
+            HealthcareDoctorAvailibilitySchedules = new HashSet<HealthcareDoctorAvailibilitySchedule>();
         }
 
         public int Id { get; set; }
@@ -22,5 +24,7 @@ namespace HealthCare.Data.Entity
         public virtual HealthCareDoctorSpecialization Specialization { get; set; }
         public virtual HealthCareUser User { get; set; }
         public virtual ICollection<HealthCarePrescription> HealthCarePrescriptions { get; set; }
+        public virtual ICollection<HealthcareAppointment> HealthcareAppointments { get; set; }
+        public virtual ICollection<HealthcareDoctorAvailibilitySchedule> HealthcareDoctorAvailibilitySchedules { get; set; }
     }
 }

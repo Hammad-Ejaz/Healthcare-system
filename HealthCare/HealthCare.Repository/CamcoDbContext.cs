@@ -16,23 +16,24 @@ namespace HealthCare.Repository
         {
 
         }
-        public virtual DbSet<HealthCareChat> HealthCareChats { get; set; }
         public virtual DbSet<AppointmentTable> AppointmentTables { get; set; }
         public virtual DbSet<AppointmentTableAudit> AppointmentTableAudits { get; set; }
         public virtual DbSet<DiscussionTable> DiscussionTables { get; set; }
         public virtual DbSet<DiscussionTableAudit> DiscussionTableAudits { get; set; }
         public virtual DbSet<ExceptionLog> ExceptionLogs { get; set; }
+        public virtual DbSet<HealthCareChat> HealthCareChats { get; set; }
         public virtual DbSet<HealthCareDoctorSpecialization> HealthCareDoctorSpecializations { get; set; }
         public virtual DbSet<HealthCareGender> HealthCareGenders { get; set; }
-        public virtual DbSet<HealthCareUser> HealthCareUsers { get; set; }
-        public virtual DbSet<HealthcareDoctor> HealthcareDoctors { get; set; }
         public virtual DbSet<HealthCarePrescription> HealthCarePrescriptions { get; set; }
+        public virtual DbSet<HealthCareUser> HealthCareUsers { get; set; }
+        public virtual DbSet<HealthcareAppointment> HealthcareAppointments { get; set; }
+        public virtual DbSet<HealthcareDoctor> HealthcareDoctors { get; set; }
+        public virtual DbSet<HealthcareDoctorAvailibilitySchedule> HealthcareDoctorAvailibilitySchedules { get; set; }
         public virtual DbSet<HealthcareProviderTable> HealthcareProviderTables { get; set; }
         public virtual DbSet<HealthcareProviderTableAudit> HealthcareProviderTableAudits { get; set; }
         public virtual DbSet<NotificationTable> NotificationTables { get; set; }
         public virtual DbSet<PaymentTable> PaymentTables { get; set; }
         public virtual DbSet<PaymentTableAudit> PaymentTableAudits { get; set; }
-        public virtual DbSet<PrescriptionTable> PrescriptionTables { get; set; }
         public virtual DbSet<PrescriptionTableAudit> PrescriptionTableAudits { get; set; }
         public virtual DbSet<ProviderHistoryTable> ProviderHistoryTables { get; set; }
         public virtual DbSet<ProviderHistoryTableAudit> ProviderHistoryTableAudits { get; set; }
@@ -47,26 +48,6 @@ namespace HealthCare.Repository
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<HealthCareChat>(entity =>
-            {
-                entity.ToTable("HealthCare_Chat");
-
-                entity.Property(e => e.EnteredDate).HasColumnType("datetime");
-
-                entity.Property(e => e.SeenDate).HasColumnType("datetime");
-
-                entity.HasOne(d => d.FromEmp)
-                    .WithMany(p => p.HealthCareChatFromEmps)
-                    .HasForeignKey(d => d.FromEmpId)
-                    .HasConstraintName("FK_FromEmp");
-
-                entity.HasOne(d => d.ToEmp)
-                    .WithMany(p => p.HealthCareChatToEmps)
-                    .HasForeignKey(d => d.ToEmpId)
-                    .HasConstraintName("FK_ToEmp");
-            });
-
-
             modelBuilder.Entity<AppointmentTable>(entity =>
             {
                 entity.HasKey(e => e.AppointmentId)
@@ -97,36 +78,6 @@ namespace HealthCare.Repository
                     .WithMany(p => p.AppointmentTables)
                     .HasForeignKey(d => d.ProviderId)
                     .HasConstraintName("FK__Appointme__Provi__5441852A");
-            });
-            modelBuilder.Entity<HealthCarePrescription>(entity =>
-            {
-                entity.ToTable("HealthCare_Prescription");
-
-                entity.Property(e => e.CreatedAt).HasColumnType("datetime");
-
-                entity.Property(e => e.DatePrescribed).HasColumnType("date");
-
-                entity.Property(e => e.Dosage)
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.Instructions).IsUnicode(false);
-
-                entity.Property(e => e.Medication)
-                    .HasMaxLength(255)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.UpdatedAt).HasColumnType("datetime");
-
-                entity.HasOne(d => d.Doctor)
-                    .WithMany(p => p.HealthCarePrescriptions)
-                    .HasForeignKey(d => d.DoctorId)
-                    .HasConstraintName("FK__HealthCar__Docto__57DD0BE4");
-
-                entity.HasOne(d => d.Patient)
-                    .WithMany(p => p.HealthCarePrescriptions)
-                    .HasForeignKey(d => d.PatientId)
-                    .HasConstraintName("FK__HealthCar__Patie__56E8E7AB");
             });
 
             modelBuilder.Entity<AppointmentTableAudit>(entity =>
@@ -319,6 +270,25 @@ namespace HealthCare.Repository
                 entity.Property(e => e.UserId).HasColumnName("UserID");
             });
 
+            modelBuilder.Entity<HealthCareChat>(entity =>
+            {
+                entity.ToTable("HealthCare_Chat");
+
+                entity.Property(e => e.EnteredDate).HasColumnType("datetime");
+
+                entity.Property(e => e.SeenDate).HasColumnType("datetime");
+
+                entity.HasOne(d => d.FromEmp)
+                    .WithMany(p => p.HealthCareChatFromEmps)
+                    .HasForeignKey(d => d.FromEmpId)
+                    .HasConstraintName("FK_FromEmp");
+
+                entity.HasOne(d => d.ToEmp)
+                    .WithMany(p => p.HealthCareChatToEmps)
+                    .HasForeignKey(d => d.ToEmpId)
+                    .HasConstraintName("FK_ToEmp");
+            });
+
             modelBuilder.Entity<HealthCareDoctorSpecialization>(entity =>
             {
                 entity.ToTable("HealthCare_DoctorSpecialization");
@@ -329,6 +299,37 @@ namespace HealthCare.Repository
                 entity.ToTable("HealthCare_Genders");
 
                 entity.Property(e => e.GenderType).HasMaxLength(255);
+            });
+
+            modelBuilder.Entity<HealthCarePrescription>(entity =>
+            {
+                entity.ToTable("HealthCare_Prescription");
+
+                entity.Property(e => e.CreatedAt).HasColumnType("datetime");
+
+                entity.Property(e => e.DatePrescribed).HasColumnType("date");
+
+                entity.Property(e => e.Dosage)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Instructions).IsUnicode(false);
+
+                entity.Property(e => e.Medication)
+                    .HasMaxLength(255)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.UpdatedAt).HasColumnType("datetime");
+
+                entity.HasOne(d => d.Doctor)
+                    .WithMany(p => p.HealthCarePrescriptions)
+                    .HasForeignKey(d => d.DoctorId)
+                    .HasConstraintName("FK__HealthCar__Docto__57DD0BE4");
+
+                entity.HasOne(d => d.Patient)
+                    .WithMany(p => p.HealthCarePrescriptions)
+                    .HasForeignKey(d => d.PatientId)
+                    .HasConstraintName("FK__HealthCar__Patie__56E8E7AB");
             });
 
             modelBuilder.Entity<HealthCareUser>(entity =>
@@ -370,6 +371,28 @@ namespace HealthCare.Repository
                     .HasConstraintName("FK_UserType");
             });
 
+            modelBuilder.Entity<HealthcareAppointment>(entity =>
+            {
+                entity.ToTable("Healthcare_Appointments");
+
+                entity.Property(e => e.AppointmentDate).HasColumnType("date");
+
+                entity.HasOne(d => d.Doctor)
+                    .WithMany(p => p.HealthcareAppointments)
+                    .HasForeignKey(d => d.DoctorId)
+                    .HasConstraintName("FK_DoctorsId");
+
+                entity.HasOne(d => d.Patient)
+                    .WithMany(p => p.HealthcareAppointments)
+                    .HasForeignKey(d => d.PatientId)
+                    .HasConstraintName("FK_PatientId");
+
+                entity.HasOne(d => d.Schedule)
+                    .WithMany(p => p.HealthcareAppointments)
+                    .HasForeignKey(d => d.ScheduleId)
+                    .HasConstraintName("FK_ScheduleId");
+            });
+
             modelBuilder.Entity<HealthcareDoctor>(entity =>
             {
                 entity.ToTable("Healthcare_Doctor");
@@ -387,6 +410,20 @@ namespace HealthCare.Repository
                     .WithMany(p => p.HealthcareDoctors)
                     .HasForeignKey(d => d.UserId)
                     .HasConstraintName("FK_Healthcare_Doctor_UserId");
+            });
+
+            modelBuilder.Entity<HealthcareDoctorAvailibilitySchedule>(entity =>
+            {
+                entity.ToTable("Healthcare_DoctorAvailibilitySchedule");
+
+                entity.Property(e => e.DayOfWeek)
+                    .HasMaxLength(10)
+                    .IsUnicode(false);
+
+                entity.HasOne(d => d.Doctor)
+                    .WithMany(p => p.HealthcareDoctorAvailibilitySchedules)
+                    .HasForeignKey(d => d.DoctorId)
+                    .HasConstraintName("FK_DoctorId");
             });
 
             modelBuilder.Entity<HealthcareProviderTable>(entity =>
@@ -595,40 +632,6 @@ namespace HealthCare.Repository
                     .WithMany(p => p.PaymentTableAuditUsers)
                     .HasForeignKey(d => d.UserId)
                     .HasConstraintName("FK__PaymentTa__UserI__09A971A2");
-            });
-
-            modelBuilder.Entity<PrescriptionTable>(entity =>
-            {
-                entity.HasKey(e => e.PrescriptionId)
-                    .HasName("PK__Prescrip__40130812C47AC112");
-
-                entity.ToTable("PrescriptionTable");
-
-                entity.Property(e => e.PrescriptionId)
-                    .ValueGeneratedNever()
-                    .HasColumnName("PrescriptionID");
-
-                entity.Property(e => e.CreatedAt).HasColumnType("datetime");
-
-                entity.Property(e => e.DatePrescribed).HasColumnType("date");
-
-                entity.Property(e => e.Dosage).HasMaxLength(255);
-
-                entity.Property(e => e.PatientUserId).HasColumnName("PatientUserID");
-
-                entity.Property(e => e.ProviderId).HasColumnName("ProviderID");
-
-                entity.Property(e => e.UpdatedAt).HasColumnType("datetime");
-
-                entity.HasOne(d => d.PatientUser)
-                    .WithMany(p => p.PrescriptionTables)
-                    .HasForeignKey(d => d.PatientUserId)
-                    .HasConstraintName("FK__Prescript__Patie__4F7CD00D");
-
-                entity.HasOne(d => d.Provider)
-                    .WithMany(p => p.PrescriptionTables)
-                    .HasForeignKey(d => d.ProviderId)
-                    .HasConstraintName("FK__Prescript__Provi__5070F446");
             });
 
             modelBuilder.Entity<PrescriptionTableAudit>(entity =>

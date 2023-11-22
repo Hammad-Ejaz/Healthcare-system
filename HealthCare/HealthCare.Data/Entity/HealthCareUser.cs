@@ -10,6 +10,7 @@ namespace HealthCare.Data.Entity
             HealthCareChatFromEmps = new HashSet<HealthCareChat>();
             HealthCareChatToEmps = new HashSet<HealthCareChat>();
             HealthCarePrescriptions = new HashSet<HealthCarePrescription>();
+            HealthcareAppointments = new HashSet<HealthcareAppointment>();
             HealthcareDoctors = new HashSet<HealthcareDoctor>();
         }
 
@@ -30,6 +31,7 @@ namespace HealthCare.Data.Entity
         public virtual ICollection<HealthCareChat> HealthCareChatFromEmps { get; set; }
         public virtual ICollection<HealthCareChat> HealthCareChatToEmps { get; set; }
         public virtual ICollection<HealthCarePrescription> HealthCarePrescriptions { get; set; }
+        public virtual ICollection<HealthcareAppointment> HealthcareAppointments { get; set; }
         public virtual ICollection<HealthcareDoctor> HealthcareDoctors { get; set; }
     }
 }

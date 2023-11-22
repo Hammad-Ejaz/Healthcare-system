@@ -1,6 +1,7 @@
 ﻿using Blazored.Toast.Services;
 using HealthCare.Data.Entity;
 using HealthCare.Service.IService;
+using HealthCare.Service.Service;
 using HealthCare.ViewModels;
 using Microsoft.AspNetCore.Components;
 using Syncfusion.Blazor.Grids;
@@ -9,71 +10,61 @@ namespace HealthCare.UI.Pages
 {
     public partial class BookDoctor
     {
-        [Inject]
-        protected NavigationManager _navigationManager { get; set; }
-        [Inject]
-        private IToastService _toastService { get; set; }
-        [Inject]
-        private ILogger<IndexModel> _logger { get; set; }
-        [Inject] IEmployeeService s { get; set; }
+        [Inject] protected NavigationManager _navigationManager { get; set; }
+        [Inject] private IToastService _toastService { get; set; }
+        [Inject] private ILogger<IndexModel> _logger { get; set; }
         [Inject] IUserService UserService { get; set; }
         [Inject] IDoctorService DoctorService { get; set; }
+        [Inject] IDoctorAvailibilityScheduleService DoctorAvailibilityService { get; set; }
+        [Inject] IAppointmentService AppointmentService { get; set; }
+        
         [Parameter]
         public string DoctorId { get; set; }
         public string Description { get; set; }
+        public DateTime AppointmentDate { get; set; }
+        public DayOfWeek[] DaysOfWeek {get;set;}
+        public List<HealthcareDoctorAvailibilitySchedule> DoctorAvailibility { get; set; }
+      
+
         public DoctorViewModel Doctor { get; set; }
         public UserViewModel User { get; set; }
-        protected List<PrescriptionViewModel> Prescription { get; set; }
-        public string SearchText { get; set; }
-        protected SfGrid<PrescriptionViewModel> PrescriptionGrid { get; set; }
-        public List<HealthCareChat> Chat { get; set; }
-        protected bool IsDetailsDialogOpened { get; set; } = false;
 
-        public List<MessageList> Lists { get; set; } = new();
         protected override async Task OnInitializedAsync()
         {
             try
             {
-                Prescription = s.Get1();
-                Chat = s.Get();
-                //      LoadMessagesChat(true);
+                DoctorAvailibility = await DoctorAvailibilityService.GetDoctorAvailibityByDoctorId(1);
+                DaysOfWeek = Enum.GetValues(typeof(DayOfWeek)).Cast<DayOfWeek>().ToArray();
                 User = await UserService.GetUserViewModelById(1);
                 Doctor = (await DoctorService.GetDoctorByDoctorId(int.Parse(DoctorId)));
+                
             }
             catch
             (Exception ex)
             { }
         }
-        protected async Task ExcelExport()
-        {
-            ExcelExportProperties excelProperties = new ExcelExportProperties
-            {
-                FileName = "PrescriptionGrid-" + DateTime.Now.ToString("MM-dd-yyyy") + ".xlsx",
-                IncludeTemplateColumn = true
-            };
-            await PrescriptionGrid.ExportToExcelAsync(excelProperties);
-        }
-        protected async Task OnSearch(Syncfusion.Blazor.Inputs.ChangedEventArgs args)
-        {
-            await PrescriptionGrid.SearchAsync(args.Value);
-        }
 
-        protected async Task ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
+        protected async Task BookAppointment()
         {
-            if (args.Item.Id == "PrescriptionGrid_excelexport")
+            var scheduleId = await DoctorAvailibilityService.GetScheduleIdByDoctorIdAndDate(1, AppointmentDate);
+            if(scheduleId != 0)
             {
-                ExcelExportProperties excelProperties = new ExcelExportProperties
+                await AppointmentService.AddAppointment(new HealthcareAppointment()
                 {
-                    FileName = "Prescription-" + DateTime.Now.ToString("MM-dd-yyyy") + ".xlsx"
-                };
-                await PrescriptionGrid.ExportToExcelAsync(excelProperties);
+                    PatientId = (await UserService.GetUserById(1)).Id,
+                    DoctorId = int.Parse(DoctorId),
+                    ScheduleId = scheduleId,
+                    Description = Description,
+                    Images = null,
+                    AppointmentDate = AppointmentDate
+                });
+                Description = null;
+                _toastService.ShowSuccess("Appointment request submitted successfully", "Request Submitted");
+            }
+            else
+            {
+                _toastService.ShowError("Doctor is not available on that day", "Invalid Day");
             }
         }
-
-        protected void OpenPrescriptionDialoge()
-        {
-            IsDetailsDialogOpened = true;
-        }
-
     }
 }

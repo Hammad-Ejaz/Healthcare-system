@@ -45,11 +45,25 @@ namespace CamcoTimeClock.Repository.UnitOfWork
         {
             get { return _genderRepository ??= new GenderRepository(_contextFactory); }
         }
+        private IAppointmentRepository _appointmentRepository;
+
+        public IAppointmentRepository Appointment
+        {
+            get { return _appointmentRepository ??= new AppointmentRepository(_contextFactory); }
+        }
+        
         private IChatRepository _chatRepository;
 
         public IChatRepository Chat
         {
             get { return _chatRepository ??= new ChatRepository(_contextFactory); }
+        }
+        private IDoctorAvailibilityScheduleRepository _doctorAvailibilityScheduleRepository;
+
+        public IDoctorAvailibilityScheduleRepository DoctorAvailibility
+        {
+            get { return _doctorAvailibilityScheduleRepository ??= new DoctorAvailibilityScheduleRepository(_contextFactory); }
+
         }
         public int Commit()
         {
