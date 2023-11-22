@@ -12,7 +12,8 @@ namespace HealthCare.Data.Entity
         public string Description { get; set; }
         public string Images { get; set; }
         public DateTime? AppointmentDate { get; set; }
-        public bool IsApproved { get; set;}
+        public bool? IsApproved { get; set; }
+
         public virtual HealthcareDoctor Doctor { get; set; }
         public virtual HealthCareUser Patient { get; set; }
         public virtual HealthcareDoctorAvailibilitySchedule Schedule { get; set; }

@@ -46,25 +46,27 @@ namespace HealthCare.UI.Pages
 
         protected async Task BookAppointment()
         {
-            var scheduleId = await DoctorAvailibilityService.GetScheduleIdByDoctorIdAndDate(1, AppointmentDate);
-            if(scheduleId != 0)
-            {
-                await AppointmentService.AddAppointment(new HealthcareAppointment()
-                {
-                    PatientId = (await UserService.GetUserById(1)).Id,
-                    DoctorId = int.Parse(DoctorId),
-                    ScheduleId = scheduleId,
-                    Description = Description,
-                    Images = null,
-                    AppointmentDate = AppointmentDate
-                });
-                Description = null;
-                _toastService.ShowSuccess("Appointment request submitted successfully", "Request Submitted");
-            }
-            else
-            {
-                _toastService.ShowError("Doctor is not available on that day", "Invalid Day");
-            }
+            _navigationManager.NavigateTo("approvedAppointment/" + DoctorId);
+            //var scheduleId = await DoctorAvailibilityService.GetScheduleIdByDoctorIdAndDate(1, AppointmentDate);
+            //if(scheduleId != 0)
+            //{
+            //    await AppointmentService.AddAppointment(new HealthcareAppointment()
+            //    {
+            //        PatientId = (await UserService.GetUserById(1)).Id,
+            //        DoctorId = int.Parse(DoctorId),
+            //        ScheduleId = scheduleId,
+            //        Description = Description,
+            //        Images = null,
+            //        AppointmentDate = AppointmentDate
+            //    });
+            //    Description = null;
+            //    _toastService.ShowSuccess("Appointment request submitted successfully", "Request Submitted");
+            //}
+            //else
+            //{
+            //    _toastService.ShowError("Doctor is not available on that day", "Invalid Day");
+            //}
+
         }
     }
 }

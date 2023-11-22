@@ -393,6 +393,7 @@ namespace HealthCare.Repository
                     .HasConstraintName("FK_ScheduleId");
             });
 
+
             modelBuilder.Entity<HealthcareDoctor>(entity =>
             {
                 entity.ToTable("Healthcare_Doctor");

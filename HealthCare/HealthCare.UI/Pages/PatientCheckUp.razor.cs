@@ -39,7 +39,6 @@ namespace HealthCare.UI.Pages
             {
                 Prescription = s.Get1();
                 Chat = s.Get();
-          //      LoadMessagesChat(true);
                 User = await UserService.GetUserViewModelById(1);
                 Doctor = (await DoctorService.GetDoctorByDoctorId(int.Parse(DoctorId)));
             }
