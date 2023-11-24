@@ -53,13 +53,18 @@ namespace CamcoTimeClock.Repository.UnitOfWork
         }
         
         private IChatRepository _chatRepository;
-
         public IChatRepository Chat
         {
             get { return _chatRepository ??= new ChatRepository(_contextFactory); }
         }
-        private IDoctorAvailibilityScheduleRepository _doctorAvailibilityScheduleRepository;
 
+        private IPrescriptionRepository _prescriptionRepository;
+        public IPrescriptionRepository Prescription
+        {
+            get { return _prescriptionRepository ??= new PrescriptionRepository(_contextFactory); }
+        }
+
+        private IDoctorAvailibilityScheduleRepository _doctorAvailibilityScheduleRepository;
         public IDoctorAvailibilityScheduleRepository DoctorAvailibility
         {
             get { return _doctorAvailibilityScheduleRepository ??= new DoctorAvailibilityScheduleRepository(_contextFactory); }

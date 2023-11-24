@@ -58,7 +58,6 @@ namespace HealthCare.UI.Pages
         {
             await AppointmentGrid.SearchAsync(args.Value);
         }
-
         protected async Task ToolbarClickHandler(Syncfusion.Blazor.Navigations.ClickEventArgs args)
         {
             if (args.Item.Id == "AppointmentsGrid_excelexport")

@@ -6,6 +6,13 @@
 @using Syncfusion.Blazor.Popups
 @using HealthCare.ViewModels;
 
+<style>
+    .btn-edit
+    {
+        width:50px;
+    }
+
+</style>
 
 <div class="col-12 navbar navbar-expand screenLabel position-fixed top-row m-0 p-0 screenLabelStyle" style="margin-top: 55px !important;">
     <div class="col-12 m-0 p-0" style="font-size: 18px; text-align: left;"><span style="float: left">Me</span></div>
@@ -52,7 +59,7 @@
                                 appointmentId = appointment.Id;
                             }
                         }
-                        <SfButton CssClass="camco-btn-sm btn-edit" @onclick="() => Approved(appointmentId)">Approved</SfButton>
+                        <SfButton CssClass="btn-edit" @onclick="() => Approved(appointmentId)">Approved</SfButton>
                     </Template>
                 </GridColumn>
             </GridColumns>

@@ -1,0 +1,87 @@
+﻿@page "/prescription/{DoctorId}"
+@using Syncfusion.Blazor.Buttons
+@using Syncfusion.Blazor.Inputs
+@using Syncfusion.Blazor.Navigations
+@using Syncfusion.Blazor.Popups
+@using HealthCare.ViewModels;
+
+<style>
+    .custom-button {
+        background: none; /* Remove the background */
+        border: none; /* Remove the border, if any */
+        padding: 0; /* Remove padding, if any */
+        cursor: pointer; /* Add cursor style if needed */
+    }
+
+</style>
+
+<div class="col-12 m-0 p-0 row">
+    <div class="col-3 m-0 p-1">
+        <label>PATIENT NAME: </label>
+        <SfTextBox CssClass="mandatory" TValue="string"  />
+        <label>DOCTOR NAME: </label>
+        <SfTextBox CssClass="mandatory" TValue="string"/>
+        <label>MEDICATION:</label>
+        <SfTextBox CssClass="mandatory" TValue="string"  />
+        <label>DOSAGE: </label>
+        <SfTextBox CssClass="mandatory" TValue="string" />
+        <label class="p-0 m-0 font-weight-bold" style="height: 115px;">INSTRUCTIONS: </label>
+        <SfTextBox CssClass="mandatory" TValue="string" />
+
+       <br/>
+       <br/>
+
+        <div class="d-flex justify-content-center align-items-center">
+            <SfButton type="button" class="btn btn-danger w-25 p-1" style="font-size: 20px;">SAVE</SfButton>
+        </div>
+    </div>
+
+
+    <div class="col-9 m-0 p-1">
+        <SfGrid ID="PrescriptionGrid" DataSource="Prescriptions" @ref="PrescriptionGrid" Height="600" Width="100%"
+                AllowPaging="false" AllowSorting="true"
+                AllowExcelExport="true" AllowFiltering="true">
+            <GridPageSettings PageSize="10"></GridPageSettings>
+            <GridFilterSettings Type="Syncfusion.Blazor.Grids.FilterType.Excel"></GridFilterSettings>
+            <GridEvents TValue="PrescriptionViewModel" OnToolbarClick="ToolbarClickHandler"></GridEvents>
+            <SfToolbar Height="5">
+                <ToolbarItems>
+                    <ToolbarItem Type="ItemType.Input" Align="ItemAlign.Left">
+                        <Template>
+                            <SfButton CssClass="healthCare-btn" @onclick="ExcelExport" style="text-align: center; background-color: dodgerblue; color: white;">Excel Export</SfButton>
+                        </Template>
+                    </ToolbarItem>
+                    <ToolbarItem Type="ItemType.Input" Align="ItemAlign.Right">
+                        <Template>
+                            <SfTextBox Placeholder="Search" ValueChange="OnSearch"></SfTextBox>
+                        </Template>
+                    </ToolbarItem>
+                </ToolbarItems>
+            </SfToolbar>
+            <GridColumns>
+                <GridColumn Field=@nameof(PrescriptionViewModel.PatientNmme) HeaderText="Patient Name"></GridColumn>
+                <GridColumn Field=@nameof(PrescriptionViewModel.DoctorName) HeaderText="Doctor Name"></GridColumn>
+                <GridColumn Field=@nameof(PrescriptionViewModel.DatePrescribed) HeaderText="Date Prescribed"></GridColumn>
+                <GridColumn Field=@nameof(PrescriptionViewModel.Medication) HeaderText="Medication"></GridColumn>
+                <GridColumn Field=@nameof(PrescriptionViewModel.Instructions) HeaderText="Instructions"></GridColumn>
+                <GridColumn Field=@nameof(PrescriptionViewModel.Dosage) HeaderText="Dosage"></GridColumn>
+                <GridColumn HeaderText="Action" Width="150">
+                    <Template Context="prescriptionContext">
+                        @{
+                            var prescription = (prescriptionContext as PrescriptionViewModel);
+                            int prescriptionId = 0;
+                            if (prescription != null)
+                            {
+                                prescriptionId = prescription.Id;
+                            }
+                        }
+                        <SfButton CssClass="action-btn">Edit</SfButton>
+                        <SfButton CssClass="action-btn">Delete</SfButton>
+                    </Template>
+                </GridColumn>
+            </GridColumns>
+        </SfGrid>
+    </div>
+</div>
+
+
