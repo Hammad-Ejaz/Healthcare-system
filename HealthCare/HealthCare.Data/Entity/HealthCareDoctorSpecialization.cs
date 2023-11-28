@@ -8,14 +8,15 @@ namespace HealthCare.Data.Entity
         public HealthCareDoctorSpecialization()
         {
             HealthcareDoctors = new HashSet<HealthcareDoctor>();
-            HealthcareProviderTables = new HashSet<HealthcareProviderTable>();
         }
 
         public int Id { get; set; }
         public string Specialization { get; set; }
         public string Detail { get; set; }
+        public DateTime? CreatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
+        public bool? Active { get; set; }
 
         public virtual ICollection<HealthcareDoctor> HealthcareDoctors { get; set; }
-        public virtual ICollection<HealthcareProviderTable> HealthcareProviderTables { get; set; }
     }
 }

@@ -16,6 +16,9 @@ namespace HealthCare.Data.Entity
         public bool? IsDeleteByFromEmp { get; set; }
         public bool? IsDeleteByToEmp { get; set; }
         public DateTime? SeenDate { get; set; }
+        public DateTime? CreatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
+        public bool? Active { get; set; }
 
         public virtual HealthCareUser FromEmp { get; set; }
         public virtual HealthCareUser ToEmp { get; set; }

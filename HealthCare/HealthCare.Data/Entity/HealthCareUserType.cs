@@ -3,18 +3,19 @@ using System.Collections.Generic;
 
 namespace HealthCare.Data.Entity
 {
-    public partial class UserType
+    public partial class HealthCareUserType
     {
-        public UserType()
+        public HealthCareUserType()
         {
             HealthCareUsers = new HashSet<HealthCareUser>();
-            UserTables = new HashSet<UserTable>();
         }
 
         public int Id { get; set; }
-        public string UserType1 { get; set; }
+        public string UserType { get; set; }
+        public DateTime? CreatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
+        public bool? Active { get; set; }
 
         public virtual ICollection<HealthCareUser> HealthCareUsers { get; set; }
-        public virtual ICollection<UserTable> UserTables { get; set; }
     }
 }

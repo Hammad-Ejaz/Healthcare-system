@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace HealthCare.Data.Entity
 {
-    public partial class ExceptionLog
+    public partial class HealthCareExceptionLog
     {
-        public int LogId { get; set; }
+        public int Id { get; set; }
         public DateTime? LogTimestamp { get; set; }
         public string ExceptionType { get; set; }
         public string ExceptionMessage { get; set; }
@@ -14,5 +14,8 @@ namespace HealthCare.Data.Entity
         public string TableName { get; set; }
         public int? RecordId { get; set; }
         public string AdditionalDetails { get; set; }
+        public DateTime? CreatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
+        public bool? Active { get; set; }
     }
 }

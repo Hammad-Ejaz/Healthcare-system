@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace HealthCare.Data.Entity    
+namespace HealthCare.Data.Entity
 {
     public partial class HealthcareAppointment
     {
@@ -13,6 +13,9 @@ namespace HealthCare.Data.Entity
         public string Images { get; set; }
         public DateTime? AppointmentDate { get; set; }
         public bool? IsApproved { get; set; }
+        public DateTime? CreatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
+        public bool? Active { get; set; }
 
         public virtual HealthcareDoctor Doctor { get; set; }
         public virtual HealthCareUser Patient { get; set; }

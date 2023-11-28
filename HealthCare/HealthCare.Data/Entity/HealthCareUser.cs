@@ -27,7 +27,7 @@ namespace HealthCare.Data.Entity
         public int? GenderId { get; set; }
 
         public virtual HealthCareGender Gender { get; set; }
-        public virtual UserType UserType { get; set; }
+        public virtual HealthCareUserType UserType { get; set; }
         public virtual ICollection<HealthCareChat> HealthCareChatFromEmps { get; set; }
         public virtual ICollection<HealthCareChat> HealthCareChatToEmps { get; set; }
         public virtual ICollection<HealthCarePrescription> HealthCarePrescriptions { get; set; }

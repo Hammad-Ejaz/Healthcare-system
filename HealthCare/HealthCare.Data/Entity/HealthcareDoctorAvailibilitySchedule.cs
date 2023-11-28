@@ -14,6 +14,9 @@ namespace HealthCare.Data.Entity
         public int? DoctorId { get; set; }
         public string DayOfWeek { get; set; }
         public TimeSpan? Time { get; set; }
+        public DateTime? CreatedAt { get; set; }
+        public DateTime? UpdatedAt { get; set; }
+        public bool? Active { get; set; }
 
         public virtual HealthcareDoctor Doctor { get; set; }
         public virtual ICollection<HealthcareAppointment> HealthcareAppointments { get; set; }
