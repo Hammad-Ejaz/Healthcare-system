@@ -27,25 +27,25 @@
     <div class=" row">
         @if(Doctors != null)
         {
-            @for (int i = 0; i < Doctors.Count(); i++)
+            @for (int i = 0; i < col_1; i++)
             {
                 <div>
                     <HealthCare.UI.Pages.Components.DoctorCards Doctor="Doctors[i]" IsBookNowButtonShown="true"></HealthCare.UI.Pages.Components.DoctorCards>
                 </div>
             }
-            @for (int i = 0; i < Doctors.Count(); i++)
+            @for (int i = col_1; i < col_2; i++)
             {
                 <div>
                     <HealthCare.UI.Pages.Components.DoctorCards Doctor="Doctors[i]" IsBookNowButtonShown="true"></HealthCare.UI.Pages.Components.DoctorCards>
                 </div>
             }
-            @for (int i = 0; i < Doctors.Count(); i++)
+            @for (int i = col_2; i < col_3; i++)
             {
                 <div>
                     <HealthCare.UI.Pages.Components.DoctorCards Doctor="Doctors[i]" IsBookNowButtonShown="true"></HealthCare.UI.Pages.Components.DoctorCards>
                 </div>
             }
-            @for (int i = 0; i < Doctors.Count(); i++)
+            @for (int i = col_3; i < col_4; i++)
             {
                 <div>
                     <HealthCare.UI.Pages.Components.DoctorCards Doctor="Doctors[i]" IsBookNowButtonShown="true"></HealthCare.UI.Pages.Components.DoctorCards>
