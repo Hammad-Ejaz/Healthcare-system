@@ -18,6 +18,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthCare.ViewModels", "He
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthCare.UI", "HealthCare.UI\HealthCare.UI.csproj", "{7E250273-DD65-41E6-AB21-5F1154E2FFDC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{DAB65DAF-D960-4F7D-B668-B33E6F7E1C48}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain Services", "Domain Services", "{99CE06AB-19B1-42D6-9C13-0709AB358F0D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{4353CD5A-17AF-4D6F-A6A0-32F8968B5E0F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +141,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{821D3006-B0CC-4DA8-A4E5-57CF0A1CFF1E} = {DAB65DAF-D960-4F7D-B668-B33E6F7E1C48}
+		{CC8A8FC0-672C-436A-802D-77C2E81D4E36} = {DAB65DAF-D960-4F7D-B668-B33E6F7E1C48}
+		{5843E3E7-A3FE-4B0C-8330-BC50EDFEF38C} = {99CE06AB-19B1-42D6-9C13-0709AB358F0D}
+		{3A9DA775-A874-42C9-8752-831F91F84FB6} = {99CE06AB-19B1-42D6-9C13-0709AB358F0D}
+		{7E250273-DD65-41E6-AB21-5F1154E2FFDC} = {4353CD5A-17AF-4D6F-A6A0-32F8968B5E0F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC21DE2D-1E8B-469B-8CDA-C468DDE678EF}

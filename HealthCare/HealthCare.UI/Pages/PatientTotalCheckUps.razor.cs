@@ -1,13 +1,11 @@
 ﻿using Blazored.Toast.Services;
-using HealthCare.Data.Entity;
 using HealthCare.Service.IService;
-using HealthCare.Service.Service;
 using HealthCare.ViewModels;
 using Microsoft.AspNetCore.Components;
 
 namespace HealthCare.UI.Pages
 {
-    public partial class PatientDashBoard
+    public partial class PatientTotalCheckUps
     {
         [Inject]
         protected NavigationManager _navigationManager { get; set; }
@@ -15,32 +13,29 @@ namespace HealthCare.UI.Pages
         private IToastService _toastService { get; set; }
         [Inject]
         private ILogger<IndexModel> _logger { get; set; }
-
-        [Inject] IDoctorService DoctorService { get; set; }
         [Inject] IUserService UserService { get; set; }
-
-        public List<DoctorViewModel> Doctors { get; set; }
-        public HealthCareUser User { get; set; }
-
+        [Inject] IDoctorService DoctorService { get; set; }
+        [Parameter]
+        public string UserId { get; set; }
         public string SearchText { get; set; }
-
+        public DoctorViewModel Doctor { get; set; }
+        public List<UserViewModel> User { get; set; }
         protected override async Task OnInitializedAsync()
         {
             try
             {
-                User = await UserService.GetUserById(1);
-                Doctors = (await DoctorService.GetAllDoctors()).OrderBy(x=> x.WorkExperience).ToList();
+                User = await UserService.GetUserViewModelList();
             }
             catch
             (Exception ex)
-            { 
-            
+            {
+
             }
         }
-		private void NavigateToDoctorSelection()
-		{
-			// You can customize the URL based on your requirements
-			_navigationManager.NavigateTo("/doctorSelection/"+SearchText);
-		}
-	}
+        private async Task DoctorSearch()
+        {
+            // You can customize the URL based on your requirements
+            User = await UserService.GetUsersBySearchText(SearchText);
+        }
+    }
 }

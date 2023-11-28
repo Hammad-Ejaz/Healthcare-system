@@ -42,20 +42,5 @@ namespace HealthCare.Service.Service
         {
             return checkData;
         }
-        public List<ExceptionLog> GetList()
-        {
-            return _employeeRepository.GetList();
-                 
-            //List<EmployeeViewModel> employees = new List<EmployeeViewModel>();
-            //foreach(var obj in _employeeRepository.GetList())
-            //{
-            //    EmployeeViewModel _obj = new EmployeeViewModel();
-            //    _obj.FirstName = obj.FirstName;
-            //    _obj.LastName = obj.LastName;
-            //    _obj.Address =  obj.Address;
-            //    employees.Add(_obj);
-            //}
-            //return employees;
-        }
     }
 }

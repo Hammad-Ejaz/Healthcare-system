@@ -28,14 +28,5 @@ namespace HealthCare.Repository.Repository
                 return Models;
             }
         }
-        public List<ExceptionLog> GetList()
-        {
-            using (var context = _contextFactory.CreateDbContext())
-            {
-                var Models = context.ExceptionLogs.ToList();
-
-                return Models;
-            }
-        }
     }
 }

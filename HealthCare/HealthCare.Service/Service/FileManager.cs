@@ -11,8 +11,8 @@ namespace HealthCare.Service.Service
 {
     public class FileManager : IFileManager
     {
-        public static string BaseFolderPath { get; } = @"D:\My_2nd_Summer\Training\Work\Images\";
-        public static string BaseFolderPathHr { get; } = @"D:\My_2nd_Summer\Training\Work\Images\";
+        public static string BaseFolderPath { get; } = @"D:\My_5th_Semester\se\Project\Healthcare-system\HealthCare\HealthCare.UI\wwwroot\Icons\";
+        public static string BaseFolderPathHr { get; } = @"D:\My_5th_Semester\se\Project\Healthcare-system\HealthCare\HealthCare.UI\wwwroot\Icons\";
 
         public void OpenFile(string filePath)
         {

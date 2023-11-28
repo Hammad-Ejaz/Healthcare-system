@@ -25,6 +25,13 @@ namespace CamcoTimeClock.Repository.UnitOfWork
             get { return _userRepository ??= new UserRepository(_contextFactory); }
         }
 
+        private ILogRepository _logRepository;
+
+        public ILogRepository Log
+        {
+            get { return _logRepository ??= new LogRepository(_contextFactory); }
+        }
+
         private IDoctorRepository _doctorRepository;
 
         public IDoctorRepository Doctor

@@ -18,7 +18,7 @@ namespace HealthCare.UI.AppSettings
             services.AddTransient<IChatRepository, ChatRepository>();
             services.AddTransient<IDoctorAvailibilityScheduleRepository, DoctorAvailibilityScheduleRepository>();
             services.AddTransient<IAppointmentRepository, AppointmentRepository>();
-
+            services.AddTransient<ILogRepository, LogRepository>();
             return services;
         }
     }

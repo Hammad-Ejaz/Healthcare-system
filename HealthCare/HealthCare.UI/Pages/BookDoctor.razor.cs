@@ -4,6 +4,7 @@ using HealthCare.Service.IService;
 using HealthCare.Service.Service;
 using HealthCare.ViewModels;
 using Microsoft.AspNetCore.Components;
+using Org.BouncyCastle.Crypto;
 using Syncfusion.Blazor.Grids;
 
 namespace HealthCare.UI.Pages
@@ -46,27 +47,39 @@ namespace HealthCare.UI.Pages
 
         protected async Task BookAppointment()
         {
-            _navigationManager.NavigateTo("approvedAppointment/" + DoctorId);
-            //var scheduleId = await DoctorAvailibilityService.GetScheduleIdByDoctorIdAndDate(1, AppointmentDate);
-            //if(scheduleId != 0)
-            //{
-            //    await AppointmentService.AddAppointment(new HealthcareAppointment()
-            //    {
-            //        PatientId = (await UserService.GetUserById(1)).Id,
-            //        DoctorId = int.Parse(DoctorId),
-            //        ScheduleId = scheduleId,
-            //        Description = Description,
-            //        Images = null,
-            //        AppointmentDate = AppointmentDate
-            //    });
-            //    Description = null;
-            //    _toastService.ShowSuccess("Appointment request submitted successfully", "Request Submitted");
-            //}
-            //else
-            //{
-            //    _toastService.ShowError("Doctor is not available on that day", "Invalid Day");
-            //}
+            var scheduleId = await DoctorAvailibilityService.GetScheduleIdByDoctorIdAndDate(int.Parse(DoctorId), AppointmentDate);
+            if (scheduleId != 0)
+            {
+                if ((await AppointmentService.IsAppointmentAlreadyExsits(int.Parse(DoctorId), 1, scheduleId)))
+                {
+                    _toastService.ShowSuccess("Appointment request already submitted try another day or time", "Request Already Submitted");
+                }
+                else
+                {
+                    await AddAppointment(scheduleId);
+                }
+                Description = null;
+                _toastService.ShowSuccess("Appointment request submitted successfully", "Request Submitted");
+            }
+            else
+            {
+                _toastService.ShowError("Doctor is not available on that day", "Invalid Day");
+            }
+        }
+        public async Task AddAppointment(int scheduleId)
+        {
+            await AppointmentService.AddAppointment(new HealthcareAppointment()
+            {
+                PatientId = (await UserService.GetUserById(1)).Id,
+                DoctorId = int.Parse(DoctorId),
+                ScheduleId = scheduleId,
+                Description = Description,
+                Images = null,
+                AppointmentDate = AppointmentDate
+            });
 
         }
     }
+
+
 }

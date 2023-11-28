@@ -14,6 +14,8 @@ namespace CamcoTimeClock.Repository.UnitOfWork
         IDoctorRepository Doctor { get; }
         IChatRepository Chat { get; }
         IPrescriptionRepository Prescription { get; }
+        ILogRepository Log { get; }
+
         int Commit();
         Task<int> CommitAsync();
     }

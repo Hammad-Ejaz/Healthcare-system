@@ -18,7 +18,7 @@ namespace HealthCare.Service.Service
         {
             this.UnitOfWork = UnitOfWork;
         }
-        public async void UpdateUser(HealthCareUser user)
+        public async Task UpdateUser(HealthCareUser user)
         {
             await UnitOfWork.User.UpdateAsync(user);
         }

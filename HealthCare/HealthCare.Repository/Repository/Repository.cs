@@ -21,16 +21,16 @@ namespace HealthCare.Repository.Repository
 
         public virtual int Insert(TEntity entity)
         {
-            int id = 0;
+                int id = 0;
 
-            using (var context = _contextFactory.CreateDbContext())
-            {
-                context.Set<TEntity>().Add(entity);
-                context.SaveChanges();
+                using (var context = _contextFactory.CreateDbContext())
+                {
+                    context.Set<TEntity>().Add(entity);
+                    context.SaveChanges();
 
-                id = (int)entity.GetType().GetProperty("Id").GetValue(entity, null);
-            }
-            return id;
+                    id = (int)entity.GetType().GetProperty("Id").GetValue(entity, null);
+                }
+                return id;
         }
 
         public virtual async Task<int> InsertAsync(TEntity entity)

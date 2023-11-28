@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Schema;
 
 namespace HealthCare.Service.Service
 {
@@ -62,6 +63,11 @@ namespace HealthCare.Service.Service
             return allUnApporvedAppointments;
         }
 
+        public async Task<bool> IsAppointmentAlreadyExsits(int doctorId , int patientId , int scheduleId)
+        {
+            var appointment = await UnitOfWork.Appointment.SearchAsync(x=> x.DoctorId == doctorId && x.PatientId == patientId &&  x.ScheduleId == scheduleId);
+            return appointment == null;
+        }
         
     }
 }

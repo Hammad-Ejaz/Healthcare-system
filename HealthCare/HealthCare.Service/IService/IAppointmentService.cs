@@ -16,6 +16,6 @@ namespace HealthCare.Service.IService
         Task<List<AppointmentViewModel>> GetUnApprovedAppointmentViewModelListByDoctorId(int doctorId);
         Task<HealthcareAppointment> GetAppointmentById(int id);
         Task UpdateAppointment(HealthcareAppointment appointment);
-        
+        Task<bool> IsAppointmentAlreadyExsits(int doctorId, int patientId, int scheduleId);
     }
 }

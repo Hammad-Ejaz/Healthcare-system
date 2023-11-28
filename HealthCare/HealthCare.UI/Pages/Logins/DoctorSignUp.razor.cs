@@ -58,8 +58,6 @@ namespace HealthCare.UI.Pages.Logins
                         ContactNumber = ContactInfo,
                         DateOfBirth = DateOfBirth,
                         UserTypeId = 1,
-                        CreatedAt = DateTime.Now,
-                        UpdatedAt = DateTime.Now,
                         Active = true
                     });
 
@@ -70,12 +68,10 @@ namespace HealthCare.UI.Pages.Logins
                         SpecializationId = Specialization,
                         MedicalLicenseInfo = MedicalNo,
                         WorkExperience = WorkExperience,
-                        CreatedAt = DateTime.Now,
-                        UpdatedAt = DateTime.Now,
                         Active = true
                     });
 
-                ToastService.ShowSuccess("UserAdded Successfully");
+                ToastService.ShowSuccess("User Added Successfully");
                 UserName = "";
                 Email = "";
                 Password = "";
