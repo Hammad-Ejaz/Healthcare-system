@@ -15,8 +15,8 @@
 
 </style>
 
-<div class="col-12 m-0 p-0 row">
-    <div class="col-3 m-0 p-1">
+<div class="col-12 m-5 p-0 row">
+    <div class="col-3 m-0 p-2">
         <label>PATIENT NAME: </label>
         <SfTextBox CssClass="mandatory" TValue="string"  />
         <label>DOCTOR NAME: </label>
@@ -25,8 +25,8 @@
         <SfTextBox CssClass="mandatory" TValue="string"  />
         <label>DOSAGE: </label>
         <SfTextBox CssClass="mandatory" TValue="string" />
-        <label class="p-0 m-0 font-weight-bold" style="height: 115px;">INSTRUCTIONS: </label>
-        <SfTextBox CssClass="mandatory" TValue="string" />
+        <label class="p-0 m-0 font-weight-bold">INSTRUCTIONS: </label>
+        <SfTextBox CssClass="mandatory" style="height: 115px;" TValue="string" />
 
        <br/>
        <br/>
@@ -36,9 +36,8 @@
         </div>
     </div>
 
-
     <div class="col-9 m-0 p-1">
-        <SfGrid ID="PrescriptionGrid" DataSource="Prescriptions" @ref="PrescriptionGrid" Height="600" Width="100%"
+        <SfGrid ID="PrescriptionGrid" DataSource="Prescriptions" @ref="PrescriptionGrid" Height="600" Width="90%"
                 AllowPaging="false" AllowSorting="true"
                 AllowExcelExport="true" AllowFiltering="true">
             <GridPageSettings PageSize="10"></GridPageSettings>
