@@ -9,6 +9,13 @@ using Microsoft.EntityFrameworkCore;
 using Syncfusion.Blazor;
 using System.Globalization;
 using Microsoft.Crm.Sdk.Messages;
+using Microsoft.AspNetCore.Authorization;
+using System.IdentityModel.Tokens.Jwt;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Builder;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -59,6 +66,7 @@ builder.Services.AddScoped<IPrintingService, PrintingService>();
 builder.Services.AddBlazorDownloadFile(ServiceLifetime.Scoped);
 builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
 builder.Services.AddSingleton(typeof(ISyncfusionStringLocalizer), typeof(SampleLocalizer));
+builder.Services.AddHttpContextAccessor();
 builder.Services.Configure<RequestLocalizationOptions>(options =>
 {
     // Define the list of cultures your app will support
@@ -86,6 +94,14 @@ HealthCare.UI.Version.Number = builder.Configuration.GetValue<string>("Version")
 builder.Services.AppService();
 builder.Services.AppRepository();
 
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.ExpireTimeSpan = TimeSpan.FromMinutes(20);
+        options.SlidingExpiration = true;
+        options.AccessDeniedPath = "/loginAccount";
+    });
 
 var app = builder.Build();
 
@@ -117,6 +133,11 @@ app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.UseCookiePolicy(new CookiePolicyOptions()
+{
+    MinimumSameSitePolicy = SameSiteMode.Strict,
+});
 
 
 app.UseEndpoints(endpoints =>
