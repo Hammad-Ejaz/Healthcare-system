@@ -100,10 +100,10 @@ namespace HealthCare.UI.Pages.Logins
                         // redirect response value.
                     };
 
-                    await httpContextAccessor.HttpContext.SignInAsync(
-                        CookieAuthenticationDefaults.AuthenticationScheme,
-                        new ClaimsPrincipal(claimsIdentity),
-                        authProperties);
+                    //await httpContextAccessor.HttpContext.SignInAsync(
+                    //    CookieAuthenticationDefaults.AuthenticationScheme,
+                    //    new ClaimsPrincipal(claimsIdentity),
+                    //    authProperties);
 
                     if (user.UserTypeId == (int)HealthCare.ViewModels.Enum.UserType.PATIENT)
                     {
