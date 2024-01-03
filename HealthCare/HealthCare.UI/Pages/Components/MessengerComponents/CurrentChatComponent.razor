@@ -44,7 +44,7 @@
             <div class="col-12 m-0 p-1">
                 @foreach (var msg in currentChat.MessagesRecord)
                 {
-                    if (msg.FromEmpId == UserId)
+                    if (msg.FromUserId == UserId)
                     {
                         <div class="col-12 m-0 p-0 row">
                             <div class="col-6 m-0 p-0"></div>
@@ -121,7 +121,7 @@
             <div class="col-12 m-0 p-1">
                 @foreach (var msg in currentChat.MessagesRecord)
                 {
-                    if (msg.FromEmpId == UserId)
+                    if (msg.FromUserId == UserId)
                     {
                         <div class="col-12 m-0 p-0 row">
                             <div class="col-6 m-0 p-0"></div>

@@ -12,9 +12,9 @@ namespace HealthCare.Repository.Repository
 {
     public class DoctorRepository  : Repository<HealthcareDoctor> ,  IDoctorRepository  
     {
-        private readonly IDbContextFactory<CamcoDbContext> _contextFactory;
+        private readonly IDbContextFactory<HealthCareDbContext> _contextFactory;
 
-        public DoctorRepository(IDbContextFactory<CamcoDbContext> contextFactory) : base(contextFactory)
+        public DoctorRepository(IDbContextFactory<HealthCareDbContext> contextFactory) : base(contextFactory)
         {
             _contextFactory = contextFactory;
         }

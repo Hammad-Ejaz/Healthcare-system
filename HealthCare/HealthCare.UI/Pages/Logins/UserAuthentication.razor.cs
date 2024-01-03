@@ -31,7 +31,7 @@ namespace HealthCare.UI.Pages.Logins
         #endregion
         #region Properties
         public string Password { get; set; }
-        public string UserName { get; set; }
+        public string Email { get; set; }
         public string ScreenLabel { get; set; } = "HuRe / Ja";
         public bool ShowSpinner { get; set; } = false;
         public HealthCare.UI.Pages.ErrorModel Error { get; set; }
@@ -39,11 +39,11 @@ namespace HealthCare.UI.Pages.Logins
 
         #region Input Controls
         // If enter key is pressed then navigate to manager section
-        protected void Keydown(KeyboardEventArgs args)
+        protected async void Keydown(KeyboardEventArgs args)
         {
             if (args.Code == "Enter" && !String.IsNullOrEmpty(Password))
             {
-                Login();
+                await Login();
             }
         }
         #endregion
@@ -55,7 +55,7 @@ namespace HealthCare.UI.Pages.Logins
             var user = await UserService.IsUserExits(
                     new HealthCareUser
                     {
-                        Username = UserName,
+                        Email = Email,
                         Password = Password,
                     }
                 );
@@ -64,7 +64,7 @@ namespace HealthCare.UI.Pages.Logins
                 if(user.Password == Password)
                 {
                     Authenticate.IsLogin = true;
-
+                    Authenticate.User = user;
                     // Generate Cookie
                     var claims = new List<Claim>
                     {

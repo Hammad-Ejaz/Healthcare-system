@@ -14,6 +14,7 @@ namespace HealthCare.Service.IService
         Task<List<DoctorViewModel>> GetDoctorBySearchText(string searchText);
         Task<List<DoctorViewModel>> GetAllDoctors();
         Task<DoctorViewModel> GetDoctorByDoctorId(int doctorId);
+        Task<HealthcareDoctor> GetDoctorByUserId(int userId);
 
 
     }

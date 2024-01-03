@@ -8,10 +8,10 @@ namespace HealthCare.ViewModels
     public class InboxMessages
     {
         public int Id { get; set; }
-        public int FromEmpId { get; set; }
-        public int ToEmpId { get; set; }
-        public string FromEmpName { get; set; }
-        public string ToEmpName { get; set; }
+        public int FromUserId { get; set; }
+        public int ToUserId { get; set; }
+        public string FromUserName { get; set; }
+        public string ToUserName { get; set; }
         public string Message { get; set; }
         public string ImageFile { get; set; }
         public string DocumentFile { get; set; }

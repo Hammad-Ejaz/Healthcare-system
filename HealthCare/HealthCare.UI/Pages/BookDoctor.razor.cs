@@ -2,6 +2,7 @@
 using HealthCare.Data.Entity;
 using HealthCare.Service.IService;
 using HealthCare.Service.Service;
+using HealthCare.UI.Shared;
 using HealthCare.ViewModels;
 using Microsoft.AspNetCore.Components;
 using Org.BouncyCastle.Crypto;
@@ -16,17 +17,17 @@ namespace HealthCare.UI.Pages
         [Inject] private ILogger<IndexModel> _logger { get; set; }
         [Inject] IUserService UserService { get; set; }
         [Inject] IDoctorService DoctorService { get; set; }
+        [Inject] IAuditsService AuditsService { get; set; }
         [Inject] IDoctorAvailibilityScheduleService DoctorAvailibilityService { get; set; }
         [Inject] IAppointmentService AppointmentService { get; set; }
-        
+        [Inject] ILogService LogService { get; set; }
+        [Inject] IHelperService HelperService { get; set; }
         [Parameter]
         public string DoctorId { get; set; }
         public string Description { get; set; }
         public DateTime AppointmentDate { get; set; }
-        public DayOfWeek[] DaysOfWeek {get;set;}
+        public DayOfWeek[] DaysOfWeek { get; set; }
         public List<HealthcareDoctorAvailibilitySchedule> DoctorAvailibility { get; set; }
-      
-
         public DoctorViewModel Doctor { get; set; }
         public UserViewModel User { get; set; }
 
@@ -34,15 +35,26 @@ namespace HealthCare.UI.Pages
         {
             try
             {
-                DoctorAvailibility = await DoctorAvailibilityService.GetDoctorAvailibityByDoctorId(1);
+                DoctorAvailibility = await DoctorAvailibilityService.GetDoctorAvailibityByDoctorId(int.Parse(DoctorId));
                 DaysOfWeek = Enum.GetValues(typeof(DayOfWeek)).Cast<DayOfWeek>().ToArray();
-                User = await UserService.GetUserViewModelById(1);
-                Doctor = (await DoctorService.GetDoctorByDoctorId(int.Parse(DoctorId)));
-                
+                User = await UserService.GetUserViewModelById(Authenticate.User.Id);
+                Doctor = await DoctorService.GetDoctorByDoctorId(int.Parse(DoctorId));
             }
             catch
             (Exception ex)
-            { }
+            {
+                await LogService.AddLog(
+                    new HealthCareExceptionLog()
+                    {
+                        LogTimestamp = DateTime.Now,
+                        ExceptionMessage = ex.Message,
+                        UserId = Authenticate.User.Id,
+                        AdditionalDetails = "BookNow.razor.cs",
+                        CreatedAt = DateTime.Now,
+                        Active = true
+
+                    });
+            }
         }
 
         protected async Task BookAppointment()
@@ -50,7 +62,7 @@ namespace HealthCare.UI.Pages
             var scheduleId = await DoctorAvailibilityService.GetScheduleIdByDoctorIdAndDate(int.Parse(DoctorId), AppointmentDate);
             if (scheduleId != 0)
             {
-                if ((await AppointmentService.IsAppointmentAlreadyExsits(int.Parse(DoctorId), 1, scheduleId)))
+                if ((await AppointmentService.IsAppointmentAlreadyExsits(int.Parse(DoctorId), Authenticate.User.Id, scheduleId)))
                 {
                     _toastService.ShowSuccess("Appointment request already submitted try another day or time", "Request Already Submitted");
                 }
@@ -68,16 +80,37 @@ namespace HealthCare.UI.Pages
         }
         public async Task AddAppointment(int scheduleId)
         {
-            await AppointmentService.AddAppointment(new HealthcareAppointment()
+            try
             {
-                PatientId = (await UserService.GetUserById(1)).Id,
-                DoctorId = int.Parse(DoctorId),
-                ScheduleId = scheduleId,
-                Description = Description,
-                Images = null,
-                AppointmentDate = AppointmentDate
-            });
+                var appointment = new HealthcareAppointment()
+                {
+                    PatientId = (await UserService.GetUserById(Authenticate.User.Id)).Id,
+                    DoctorId = int.Parse(DoctorId),
+                    ScheduleId = scheduleId,
+                    Description = Description,
+                    Images = null,
+                    AppointmentDate = AppointmentDate,
+                    Active = true
+                };
+                appointment.Id = 
+                    await AppointmentService.AddAppointment(appointment);
+                await AuditsService.AddAppointmentAudit(appointment, "ADD", Authenticate.User.Id);
+            }
+            catch (Exception ex)
+            {
+                await LogService.AddLog(
+                new HealthCareExceptionLog()
+                {
+                    LogTimestamp = DateTime.Now,
+                    ExceptionMessage = ex.Message,
+                    UserId = Authenticate.User.Id,
+                    TableName = "Appointment, Audits",
+                    AdditionalDetails = "BookNow.razor.cs",
+                    CreatedAt = DateTime.Now,
+                    Active = true
 
+                });
+            }
         }
     }
 

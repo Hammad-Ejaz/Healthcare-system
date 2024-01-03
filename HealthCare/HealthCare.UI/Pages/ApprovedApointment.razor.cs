@@ -1,6 +1,7 @@
 ﻿using Blazored.Toast.Services;
 using CamcoTimeClock.Repository.UnitOfWork;
 using HealthCare.Service.IService;
+using HealthCare.UI.Shared;
 using HealthCare.ViewModels;
 using Microsoft.AspNetCore.Components;
 using Syncfusion.Blazor.Grids;
@@ -15,19 +16,11 @@ namespace HealthCare.UI.Pages
         protected NavigationManager _navigationManager { get; set; }
         [Inject]
         private IToastService _toastService { get; set; }
-        [Inject]
-        private ILogger<IndexModel> _logger { get; set; }
-        [Inject] IEmployeeService s { get; set; }
-        [Inject] IUserService UserService { get; set; }
         [Inject] IDoctorService DoctorService { get; set; }
         [Inject] IAppointmentService AppointmentService { get; set; }
-        [Parameter]
-        public string DoctorId { get; set; }
+        [Inject] IAuditsService AuditsService { get; set; }
+        public int DoctorId { get; set; }
         public DoctorViewModel Doctor { get; set; }
-        public UserViewModel User { get; set; }
-        protected List<PrescriptionViewModel> Prescription { get; set; }
-        public string SearchText { get; set; }
-
 
         protected List<AppointmentViewModel> Appointment { get; set; }
         protected SfGrid<AppointmentViewModel> AppointmentGrid { get; set; }
@@ -35,9 +28,9 @@ namespace HealthCare.UI.Pages
         {
             try
             {
-                Appointment = await AppointmentService.GetUnApprovedAppointmentViewModelListByDoctorId(2);
-                User = await UserService.GetUserViewModelById(1);
-                Doctor = (await DoctorService.GetDoctorByDoctorId(int.Parse(DoctorId)));
+                DoctorId = (await DoctorService.GetDoctorByUserId(Authenticate.User.Id)).Id;
+                Doctor = (await DoctorService.GetDoctorByDoctorId(DoctorId));
+                Appointment = await AppointmentService.GetAppointmentViewModelListByDoctorId(DoctorId);
             }
             catch
             (Exception ex)
@@ -69,12 +62,20 @@ namespace HealthCare.UI.Pages
                 await AppointmentGrid.ExportToExcelAsync(excelProperties);
             }
         }
+        protected async Task CheckUp(int Id)
+        {
+            var appointment = Appointment.Where(x => x.Id == Id).FirstOrDefault();
+            _navigationManager.NavigateTo("/doctorCheckUp/" + appointment.PatientId);
+
+        }
         private async Task Approved(int Id)
         {
             var appointment = await AppointmentService.GetAppointmentById(Id);
             appointment.IsApproved = true;
+
+            await AuditsService.AddAppointmentAudit(appointment, "UPDATE" , Authenticate.User.Id);
             await AppointmentService.UpdateAppointment(appointment);
-            Appointment = await AppointmentService.GetUnApprovedAppointmentViewModelListByDoctorId(2);
+            Appointment = await AppointmentService.GetAppointmentViewModelListByDoctorId(DoctorId);
         }
     }
 }

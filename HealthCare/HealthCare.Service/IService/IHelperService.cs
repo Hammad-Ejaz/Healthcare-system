@@ -11,5 +11,7 @@ namespace HealthCare.Service.IService
     {
         Task<List<HealthCareGender>> GetAllGenders();
         Task<List<HealthCareDoctorSpecialization>> GetAllDoctorSpecializations();
+        Task<Tuple<int, int>> GetIdsFromString(string ids);
+
     }
 }

@@ -20,7 +20,6 @@ namespace HealthCare.Service.Service
 
         public async Task AddLog(HealthCareExceptionLog log)
         {
-            
             await UnitOfWork.Log.InsertAsync(log);
         }
 

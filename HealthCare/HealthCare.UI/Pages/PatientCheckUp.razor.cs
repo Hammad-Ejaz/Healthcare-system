@@ -4,6 +4,7 @@ using HealthCare.Repository;
 using HealthCare.Service.IService;
 using HealthCare.Service.Service;
 using HealthCare.UI.Pages.Components;
+using HealthCare.UI.Shared;
 using HealthCare.ViewModels;
 using Microsoft.AspNetCore.Components;
 using Org.BouncyCastle.Ocsp;
@@ -15,18 +16,17 @@ namespace HealthCare.UI.Pages
     {
         [Inject]
         protected NavigationManager _navigationManager { get; set; }
-        [Inject]
-        private IToastService _toastService { get; set; }
-        [Inject]
-        private ILogger<IndexModel> _logger { get; set; }
-        [Inject] IEmployeeService s { get; set; }
+        [Inject] IToastService ToastService { get; set; }
+        [Inject] IEmployeeService Chats { get; set; }
         [Inject] IUserService UserService { get; set; }
         [Inject] IDoctorService DoctorService { get; set; }
+        [Inject] ILogService LogService { get; set; }
+        [Inject] IPrescriptionService PrescriptionService { get; set; }
         [Parameter]
         public string DoctorId { get; set; }
         public DoctorViewModel Doctor { get; set; }
-        public UserViewModel User  { get; set; }
-        protected List<PrescriptionViewModel> Prescription { get; set; }
+        protected List<PrescriptionViewModel> Prescriptions { get; set; }
+        protected HealthCareUser User { get; set; }
         public string SearchText { get; set; }
         protected SfGrid<PrescriptionViewModel> PrescriptionGrid { get; set; }
         public List<HealthCareChat> Chat { get; set; }
@@ -37,14 +37,26 @@ namespace HealthCare.UI.Pages
         {
             try
             {
-                Prescription = s.Get1();
-                Chat = s.Get();
-                User = await UserService.GetUserViewModelById(1);
+                User = await UserService.GetUserById(Authenticate.User.Id);
+                Prescriptions = await PrescriptionService.GetPrescriptionViewModelByDoctorIdAndUserId(int.Parse(DoctorId), User.Id);
+                Chat = Chats.Get();
                 Doctor = (await DoctorService.GetDoctorByDoctorId(int.Parse(DoctorId)));
             }
             catch
             (Exception ex)
-            { }
+            {
+                await LogService.AddLog(
+                    new HealthCareExceptionLog()
+                    {
+                        LogTimestamp = DateTime.Now,
+                        ExceptionMessage = ex.Message,
+                        UserId = Authenticate.User.Id,
+                        AdditionalDetails = "PatientCheckUp.razor.cs",
+                        CreatedAt = DateTime.Now,
+                        Active = true
+                    });
+
+            }
         }
         protected async Task ExcelExport()
         {
@@ -74,8 +86,7 @@ namespace HealthCare.UI.Pages
 
         protected void OpenPrescriptionDialoge()
         {
-            _navigationManager.NavigateTo("/prescription/1");
-         //   IsDetailsDialogOpened = true;
+            IsDetailsDialogOpened = true;
         }
 
     }

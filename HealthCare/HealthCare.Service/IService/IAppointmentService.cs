@@ -13,9 +13,11 @@ namespace HealthCare.Service.IService
     {
         Task<List<HealthcareAppointment>> GetDoctorAppointments(int doctorId);
         Task<int> AddAppointment(HealthcareAppointment appointment);
-        Task<List<AppointmentViewModel>> GetUnApprovedAppointmentViewModelListByDoctorId(int doctorId);
+        Task<List<AppointmentViewModel>> GetAppointmentViewModelListByDoctorId(int doctorId);
         Task<HealthcareAppointment> GetAppointmentById(int id);
         Task UpdateAppointment(HealthcareAppointment appointment);
         Task<bool> IsAppointmentAlreadyExsits(int doctorId, int patientId, int scheduleId);
+        Task<List<AppointmentViewModel>> GetAppointmentViewModelListByUserId(int userId);
+        Task<List<AppointmentViewModel>> GetAppointmentViewModelListByDoctorIdAndDate(int doctorId, DateTime date);
     }
 }

@@ -232,8 +232,8 @@ namespace HealthCare.UI.Pages.Components.MessengerComponents
                             message.Message = message.Message.ToUpper();
                         }
                         message.IsSeen = false;
-                        message.ToEmpId = UserId;
-                        message.FromEmpId = DoctorId;
+                        message.ToUserId = UserId;
+                        message.FromUserId = DoctorId;
                         message.Id = await ChatService.AddChat(message);
                         currentChat.MessagesRecord.Add(await ChatService.ConvertTimeClockMsgToMsg(message));
                     }

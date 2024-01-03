@@ -10,15 +10,24 @@ using System.Threading.Tasks;
 
 namespace HealthCare.Repository.Repository
 {
+    /// <summary>
+    /// This is the generaic class for the crud of all the entities
+    /// </summary>
+    /// <typeparam name="TEntity"></typeparam>
     public abstract class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
-        private readonly IDbContextFactory<CamcoDbContext> _contextFactory;
+        private readonly IDbContextFactory<HealthCareDbContext> _contextFactory;
       
-        public Repository(IDbContextFactory<CamcoDbContext> contextFactory)
+        public Repository(IDbContextFactory<HealthCareDbContext> contextFactory)
         {
             _contextFactory = contextFactory;
         }
 
+        /// <summary>
+        /// This is the generic function for the insertion of data 
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
         public virtual int Insert(TEntity entity)
         {
                 int id = 0;
@@ -33,6 +42,11 @@ namespace HealthCare.Repository.Repository
                 return id;
         }
 
+        /// <summary>
+        /// This is the Generic function for the insertion of data Async
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
         public virtual async Task<int> InsertAsync(TEntity entity)
         {
             try
@@ -53,6 +67,11 @@ namespace HealthCare.Repository.Repository
             }
         }
 
+        /// <summary>
+        /// This is the generic function to add a specific range of data async
+        /// </summary>
+        /// <param name="entities"></param>
+        /// <returns></returns>
         public virtual async Task AddRangeAsync(IEnumerable<TEntity> entities)
         {
             using (var context = _contextFactory.CreateDbContext())
@@ -61,11 +80,22 @@ namespace HealthCare.Repository.Repository
                 await context.SaveChangesAsync();
             }
         }
+
+        /// <summary>
+        /// This is the generic function to search some data on the basis of some condition
+        /// </summary>
+        /// <param name="predicate"></param>
+        /// <returns></returns>
         public virtual IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate)
         {
              return _contextFactory.CreateDbContext().Set<TEntity>().Where(predicate);
         }
 
+
+        /// <summary>
+        /// This is the generic function to get the all list of data async
+        /// </summary>
+        /// <returns></returns>
         public virtual async Task<IEnumerable<TEntity>> GetListAsync()
         {
             try
@@ -82,7 +112,10 @@ namespace HealthCare.Repository.Repository
                 throw;
             }
         }
-
+        /// <summary>
+        /// This is function is used to get the list of all data in a table
+        /// </summary>
+        /// <returns></returns>
         public virtual IEnumerable<TEntity> GetList()
         {
             using (var context = _contextFactory.CreateDbContext())
@@ -91,6 +124,11 @@ namespace HealthCare.Repository.Repository
             }
         }
 
+        /// <summary>
+        /// This function is used to get the data by Id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public virtual TEntity GetById(int id)
         {
             using (var context = _contextFactory.CreateDbContext())
@@ -99,6 +137,11 @@ namespace HealthCare.Repository.Repository
             }
         }
 
+        /// <summary>
+        /// This funciton is used to get the data by Id async
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public virtual async Task<TEntity> GetByIdAsync(int id)
         {
             using (var context = _contextFactory.CreateDbContext())
@@ -109,6 +152,10 @@ namespace HealthCare.Repository.Repository
             }
         }
 
+        /// <summary>
+        /// This function is used to remove the data from the table by using its Id
+        /// </summary>
+        /// <param name="id"></param>
         public virtual void Remove(int id)
         {
             using (var context = _contextFactory.CreateDbContext())
@@ -122,6 +169,10 @@ namespace HealthCare.Repository.Repository
             }
         }
 
+        /// <summary>
+        /// This function is used to remove the data from the table by the entity
+        /// </summary>
+        /// <param name="entity"></param>
         public virtual void Remove(TEntity entity)
         {
             using (var context = _contextFactory.CreateDbContext())
@@ -136,6 +187,10 @@ namespace HealthCare.Repository.Repository
             }
         }
 
+        /// <summary>
+        /// This function is used to remove the specific range of data 
+        /// </summary>
+        /// <param name="entities"></param>
         public virtual void RemoveRange(IEnumerable<TEntity> entities)
         {
             using (var context = _contextFactory.CreateDbContext())
@@ -145,6 +200,11 @@ namespace HealthCare.Repository.Repository
             }
         }
 
+        /// <summary>
+        /// This function is used to get the first entity of the data 
+        /// </summary>
+        /// <param name="predicate"></param>
+        /// <returns></returns>
         public virtual Task<TEntity> SingleOrDefaultAsync(Expression<Func<TEntity, bool>> predicate)
         {
             using (var context = _contextFactory.CreateDbContext())
@@ -153,6 +213,10 @@ namespace HealthCare.Repository.Repository
             }
         }
 
+        /// <summary>
+        /// This function is used to update the data in the table
+        /// </summary>
+        /// <param name="entity"></param>
         public virtual void Update(TEntity entity)
         {
             using (var context = _contextFactory.CreateDbContext())
@@ -168,6 +232,11 @@ namespace HealthCare.Repository.Repository
             }           
         }
 
+        /// <summary>
+        /// This function is used to update the data async
+        /// </summary>
+        /// <param name="entity"></param>
+        /// <returns></returns>
         public virtual async Task UpdateAsync(TEntity entity)
         {
             using (var context = _contextFactory.CreateDbContext())

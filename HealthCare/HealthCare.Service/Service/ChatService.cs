@@ -29,18 +29,18 @@ namespace HealthCare.Service.Service
         {
             InboxMessages msg = new InboxMessages();
             msg.Id = message.Id;
-            msg.ToEmpId = message.ToEmpId??0;
-            msg.FromEmpId = message.FromEmpId ?? 0;
+            msg.ToUserId = message.ToUserId??0;
+            msg.FromUserId = message.FromUserId ?? 0;
             msg.EnteredDate = message.EnteredDate;
             msg.IsSeen = (bool)message.IsSeen;
             msg.StringEnteredDate = message.EnteredDate.Value.ToString("h:m tt M/d");
             msg.Message = message.Message;
             msg.DocumentFile = message.DocumentFile;
             msg.ImageFile = message.ImageFile;
-            var fromEmp = await UnitOfWork.User.GetByIdAsync(msg.FromEmpId);
+            var fromEmp = await UnitOfWork.User.GetByIdAsync(msg.FromUserId);
             msg.NameAndEnteredDate = fromEmp.Username + ", " + msg.StringEnteredDate;
-            msg.FromEmpName = fromEmp.Username;
-            msg.ToEmpName = (await UnitOfWork.User.GetByIdAsync(msg.ToEmpId)).Username;
+            msg.FromUserName = fromEmp.Username;
+            msg.ToUserName = (await UnitOfWork.User.GetByIdAsync(msg.ToUserId)).Username;
             msg.IsSeen = (bool)message.IsSeen;
             if (msg.IsSeen == true)
             {
@@ -62,20 +62,20 @@ namespace HealthCare.Service.Service
             var toUser =await UnitOfWork.User.GetByIdAsync(toUserId);
             var fromUser = await UnitOfWork.User.GetByIdAsync(FromUserId);
             chat.ChatEmpName = toUser.Username;
-            var messageRecord = UnitOfWork.Chat.Find(x => (!isUnseenMsgs || x.IsSeen == null || (bool)x.IsSeen == false) && x.ToEmpId == toUserId && x.FromEmpId == FromUserId && (x.IsDeleteByToEmp == null || !(bool)x.IsDeleteByToEmp) || (!isUnseenMsgs && x.FromEmpId == toUserId && x.ToEmpId == FromUserId && (x.IsDeleteByFromEmp == null || !(bool)x.IsDeleteByFromEmp))).OrderBy(x => x.EnteredDate).ToList();
+            var messageRecord = UnitOfWork.Chat.Find(x => (!isUnseenMsgs || x.IsSeen == null || (bool)x.IsSeen == false) && x.ToUserId == toUserId && x.FromUserId == FromUserId  || (!isUnseenMsgs && x.FromUserId == toUserId && x.ToUserId == FromUserId)).OrderBy(x => x.EnteredDate).ToList();
             for (int j = 0; j < messageRecord.Count; j++)
             {
                 InboxMessages msg = new InboxMessages();
                 msg.Id = messageRecord[j].Id;
-                msg.ToEmpId = messageRecord[j].ToEmpId ?? 0;
-                msg.FromEmpId = messageRecord[j].FromEmpId ?? 0;
+                msg.ToUserId = messageRecord[j].ToUserId ?? 0;
+                msg.FromUserId = messageRecord[j].FromUserId ?? 0;
                 msg.EnteredDate = messageRecord[j].EnteredDate;
                 msg.StringEnteredDate = messageRecord[j].EnteredDate.Value.ToString("h:m tt M/d");
                 msg.Message = messageRecord[j].Message;
                 msg.ImageFile = messageRecord[j].ImageFile;
                 msg.DocumentFile = messageRecord[j].DocumentFile;
-                msg.FromEmpName = fromUser.Username;
-                msg.ToEmpName = toUser.Username;
+                msg.FromUserName = fromUser.Username;
+                msg.ToUserName = toUser.Username;
                 msg.IsSeen = messageRecord[j].IsSeen == null || (bool)messageRecord[j].IsSeen == false ? false : true;
                 msg.NameAndEnteredDate = fromUser.Username + ", " + msg.StringEnteredDate;
                 if (messageRecord[j].IsSeen == true)
@@ -86,7 +86,7 @@ namespace HealthCare.Service.Service
                 {
                     msg.StringSeenDate = "UNREAD";
                 }
-                if (msg.ToEmpId == toUserId)
+                if (msg.ToUserId == toUserId)
                 {
                     msg.Color = "#f2f6f9 !important";
                 }

@@ -11,9 +11,9 @@ namespace HealthCare.Repository.Repository
 {
     public class AppointmentRepository : Repository<HealthcareAppointment>, IAppointmentRepository
     {
-        private readonly IDbContextFactory<CamcoDbContext> _contextFactory;
+        private readonly IDbContextFactory<HealthCareDbContext> _contextFactory;
 
-        public AppointmentRepository(IDbContextFactory<CamcoDbContext> contextFactory) : base(contextFactory)
+        public AppointmentRepository(IDbContextFactory<HealthCareDbContext> contextFactory) : base(contextFactory)
         {
             _contextFactory = contextFactory;
         }

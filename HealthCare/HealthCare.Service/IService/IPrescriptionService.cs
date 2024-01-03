@@ -12,5 +12,8 @@ namespace HealthCare.Service.IService
     {
         Task<List<HealthCarePrescription>> GetPrescriptionByDoctorIdAndUserId(int doctorId, int userId);
         Task<List<PrescriptionViewModel>> GetPrescriptionViewModelByDoctorIdAndUserId(int doctorId, int userId);
+        Task<int> AddPrescription(HealthCarePrescription prescription);
+        Task UpdatePrescription(HealthCarePrescription prescription);
+        Task<HealthCarePrescription> GetPrescriptionById(int prescriptionId);
     }
 }

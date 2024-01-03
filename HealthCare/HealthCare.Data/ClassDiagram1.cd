@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HealthCare.Data.Entity.HealthcareAppointment">
+    <Position X="9.75" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAgCABAACAAAAAAAEgCABQiAAAAAAAACAA=</HashCode>
+      <FileName>Entity\HealthcareAppointment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthCare.Data.Entity.HealthCareChat">
+    <Position X="12.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>gIACwSAgAAQACAAAACAAAAAAAEAAIASkAAABICAAAAA=</HashCode>
+      <FileName>Entity\HealthCareChat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthCare.Data.Entity.HealthcareDoctor">
+    <Position X="5.5" Y="7" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAADAAgAIEAACAAAACAAAAgAEAAAAAAgAAAAAAEAAkA=</HashCode>
+      <FileName>Entity\HealthcareDoctor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthCare.Data.Entity.HealthcareDoctorAvailibilitySchedule">
+    <Position X="10.25" Y="11.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAACAAAACAAAAAAEAACAAQgAAAEAAAAAQA=</HashCode>
+      <FileName>Entity\HealthcareDoctorAvailibilitySchedule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthCare.Data.Entity.HealthCareDoctorSpecialization">
+    <Position X="5.5" Y="11.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAACAAAACAAABAAAAAAAAAgAAAAAAAACEA=</HashCode>
+      <FileName>Entity\HealthCareDoctorSpecialization.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthCare.Data.Entity.HealthCareExceptionLog">
+    <Position X="2.25" Y="9.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACCAAAEAAAACgAAACAAEAgIAAAAAAAgAAAAAQIAAAA=</HashCode>
+      <FileName>Entity\HealthCareExceptionLog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthCare.Data.Entity.HealthCareGender">
+    <Position X="2.25" Y="6.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAACAAgACAAABAAEAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\HealthCareGender.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthCare.Data.Entity.HealthCarePrescription">
+    <Position X="9" Y="5.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKAAAAAQAACQAAACAAAAAAAIAKAAQgAAAAAAAACAA=</HashCode>
+      <FileName>Entity\HealthCarePrescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthCare.Data.Entity.HealthCareUser">
+    <Position X="5.5" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAACABgAADoIGACAASAAABAAEAAUGAArAgAAAAACAAA=</HashCode>
+      <FileName>Entity\HealthCareUser.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="HealthCareGender" />
+      <Property Name="HealthCarePrescription" />
+      <Property Name="HealthcareAppointment" />
+      <Property Name="HealthCareUserType" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="HealthCare.Data.Entity.HealthCareUserType">
+    <Position X="2.25" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAACAAAACAAABAAAAAACAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\HealthCareUserType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

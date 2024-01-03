@@ -1,0 +1,96 @@
+﻿@page "/doctorCheckUp/{UserId}"
+@using Syncfusion.Blazor.Buttons
+@using Syncfusion.Blazor.Inputs
+@using Syncfusion.Blazor.Navigations
+@using Syncfusion.Blazor.Popups
+@using HealthCare.ViewModels;
+
+<style>
+    .custom-button {
+        background: none; /* Remove the background */
+        border: none; /* Remove the border, if any */
+        padding: 0; /* Remove padding, if any */
+        cursor: pointer; /* Add cursor style if needed */
+    }
+
+</style>
+
+<div class="col-12 m-0 p-0 row">
+    <div class="col-3 m-0 p-1">
+        <div>
+        @if (User != null)
+        {
+            <HealthCare.UI.Pages.Components.PatientCard User="User" IsCheckUpButtonShown="false"></HealthCare.UI.Pages.Components.PatientCard>
+        }
+        </div>
+        <div class="doctor-card">
+            <div class="doctor-container">
+                <div class="doctor-info">
+                    <label><strong>Record For:</strong></label>
+                    <p>John Doe</p>
+
+                    <label><strong>Prescription:</strong></label>
+                    <br />
+                    <SfButton class="custom-button" OnClick="OpenPrescriptionDialoge">
+                        <img class="presc-image" src="/Icons/prescription.png" alt="">
+                    </SfButton>
+                    <br />
+                    <label><strong>Record Created On:</strong></label>
+                    <p>10 years</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-9">
+
+        @if (Chat != null && Lists != null)
+        {
+            <HealthCare.UI.Pages.Components.MessengerComponents.CurrentChatComponent UserId="1" DoctorId="2"></HealthCare.UI.Pages.Components.MessengerComponents.CurrentChatComponent>
+        }
+
+        <SfDialog Width="60%" ShowCloseIcon="true" IsModal="true" @bind-Visible="@IsDetailsDialogOpened">
+            <DialogTemplates>
+                <Header> Prescription Detail </Header>
+                <Content>
+                    <div class="col-lg-12">
+                        <SfGrid ID="PrescriptionGrid" DataSource="Prescription" @ref="PrescriptionGrid" Height="600" Width="100%"
+                                AllowPaging="false" AllowSorting="true"
+                                AllowExcelExport="true" AllowFiltering="true">
+                            <GridPageSettings PageSize="10"></GridPageSettings>
+                            <GridFilterSettings Type="Syncfusion.Blazor.Grids.FilterType.Excel"></GridFilterSettings>
+                            <GridEvents TValue="PrescriptionViewModel" OnToolbarClick="ToolbarClickHandler"></GridEvents>
+                            <SfToolbar Height="5">
+                                <ToolbarItems>
+                                    <ToolbarItem Type="ItemType.Input" Align="ItemAlign.Left">
+                                        <Template>
+                                            <SfButton CssClass="healthCare-btn" @onclick="ExcelExport" style="text-align: center; background-color: dodgerblue; color: white;">Excel Export</SfButton>
+                                        </Template>
+                                    </ToolbarItem>
+                                    <ToolbarItem Type="ItemType.Input" Align="ItemAlign.Right">
+                                        <Template>
+                                            <SfTextBox Placeholder="Search" ValueChange="OnSearch"></SfTextBox>
+                                        </Template>
+                                    </ToolbarItem>
+                                </ToolbarItems>
+                            </SfToolbar>
+                            <GridColumns>
+                                <GridColumn Field=@nameof(PrescriptionViewModel.Id) HeaderText="ID"></GridColumn>
+                                <GridColumn Field=@nameof(PrescriptionViewModel.PatientId) HeaderText="Shipment Name"></GridColumn>
+                                <GridColumn Field=@nameof(PrescriptionViewModel.DoctorId) HeaderText="Customer"></GridColumn>
+                                <GridColumn Field=@nameof(PrescriptionViewModel.DatePrescribed) HeaderText="Ship Date"></GridColumn>
+                            </GridColumns>
+                        </SfGrid>
+                    </div>
+                </Content>
+            </DialogTemplates>
+            <Syncfusion.Blazor.Popups.DialogButtons>
+                <Syncfusion.Blazor.Popups.DialogButton Content="Save" CssClass="healthCare-btn" style="text-align: center; background-color: dodgerblue; color: white;" />
+                <Syncfusion.Blazor.Popups.DialogButton Content="Close" CssClass="healthCare-btn" style="text-align: center; background-color: dodgerblue; color: white;" />
+            </Syncfusion.Blazor.Popups.DialogButtons>
+        </SfDialog>
+    </div>
+</div>
+
+

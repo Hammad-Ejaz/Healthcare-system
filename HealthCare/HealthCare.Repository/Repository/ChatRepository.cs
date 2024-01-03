@@ -11,9 +11,9 @@ namespace HealthCare.Repository.Repository
 {
     public class ChatRepository : Repository<HealthCareChat>, IChatRepository
     {
-        private readonly IDbContextFactory<CamcoDbContext> _contextFactory;
+        private readonly IDbContextFactory<HealthCareDbContext> _contextFactory;
 
-        public ChatRepository(IDbContextFactory<CamcoDbContext> contextFactory) : base(contextFactory)
+        public ChatRepository(IDbContextFactory<HealthCareDbContext> contextFactory) : base(contextFactory)
         {
             _contextFactory = contextFactory;
         }

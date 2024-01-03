@@ -11,9 +11,9 @@ namespace HealthCare.Repository.Repository
 {
     public class EmployeeRepository : IEmployeeRepository
     {
-        private readonly IDbContextFactory<CamcoDbContext> _contextFactory;
+        private readonly IDbContextFactory<HealthCareDbContext> _contextFactory;
 
-        public EmployeeRepository(IDbContextFactory<CamcoDbContext> contextFactory)
+        public EmployeeRepository(IDbContextFactory<HealthCareDbContext> contextFactory)
         {
             _contextFactory = contextFactory;
         }

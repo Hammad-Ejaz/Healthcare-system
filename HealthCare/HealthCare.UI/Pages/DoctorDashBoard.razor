@@ -22,35 +22,56 @@
         <h3>Find your doctor</h3>
     </div>
     <div class="search-box">
-        <SfTextBox placeholder="Search for a doctor" @bind-Value="@SearchText" @onchange="@(() => DoctorSearch())" />
+        <SfTextBox placeholder="Search for a patient" @bind-Value="@SearchText" @onchange="@(() => DoctorSearch())" />
     </div>
-    <div class=" row">
-        @if (User != null)
-        {
-            @for (int i = 0; i < User.Count(); i++)
+    @if (Appointments?.Count() <= 0)
+    {
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div class="text-center standard-header-style font-weight-bold">
+            <h3>No Appointments For Today</h3>
+        </div>
+    }
+    else
+    {
+        <div class=" row">
+            @if (User != null)
             {
-                <div>
-                    <HealthCare.UI.Pages.Components.PatientCard User="User[i]" IsCheckUpButtonShown = "true"></HealthCare.UI.Pages.Components.PatientCard>
-                </div>
+                @for (int i = 0; i < col_1; i++)
+                {
+                    <div>
+                        <HealthCare.UI.Pages.Components.PatientCard User="User[i]" IsCheckUpButtonShown="true"></HealthCare.UI.Pages.Components.PatientCard>
+                    </div>
+                }
+                @for (int i = col_1; i <col_2; i++)
+                {
+                    <div>
+                        <HealthCare.UI.Pages.Components.PatientCard User="User[i]" IsCheckUpButtonShown="true"></HealthCare.UI.Pages.Components.PatientCard>
+                    </div>
+                }
+                @for (int i = col_2; i < col_3; i++)
+                {
+                    <div>
+                        <HealthCare.UI.Pages.Components.PatientCard User="User[i]" IsCheckUpButtonShown="true"></HealthCare.UI.Pages.Components.PatientCard>
+                    </div>
+                }
+                @for (int i = col_3; i < col_4; i++)
+                {
+                    <div>
+                        <HealthCare.UI.Pages.Components.PatientCard User="User[i]" IsCheckUpButtonShown="true"></HealthCare.UI.Pages.Components.PatientCard>
+                    </div>
+                }
             }
-            @for (int i = 0; i < User.Count(); i++)
-            {
-                <div>
-                    <HealthCare.UI.Pages.Components.PatientCard User="User[i]" IsCheckUpButtonShown="true"></HealthCare.UI.Pages.Components.PatientCard>
-                </div>
-            }
-            @for (int i = 0; i < User.Count(); i++)
-            {
-                <div>
-                    <HealthCare.UI.Pages.Components.PatientCard User="User[i]" IsCheckUpButtonShown="true"></HealthCare.UI.Pages.Components.PatientCard>
-                </div>
-            }
-            @for (int i = 0; i < User.Count(); i++)
-            {
-                <div>
-                    <HealthCare.UI.Pages.Components.PatientCard User="User[i]" IsCheckUpButtonShown="true"></HealthCare.UI.Pages.Components.PatientCard>
-                </div>
-            }
-        }
-    </div>
+        </div>
+    }
 </div>

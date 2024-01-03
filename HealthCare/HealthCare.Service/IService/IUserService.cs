@@ -18,5 +18,6 @@ namespace HealthCare.Service.IService
         Task UpdateUser(HealthCareUser user);
         Task<List<UserViewModel>> GetUserViewModelList();
         Task<List<UserViewModel>> GetUsersBySearchText(string searchText);
+        Task<List<UserViewModel>> GetUserViewModelListOfTodaysAppointment(List<AppointmentViewModel> appointments);
     }
 }

@@ -1,5 +1,6 @@
-﻿@page "/patientTotalCheckUps/{UserId}"
+﻿@page "/patientTotalCheckUps"
 
+@using HealthCare.ViewModels;
 @using Syncfusion.Blazor.Inputs
 
 <style>
@@ -16,44 +17,62 @@
     <div class="col-12 m-0 p-0" style="font-size: 18px; text-align: left;"><span style="float: left">Me</span></div>
 </div>
 
+<div>
+    <h3 class="ml-3">Check Ups </h3>
+</div>
+<div class="m-4">
+    @if(Appointment != null)
+    {
+        <SfGrid ID="AppointmentGrid" DataSource="Appointment" @ref="AppointmentGrid" Height="600" Width="100%"
+                AllowPaging="false" AllowSorting="true"
+                AllowExcelExport="true" AllowFiltering="true">
+            <GridPageSettings PageSize="10"></GridPageSettings>
+            <GridFilterSettings Type="Syncfusion.Blazor.Grids.FilterType.Excel"></GridFilterSettings>
+            <GridEvents TValue="AppointmentViewModel" OnToolbarClick="ToolbarClickHandler"></GridEvents>
+            <SfToolbar Height="5">
+                <ToolbarItems>
+                    <ToolbarItem Type="ItemType.Input" Align="ItemAlign.Left">
+                        <Template>
+                            <SfButton CssClass="healthCare-btn" @onclick="ExcelExport" style="margin:2px; text-align: center; background-color: dodgerblue; color: white;">Excel Export</SfButton>
+                        </Template>
+                    </ToolbarItem>
+                    <ToolbarItem Type="ItemType.Input" Align="ItemAlign.Right">
+                        <Template>
+                            <SfTextBox Placeholder="Search" ValueChange="OnSearch"></SfTextBox>
+                        </Template>
+                    </ToolbarItem>
+                </ToolbarItems>
+            </SfToolbar>
+            <GridColumns>
+                <GridColumn Field=@nameof(AppointmentViewModel.PatientName) HeaderText="Patient Name"></GridColumn>
+                <GridColumn Field=@nameof(AppointmentViewModel.DoctorName) HeaderText="Doctor Name"></GridColumn>
+                <GridColumn Field=@nameof(AppointmentViewModel.ScheduleDate) HeaderText="Date"></GridColumn>
+                <GridColumn Field=@nameof(AppointmentViewModel.ScheduleDay) HeaderText="Day"></GridColumn>
+                <GridColumn Field=@nameof(AppointmentViewModel.ScheduleTime) HeaderText="Time"></GridColumn>
+                <GridColumn Field=@nameof(AppointmentViewModel.Description) HeaderText="Description"></GridColumn>
+                <GridColumn Field=@nameof(AppointmentViewModel.IsApproved) HeaderText="Is Approved"></GridColumn>
+                <GridColumn HeaderText="Action">
+                    <Template Context="appointmentContext">
+                        @{
+                            var appointment = (appointmentContext as AppointmentViewModel);
+                            int appointmentId = 0;
+                            if (appointment != null)
+                            {
+                                appointmentId = appointment.Id;
+                            }
+                            if(appointment.IsApproved == true)
+                            {
+                                <Syncfusion.Blazor.Buttons.SfButton @onclick="() => CheckUp(appointmentId)">CheckUp</Syncfusion.Blazor.Buttons.SfButton>
+                            }
+                            else
+                            {
+                                <Syncfusion.Blazor.Buttons.SfButton >Approval Required</Syncfusion.Blazor.Buttons.SfButton>
+                            }
+                        }
+                    </Template>
+                </GridColumn>
+            </GridColumns>
+        </SfGrid>
+    }
 
-<div class="container-fluid p-3">
-    <div class="header">
-        <h3>Find your doctor</h3>
-    </div>
-    <div class="search-box">
-        <SfTextBox placeholder="Search for a doctor" @bind-Value="@SearchText" @onchange="@(() => DoctorSearch())" />
-    </div>
-    <div class=" row">
-        @if (User != null)
-        {
-            @*
-
-            @for (int i = 0; i < User.Count(); i++)
-            {
-                <div>
-                    <HealthCare.UI.Pages.Components.DoctorCards Doctor="Doctors[0]" IsBookNowButtonShown="true"></HealthCare.UI.Pages.Components.DoctorCards>
-                </div>
-            }
-            @for (int i = 0; i < User.Count(); i++)
-            {
-                <div>
-                    <HealthCare.UI.Pages.Components.DoctorCards Doctor="Doctors[0]" IsBookNowButtonShown="true"></HealthCare.UI.Pages.Components.DoctorCards>
-                </div>
-            }
-            @for (int i = 0; i < User.Count(); i++)
-            {
-                <div>
-                    <HealthCare.UI.Pages.Components.DoctorCards Doctor="Doctors[0]" IsBookNowButtonShown="true"></HealthCare.UI.Pages.Components.DoctorCards>
-                </div>
-            }
-            @for (int i = 0; i < User.Count(); i++)
-            {
-                <div>
-                    <HealthCare.UI.Pages.Components.DoctorCards Doctor="Doctors[0]" IsBookNowButtonShown="true"></HealthCare.UI.Pages.Components.DoctorCards>
-                </div>
-            }
-            *@
-        }
-    </div>
 </div>

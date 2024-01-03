@@ -11,9 +11,9 @@ namespace HealthCare.Repository.Repository
 {
     public class SpecializationRepository : Repository<HealthCareDoctorSpecialization>, ISpecializationRepository
     {
-        private readonly IDbContextFactory<CamcoDbContext> _contextFactory;
+        private readonly IDbContextFactory<HealthCareDbContext> _contextFactory;
 
-        public SpecializationRepository(IDbContextFactory<CamcoDbContext> contextFactory) : base(contextFactory)
+        public SpecializationRepository(IDbContextFactory<HealthCareDbContext> contextFactory) : base(contextFactory)
         {
             _contextFactory = contextFactory;
         }

@@ -5,6 +5,7 @@ using HealthCare.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Schema;
@@ -17,7 +18,7 @@ namespace HealthCare.Service.Service
 
         public AppointmentService(IUnitOfWork UnitOfWork)
         {
-            this.UnitOfWork = UnitOfWork;
+            this.UnitOfWork = UnitOfWork; 
         }
 
         public async Task<List<HealthcareAppointment>> GetDoctorAppointments(int doctorId)
@@ -37,10 +38,10 @@ namespace HealthCare.Service.Service
         {
              await UnitOfWork.Appointment.UpdateAsync(appointment);
         }
-        public async Task<List<AppointmentViewModel>> GetUnApprovedAppointmentViewModelListByDoctorId(int doctorId)
+        public async Task<List<AppointmentViewModel>> GetAppointmentViewModelListByDoctorId(int doctorId)
         {
             var Appointments = await UnitOfWork.Appointment.GetListAsync();
-            var unApprovedAppointments = Appointments.Where(x => x.IsApproved != true && x.DoctorId == doctorId).ToList();
+            var unApprovedAppointments = Appointments.Where(x => x.DoctorId == doctorId).ToList();
             List<AppointmentViewModel> allUnApporvedAppointments = new();
             var doctors = await UnitOfWork.Doctor.GetListAsync();
             foreach (var obj in  unApprovedAppointments)
@@ -52,12 +53,72 @@ namespace HealthCare.Service.Service
                     {
                         Id = obj.Id,
                         DoctorName = (await UnitOfWork.User.GetByIdAsync(doctorUserId ?? 0)).Username,
+                        PatientId = obj.PatientId??0,
+                        DoctorId = obj.DoctorId ?? 0,
                         PatientName = (await UnitOfWork.User.GetByIdAsync(obj.PatientId ?? 0)).Username,
                         ScheduleDate = obj.AppointmentDate.Value.Date,
                         ScheduleDay = schedule.DayOfWeek,
                         ScheduleTime = schedule.Time.Value,
                         Description = obj.Description,
                         IsApproved = obj.IsApproved??false
+                    });
+            }
+            return allUnApporvedAppointments;
+        }
+
+
+        public async Task<List<AppointmentViewModel>> GetAppointmentViewModelListByDoctorIdAndDate(int doctorId , DateTime date)
+        {
+            var Appointments = await UnitOfWork.Appointment.GetListAsync();
+            var unApprovedAppointments = Appointments.Where(x => x.DoctorId == doctorId && x.AppointmentDate.Value.Date == date.Date).ToList();
+            List<AppointmentViewModel> allUnApporvedAppointments = new();
+            var doctors = await UnitOfWork.Doctor.GetListAsync();
+            foreach (var obj in unApprovedAppointments)
+            {
+                var doctorUserId = doctors.Where(x => x.Id == obj.DoctorId).Select(x => x.UserId).FirstOrDefault();
+                var schedule = await UnitOfWork.DoctorAvailibility.GetByIdAsync(obj.ScheduleId ?? 0);
+                allUnApporvedAppointments.Add(
+                    new AppointmentViewModel()
+                    {
+                        Id = obj.Id,
+                        DoctorName = (await UnitOfWork.User.GetByIdAsync(doctorUserId ?? 0)).Username,
+                        PatientId = obj.PatientId ?? 0,
+                        DoctorId = obj.DoctorId ?? 0,
+                        PatientName = (await UnitOfWork.User.GetByIdAsync(obj.PatientId ?? 0)).Username,
+                        ScheduleDate = obj.AppointmentDate.Value.Date,
+                        ScheduleDay = schedule.DayOfWeek,
+                        ScheduleTime = schedule.Time.Value,
+                        Description = obj.Description,
+                        IsApproved = obj.IsApproved ?? false
+                    });
+            }
+            return allUnApporvedAppointments;
+        }
+
+
+        public async Task<List<AppointmentViewModel>> GetAppointmentViewModelListByUserId(int userId)
+        {
+            var Appointments = await UnitOfWork.Appointment.GetListAsync();
+            var unApprovedAppointments = Appointments.Where(x => x.PatientId == userId).ToList();
+            List<AppointmentViewModel> allUnApporvedAppointments = new();
+            var doctors = await UnitOfWork.Doctor.GetListAsync();
+            foreach (var obj in unApprovedAppointments)
+            {
+                var doctorUserId = doctors.Where(x => x.Id == obj.DoctorId).Select(x => x.UserId).FirstOrDefault();
+                var schedule = await UnitOfWork.DoctorAvailibility.GetByIdAsync(obj.ScheduleId ?? 0);
+                allUnApporvedAppointments.Add(
+                    new AppointmentViewModel()
+                    {
+                        Id = obj.Id,
+                        DoctorName = (await UnitOfWork.User.GetByIdAsync(doctorUserId ?? 0)).Username,
+                        PatientId = obj.PatientId ?? 0,
+                        DoctorId = obj.DoctorId ?? 0,
+                        PatientName = (await UnitOfWork.User.GetByIdAsync(obj.PatientId ?? 0)).Username,
+                        ScheduleDate = obj.AppointmentDate.Value.Date,
+                        ScheduleDay = schedule.DayOfWeek,
+                        ScheduleTime = schedule.Time.Value,
+                        Description = obj.Description,
+                        IsApproved = obj.IsApproved ?? false
                     });
             }
             return allUnApporvedAppointments;

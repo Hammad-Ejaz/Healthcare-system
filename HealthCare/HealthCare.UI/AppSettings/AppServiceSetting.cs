@@ -7,7 +7,7 @@ namespace HealthCare.UI.AppSettings
     {
         public static IServiceCollection AppService(this IServiceCollection services)
         {
-            //app services
+      
             services.AddTransient<IEmployeeService, EmployeeService>();
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IHelperService, HelperService>();
@@ -19,6 +19,7 @@ namespace HealthCare.UI.AppSettings
             services.AddTransient<IDoctorAvailibilityScheduleService, DoctorAvailibilityScheduleService>();
             services.AddTransient<IAppointmentService, AppointmentService>();
             services.AddTransient<ILogService, LogService>();
+            services.AddTransient<IAuditsService, AuditsService>();
 
             return services;
         }

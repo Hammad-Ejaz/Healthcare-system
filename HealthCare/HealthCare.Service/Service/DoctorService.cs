@@ -53,6 +53,10 @@ namespace HealthCare.Service.Service
    		{
 			return (await GetAllDoctors()).Where(x=> (x.Username != null && x.Username.ToLower().Contains(searchText.ToLower())) || (x.Specialization != null && x.Specialization.ToLower().Contains(searchText.ToLower()))).ToList();
         }
+        public async Task<HealthcareDoctor> GetDoctorByUserId(int userId)
+        {
+            return (await UnitOfWork.Doctor.GetListAsync())?.FirstOrDefault(x => x.UserId == userId);
+        }
         public async Task<DoctorViewModel> GetDoctorByDoctorId(int doctorId) 
         {
             return (await GetAllDoctors()).Where(x=> x.DoctorId == doctorId).FirstOrDefault();

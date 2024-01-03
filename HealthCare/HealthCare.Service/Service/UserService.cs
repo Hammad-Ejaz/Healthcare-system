@@ -29,8 +29,9 @@ namespace HealthCare.Service.Service
         }
         public async Task<HealthCareUser> IsUserExits(HealthCareUser user)
         {
-            var obj = (await UnitOfWork.User.GetListAsync()).Where(x=> x.Username == user.Username).FirstOrDefault();
-            return (obj != null) ? obj : null;
+            var obj = (await UnitOfWork.User.GetListAsync()).Where(x=> x.Email == user.Email).FirstOrDefault();
+
+             return (obj != null) ? obj : null;
         }
         public async Task<HealthCareUser> GetUserById(int UserId)
         {
@@ -40,13 +41,19 @@ namespace HealthCare.Service.Service
         public async Task<UserViewModel> GetUserViewModelById(int UserId)
         {
             var obj = await UnitOfWork.User.GetByIdAsync(UserId);
-            UserViewModel user = new UserViewModel{
-                Username = obj.Username,
-                ContactNumber = obj.ContactNumber,
-                Age = (int)(DateTime.Now.Year - obj.DateOfBirth.Value.Year),
-                Gender = (await UnitOfWork.Gender.GetByIdAsync(obj.GenderId??0)).GenderType
-            };
-            return user;
+            if(obj != null) 
+            {
+                UserViewModel user = new UserViewModel{
+                    
+                    Id = obj.Id,
+                    Username = obj.Username,
+                    ContactNumber = obj.ContactNumber,
+                    Age = (int)(DateTime.Now.Year - (obj.DateOfBirth != null ? obj.DateOfBirth.Value.Year : DateTime.Now.Year)),
+                    Gender = (await UnitOfWork.Gender.GetByIdAsync(obj.GenderId??0))?.GenderType
+                };
+                return user;
+            }
+            return null;
         }
         public async Task<List<UserViewModel>> GetUserViewModelList()
         {
@@ -56,6 +63,32 @@ namespace HealthCare.Service.Service
             {
                 users.Add(new UserViewModel
                 {
+                    Username = obj.Username,
+                    ContactNumber = obj.ContactNumber,
+                    Age = (int)(obj.DateOfBirth != null ? (DateTime.Now.Year - obj.DateOfBirth.Value.Year) : DateTime.Now.Year),
+                    Gender = (await UnitOfWork.Gender.GetByIdAsync(obj.GenderId ?? 1)).GenderType
+                });
+            }
+            return users;
+        }
+        public async Task<List<UserViewModel>> GetUserViewModelListOfTodaysAppointment(List<AppointmentViewModel> appointments)
+        {
+            List<HealthCareUser> userList = new();
+            var usersList = await UnitOfWork.User.GetListAsync();
+            foreach(var appointment in appointments)
+            {
+                var user = usersList.Where(x=> x.Id == appointment.PatientId).FirstOrDefault();
+                if(user != null)
+                {
+                    userList.Add(user);
+                }
+            }
+            List<UserViewModel> users = new();
+            foreach (var obj in userList)
+            {
+                users.Add(new UserViewModel
+                {
+                    Id = obj.Id,
                     Username = obj.Username,
                     ContactNumber = obj.ContactNumber,
                     Age = (int)(obj.DateOfBirth != null ? (DateTime.Now.Year - obj.DateOfBirth.Value.Year) : DateTime.Now.Year),

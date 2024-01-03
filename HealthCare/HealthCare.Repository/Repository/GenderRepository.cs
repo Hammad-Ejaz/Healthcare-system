@@ -11,9 +11,9 @@ namespace HealthCare.Repository.Repository
 {
     public class GenderRepository : Repository<HealthCareGender> ,  IGenderRepository  
     {
-        private readonly IDbContextFactory<CamcoDbContext> _contextFactory;
+        private readonly IDbContextFactory<HealthCareDbContext> _contextFactory;
 
-        public GenderRepository(IDbContextFactory<CamcoDbContext> contextFactory) : base(contextFactory)
+        public GenderRepository(IDbContextFactory<HealthCareDbContext> contextFactory) : base(contextFactory)
         {
             _contextFactory = contextFactory;
         }

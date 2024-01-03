@@ -11,8 +11,12 @@
             @if(Login)
             {
                 <li class="nav-item">
-                    <NavLink class="nav-link" href="login">HOME</NavLink>
+                    <NavLink class="nav-link" @onclick="Home">HOME</NavLink>
                 </li>
+                <li class="nav-item">
+                    <NavLink class="nav-link" @onclick="Appointments">APPOINTMENTS</NavLink>
+                </li>
+
             }
         </ul>
         <ul class="navbar-nav">
@@ -34,6 +38,6 @@
 
 <div id="profileMenu" class="profile-menu" style="@(Visible ? "visibility:visible": "visibility:hidden" )">
     <SfButton class="menu-button" OnClick="NavigateToProfile">Your Profile</SfButton>
-    <SfButton class="menu-button">History</SfButton>
-    <SfButton class="menu-button">Logout</SfButton>
+    <SfButton class="menu-button" OnClick=" NavigateToProfile">History</SfButton>
+    <SfButton class="menu-button" OnClick=" Logout">Logout</SfButton>
 </div>

@@ -27,7 +27,7 @@
     <div class="doctor-container">
         <div class="doctor-info">
             <label><strong>Record For:</strong></label>
-            <p>John Doe</p>
+            <p>@Authenticate.User.Username.ToUpper()</p>
 
             <label><strong>Prescription:</strong></label>
             <br/> 
@@ -41,7 +41,6 @@
     </div>
 </div>
 
-<HealthCare.UI.Pages.Components.PatientCard User="User" IsCheckUpButtonShown="false"></HealthCare.UI.Pages.Components.PatientCard>
 </div>
 
 <div class="col-9" >
@@ -55,41 +54,39 @@
     <DialogTemplates>
         <Header> Prescription Detail </Header> 
         <Content>
-            <div class="col-lg-12">
-                <SfGrid ID="PrescriptionGrid" DataSource="Prescription" @ref="PrescriptionGrid" Height="600" Width="100%"
-                        AllowPaging="false" AllowSorting="true"
-                        AllowExcelExport="true" AllowFiltering="true">
-                    <GridPageSettings PageSize="10"></GridPageSettings>
-                    <GridFilterSettings Type="Syncfusion.Blazor.Grids.FilterType.Excel"></GridFilterSettings>
-                    <GridEvents TValue="PrescriptionViewModel" OnToolbarClick="ToolbarClickHandler"></GridEvents>
-                    <SfToolbar Height="5">
-                        <ToolbarItems>
-                            <ToolbarItem Type="ItemType.Input" Align="ItemAlign.Left">
-                                <Template>
+            <div class="col-lg-12">        
+                <SfGrid ID="PrescriptionGrid" DataSource="Prescriptions" @ref="PrescriptionGrid" Height="600" Width="90%"
+                                AllowPaging="false" AllowSorting="true"
+                                AllowExcelExport="true" AllowFiltering="true">
+                            <GridPageSettings PageSize="10"></GridPageSettings>
+                            <GridFilterSettings Type="Syncfusion.Blazor.Grids.FilterType.Excel"></GridFilterSettings>
+                            <GridEvents TValue="PrescriptionViewModel" OnToolbarClick="ToolbarClickHandler"></GridEvents>
+                            <SfToolbar Height="5">
+                                <ToolbarItems>
+                                    <ToolbarItem Type="ItemType.Input" Align="ItemAlign.Left">
+                                        <Template>
                                             <SfButton CssClass="healthCare-btn" @onclick="ExcelExport" style="text-align: center; background-color: dodgerblue; color: white;">Excel Export</SfButton>
-                                </Template>
-                            </ToolbarItem>
-                            <ToolbarItem Type="ItemType.Input" Align="ItemAlign.Right">
-                                <Template>
-                                    <SfTextBox Placeholder="Search" ValueChange="OnSearch"></SfTextBox>
-                                </Template>
-                            </ToolbarItem>
-                        </ToolbarItems>
-                    </SfToolbar>
-                    <GridColumns>
-                        <GridColumn Field=@nameof(PrescriptionViewModel.Id) HeaderText="ID"></GridColumn>
-                        <GridColumn Field=@nameof(PrescriptionViewModel.PatientId) HeaderText="Shipment Name"></GridColumn>
-                        <GridColumn Field=@nameof(PrescriptionViewModel.DoctorId) HeaderText="Customer"></GridColumn>
-                        <GridColumn Field=@nameof(PrescriptionViewModel.DatePrescribed) HeaderText="Ship Date" ></GridColumn>
-                    </GridColumns>
-                </SfGrid>
+                                        </Template>
+                                    </ToolbarItem>
+                                    <ToolbarItem Type="ItemType.Input" Align="ItemAlign.Right">
+                                        <Template>
+                                            <SfTextBox Placeholder="Search" ValueChange="OnSearch"></SfTextBox>
+                                        </Template>
+                                    </ToolbarItem>
+                                </ToolbarItems>
+                            </SfToolbar>
+                            <GridColumns>
+                                <GridColumn Field=@nameof(PrescriptionViewModel.PatientNmme) HeaderText="Patient Name"></GridColumn>
+                                <GridColumn Field=@nameof(PrescriptionViewModel.DoctorName) HeaderText="Doctor Name"></GridColumn>
+                                <GridColumn Field=@nameof(PrescriptionViewModel.DatePrescribed) HeaderText="Date Prescribed"></GridColumn>
+                                <GridColumn Field=@nameof(PrescriptionViewModel.Medication) HeaderText="Medication"></GridColumn>
+                                <GridColumn Field=@nameof(PrescriptionViewModel.Instructions) HeaderText="Instructions"></GridColumn>
+                                <GridColumn Field=@nameof(PrescriptionViewModel.Dosage) HeaderText="Dosage"></GridColumn>
+                            </GridColumns>
+                        </SfGrid>
             </div>
         </Content>
     </DialogTemplates>
-    <Syncfusion.Blazor.Popups.DialogButtons>
-                <Syncfusion.Blazor.Popups.DialogButton Content="Save" CssClass="healthCare-btn" style="text-align: center; background-color: dodgerblue; color: white;" />
-                <Syncfusion.Blazor.Popups.DialogButton Content="Close" CssClass="healthCare-btn" style="text-align: center; background-color: dodgerblue; color: white;" />
-    </Syncfusion.Blazor.Popups.DialogButtons>
 </SfDialog>
 </div>
 </div>

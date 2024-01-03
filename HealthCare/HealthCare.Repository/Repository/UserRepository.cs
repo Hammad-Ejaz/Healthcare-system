@@ -14,9 +14,9 @@ namespace HealthCare.Repository.Repository
     public class UserRepository : Repository<HealthCareUser> ,  IUserRepository
     {
 
-        private readonly IDbContextFactory<CamcoDbContext> _contextFactory;
+        private readonly IDbContextFactory<HealthCareDbContext> _contextFactory;
 
-        public UserRepository(IDbContextFactory<CamcoDbContext> contextFactory) : base(contextFactory)
+        public UserRepository(IDbContextFactory<HealthCareDbContext> contextFactory) : base(contextFactory)
         {
             _contextFactory = contextFactory;
         }

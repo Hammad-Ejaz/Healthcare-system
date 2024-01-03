@@ -19,6 +19,18 @@ namespace HealthCare.Service.Service
         {
             this.UnitOfWork = UnitOfWork;
         }
+        public async Task<int> AddPrescription(HealthCarePrescription prescription)
+        {
+            return await UnitOfWork.Prescription.InsertAsync(prescription);
+        }
+        public async Task UpdatePrescription(HealthCarePrescription prescription)
+        {
+            await UnitOfWork.Prescription.UpdateAsync(prescription);
+        }
+        public async Task<HealthCarePrescription> GetPrescriptionById(int prescriptionId)
+        {
+            return await UnitOfWork.Prescription.GetByIdAsync(prescriptionId);
+        }
 
         public async Task<List<HealthCarePrescription>> GetPrescriptionByDoctorIdAndUserId(int doctorId  , int userId)
         {
@@ -26,7 +38,7 @@ namespace HealthCare.Service.Service
         }
         public async Task<List<PrescriptionViewModel>> GetPrescriptionViewModelByDoctorIdAndUserId(int doctorId, int userId)
         {
-            var prescriptions =  (await UnitOfWork.Prescription.SearchAsync(x => x.DoctorId == doctorId && x.PatientId == userId)).ToList();
+            var prescriptions =  (await UnitOfWork.Prescription.SearchAsync(x => x.DoctorId == doctorId && x.PatientId == userId && x.Active == true)).ToList();
             var doctor = await UnitOfWork.Doctor.GetByIdAsync(doctorId);
             List<PrescriptionViewModel> prescriptionsList = new();
 
@@ -34,6 +46,7 @@ namespace HealthCare.Service.Service
             {
                 prescriptionsList.Add(new PrescriptionViewModel()
                 {
+                    Id = prescription.Id,
                     PatientNmme = (await UnitOfWork.User.GetByIdAsync(prescription.PatientId ?? 0)).Username,
                     DoctorName = (await UnitOfWork.User.GetByIdAsync(doctor.UserId ?? 0)).Username,
                     DatePrescribed = prescription.DatePrescribed,

@@ -21,9 +21,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 //Db connection
-builder.Services.AddDbContextFactory<CamcoDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), o => o.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery)), ServiceLifetime.Singleton);
+builder.Services.AddDbContextFactory<HealthCareDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), o => o.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery)), ServiceLifetime.Singleton);
 
-builder.Services.AddDbContext<CamcoDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), o => o.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery)), ServiceLifetime.Singleton);
+builder.Services.AddDbContext<HealthCareDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), o => o.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery)), ServiceLifetime.Singleton);
 
 
 

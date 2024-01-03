@@ -1,6 +1,8 @@
 ﻿using HealthCare.Repository;
 using HealthCare.Repository.IRepository;
+using HealthCare.Repository.IRepository.IAudits;
 using HealthCare.Repository.Repository;
+using HealthCare.Repository.Repository.Audits;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Internal;
 using System;
@@ -10,12 +12,12 @@ namespace CamcoTimeClock.Repository.UnitOfWork
 {
     public class UnitOfWork : IDisposable, IUnitOfWork
     {
-        public UnitOfWork(IDbContextFactory<CamcoDbContext> contextFactory)
+        public UnitOfWork(IDbContextFactory<HealthCareDbContext> contextFactory)
         {
             this._contextFactory = contextFactory;
         }
 
-        private readonly IDbContextFactory<CamcoDbContext> _contextFactory;
+        private readonly IDbContextFactory<HealthCareDbContext> _contextFactory;
 
         
         private IUserRepository _userRepository;
@@ -77,6 +79,53 @@ namespace CamcoTimeClock.Repository.UnitOfWork
             get { return _doctorAvailibilityScheduleRepository ??= new DoctorAvailibilityScheduleRepository(_contextFactory); }
 
         }
+
+
+
+
+
+        private IUserAuditRepository _userAuditRepository;
+
+        public IUserAuditRepository UserAudit
+        {
+            get { return _userAuditRepository ??= new UserAuditRepository(_contextFactory); }
+        }
+
+
+        private IDoctorAuditRepository _doctorAuditRepository;
+
+        public IDoctorAuditRepository DoctorAudit
+        {
+            get { return _doctorAuditRepository ??= new DoctorAuditRepository(_contextFactory); }
+        }
+
+        private IAppointmentAuditRepository _appointmentAuditRepository;
+
+        public IAppointmentAuditRepository AppointmentAudit
+        {
+            get { return _appointmentAuditRepository ??= new AppointmentAuditRepository(_contextFactory); }
+        }
+
+        private IChatAuditRepository _chatAuditRepository;
+        public IChatAuditRepository ChatAudit
+        {
+            get { return _chatAuditRepository ??= new ChatAuditRepository(_contextFactory); }
+        }
+
+        private IPrescriptionAuditRepository _prescriptionAuditRepository;
+        public IPrescriptionAuditRepository PrescriptionAudit
+        {
+            get { return _prescriptionAuditRepository ??= new PrescriptionAuditRepository(_contextFactory); }
+        }
+
+        private IDoctorAvailibilityScheduleAuditRepository _doctorAvailibilityScheduleAuditRepository;
+        public IDoctorAvailibilityScheduleAuditRepository DoctorAvailibilityAudit
+        {
+            get { return _doctorAvailibilityScheduleAuditRepository ??= new DoctorAvailibilityScheduleAuditRepository(_contextFactory); }
+
+        }
+
+
         public int Commit()
         {
             try

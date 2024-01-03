@@ -14,8 +14,8 @@ namespace HealthCare.Repository.Repository
 {
     public class PrescriptionRepository : Repository<HealthCarePrescription> ,  IPrescriptionRepository  
     {
-        private readonly IDbContextFactory<CamcoDbContext> _contextFactory;
-        public PrescriptionRepository(IDbContextFactory<CamcoDbContext> contextFactory) : base(contextFactory)
+        private readonly IDbContextFactory<HealthCareDbContext> _contextFactory;
+        public PrescriptionRepository(IDbContextFactory<HealthCareDbContext> contextFactory) : base(contextFactory)
         {
             _contextFactory = contextFactory;
         }

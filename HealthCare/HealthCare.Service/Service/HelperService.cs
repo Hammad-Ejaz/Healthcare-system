@@ -26,5 +26,12 @@ namespace HealthCare.Service.Service
         {
             return (await UnitOfWork.Specialization.GetListAsync()).ToList();
         }
+
+        public async Task<Tuple<int, int>> GetIdsFromString(string ids)
+        {
+            string[] values = ids.Split(';');
+
+            return new Tuple<int, int>(int.Parse(values[0]), int.Parse(values[1]));
+        }
     }
 }

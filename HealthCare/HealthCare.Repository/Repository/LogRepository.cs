@@ -11,9 +11,9 @@ namespace HealthCare.Repository.Repository
 {
     public class LogRepository : Repository<HealthCareExceptionLog>, ILogRepository
     {
-        private readonly IDbContextFactory<CamcoDbContext> _contextFactory;
+        private readonly IDbContextFactory<HealthCareDbContext> _contextFactory;
 
-        public LogRepository(IDbContextFactory<CamcoDbContext> contextFactory) : base(contextFactory)
+        public LogRepository(IDbContextFactory<HealthCareDbContext> contextFactory) : base(contextFactory)
         {
             _contextFactory = contextFactory;
         }

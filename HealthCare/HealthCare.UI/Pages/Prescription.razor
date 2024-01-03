@@ -1,4 +1,4 @@
-﻿@page "/prescription/{DoctorId}"
+﻿@page "/prescription/{UserId}"
 @using Syncfusion.Blazor.Buttons
 @using Syncfusion.Blazor.Inputs
 @using Syncfusion.Blazor.Navigations
@@ -17,22 +17,25 @@
 
 <div class="col-12 m-5 p-0 row">
     <div class="col-3 m-0 p-2">
-        <label>PATIENT NAME: </label>
-        <SfTextBox CssClass="mandatory" TValue="string"  />
-        <label>DOCTOR NAME: </label>
-        <SfTextBox CssClass="mandatory" TValue="string"/>
-        <label>MEDICATION:</label>
-        <SfTextBox CssClass="mandatory" TValue="string"  />
-        <label>DOSAGE: </label>
-        <SfTextBox CssClass="mandatory" TValue="string" />
-        <label class="p-0 m-0 font-weight-bold">INSTRUCTIONS: </label>
-        <SfTextBox CssClass="mandatory" style="height: 115px;" TValue="string" />
+        @if(User != null)
+        {
+            <label>PATIENT NAME: </label>
+            <SfTextBox Enabled= "false" CssClass="mandatory" TValue="string" @bind-Value = "User.Username" />
+            <label>DOCTOR NAME: </label>
+            <SfTextBox Enabled="false" CssClass="mandatory" TValue="string" @bind-Value="Authenticate.User.Username" />
+            <label>MEDICATION:</label>
+            <SfTextBox CssClass="mandatory" TValue="string" @bind-Value = "Prescription_.Medication" />
+            <label>DOSAGE: </label>
+            <SfTextBox CssClass="mandatory" TValue="string" @bind-Value = "Prescription_.Dosage" />
+            <label class="p-0 m-0 font-weight-bold">INSTRUCTIONS: </label>
+            <SfTextBox CssClass="mandatory" style="height: 115px;" TValue="string" @bind-Value = "Prescription_.Instructions"/>
+        }
 
        <br/>
        <br/>
 
         <div class="d-flex justify-content-center align-items-center">
-            <SfButton type="button" class="btn btn-danger w-25 p-1" style="font-size: 20px;">SAVE</SfButton>
+            <SfButton type="button" class="btn btn-danger w-25 p-1" style="font-size: 20px;" OnClick="Save">SAVE</SfButton>
         </div>
     </div>
 
@@ -74,8 +77,8 @@
                                 prescriptionId = prescription.Id;
                             }
                         }
-                        <SfButton CssClass="action-btn">Edit</SfButton>
-                        <SfButton CssClass="action-btn">Delete</SfButton>
+                        <SfButton @onclick="() =>  Edit(prescription.Id)">Edit</SfButton>
+                        <SfButton @onclick="() => Delete(prescription.Id)">Delete</SfButton>
                     </Template>
                 </GridColumn>
             </GridColumns>

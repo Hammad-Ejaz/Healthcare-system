@@ -1,4 +1,6 @@
-﻿namespace HealthCare.UI.Shared
+﻿using HealthCare.Data.Entity;
+
+namespace HealthCare.UI.Shared
 {
     public class Authenticate
     {
@@ -10,5 +12,6 @@
             } }
 
         public static event Action OnLoginChanged;
+        public static HealthCareUser User { get; set; }
     }
 }

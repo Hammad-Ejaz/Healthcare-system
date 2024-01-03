@@ -1,4 +1,4 @@
-﻿@page "/approvedAppointment/{DoctorId}"
+﻿@page "/approvedAppointment"
 @using Syncfusion.Blazor.Buttons
 @using Syncfusion.Blazor.Calendars
 @using Syncfusion.Blazor.Inputs
@@ -58,8 +58,15 @@
                             {
                                 appointmentId = appointment.Id;
                             }
+                            if(appointment.IsApproved == true)
+                            {
+                                <Syncfusion.Blazor.Buttons.SfButton @onclick="() => CheckUp(appointmentId)">CheckUp</Syncfusion.Blazor.Buttons.SfButton>
+                            }
+                            else
+                            {
+                                    <Syncfusion.Blazor.Buttons.SfButton @onclick="() => Approved(appointmentId)">Approved</Syncfusion.Blazor.Buttons.SfButton>
+                            }
                         }
-                        <SfButton CssClass="btn-edit" @onclick="() => Approved(appointmentId)">Approved</SfButton>
                     </Template>
                 </GridColumn>
             </GridColumns>
